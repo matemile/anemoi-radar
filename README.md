@@ -1,1 +1,2 @@
-# This is a small git repo collecting scripts, configs, hardware settings for Anemoi with RADAR dataset
+# Anemoi with RADAR dataset
+This repository consists of materials (scripts, configs, etc) for Anemoi system using RADAR observations.
