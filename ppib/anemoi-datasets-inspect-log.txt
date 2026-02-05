@@ -1,0 +1,25 @@
+(.venv) matem@ppi-r8login-b1:/lustre/storeB/users/matem/data/zarr$ anemoi-datasets inspect radar-nordic-1day-15m-v1.zarr
+2026-02-05 12:36:56 WARNING Dataset radar-nordic-1day-15m-v1.zarr has missing dates
+📦 Path          : radar-nordic-1day-15m-v1.zarr
+🔢 Format version: 0.30.0
+
+📅 Start      : 2020-11-13 10:00
+📅 End        : 2020-11-13 20:00
+⏰ Frequency  : 15m
+🚫 Missing    : 1
+🌎 Resolution : None
+🌎 Field shape: [2134, 1694]
+
+📐 Shape      : 41 × 4 × 1 × 3,614,996 (2.2 GiB)
+💽 Size       : 99.6 MiB (99.6 MiB)
+📁 Files      : 146
+
+   Index │ Variable               │ Min │     Max │      Mean │    Stdev
+   ──────┼────────────────────────┼─────┼─────────┼───────────┼─────────
+       0 │ block_percent          │   0 │     100 │   3.19903 │  11.2324
+       1 │ is_blocked             │   0 │       1 │  0.257514 │ 0.437265
+       2 │ is_nodata              │   0 │       1 │  0.481796 │ 0.499669
+       3 │ lwe_precipitation_rate │   0 │ 95.5427 │ 0.0330989 │ 0.322948
+   ──────┴────────────────────────┴─────┴─────────┴───────────┴─────────
+🔋 Dataset ready, last update 1 minute ago.
+📊 Statistics ready.

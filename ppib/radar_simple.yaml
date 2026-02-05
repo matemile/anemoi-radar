@@ -1,0 +1,29 @@
+description: Radar test dataset
+
+name: radar-nordic-1day-15m-v1.zarr
+
+dates:
+  start: 2020-11-13T10:00:00Z
+  end: 2020-11-13T20:00:00Z
+  frequency: 15m
+
+  missing:
+  - 2020-11-13 13:15:00
+
+build:
+  group_by: daily
+
+input:
+  join:
+    - netcdf:
+        path: /lustre/storeB/project/remotesensing/radar/reflectivity-nordic/2020/11/yrwms-nordic.mos.pcappi-0-dbz.noclass-clfilter-novpr-clcorr-block.nordiclcc-1000.20201113.nc
+        param: [lwe_precipitation_rate, is_nodata, is_blocked, block_percent]
+
+output:
+  remapping:
+     param_level: '{param}'
+     number: '-'
+
+statistics:
+  allow_nans: [lwe_precipitation_rate, is_nodata, is_blocked, block_percent]
+
