@@ -1,0 +1,48 @@
+(.venv) matem@c6525-1l5jvp3-bn-compute:/lustre/storeB/users/matem$ anemoi-graphs inspect /lustre/storeB/users/matem/graphs/graph-radar-nordicllc.pt .
+/home/matem/.venv/lib/python3.10/site-packages/anemoi/graphs/describe.py:26: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.graph = torch.load(self.path)
+
+📦 Path       : /lustre/storeB/users/matem/graphs/graph-radar-nordicllc.pt
+💽 Size       : 347.4 MiB (364313388)
+
+🪩  Nodes summary
+
+   Nodes name │ Num. nodes │  Attributes │ Attribute dim │ Min. latitude │ Max. latitude │ Min. longitude │ Max. longitude
+   ───────────┼────────────┼─────────────┼───────────────┼───────────────┼───────────────┼────────────────┼───────────────
+   data       │  3.615e+06 │ area_weight │             1 │       53.1392 │       73.0595 │       -8.08534 │        40.7264
+   hidden     │       1293 │ area_weight │             1 │       52.3623 │       73.8743 │       -10.3599 │        42.5298
+   ───────────┴────────────┴─────────────┴───────────────┴───────────────┴───────────────┴────────────────┴───────────────
+
+
+🌐  Edges summary
+
+   Source │ Target │  Num. edges │ Isolated Source │ Isolated Target │ Attribute dim │                     Attributes
+   ───────┼────────┼─────────────┼─────────────────┼─────────────────┼───────────────┼───────────────────────────────
+   data   │ hidden │ 5.19113e+06 │               0 │             153 │             3 │ edge_length(1D), edge_dirs(2D)
+   hidden │ hidden │        9776 │               0 │               0 │             3 │ edge_length(1D), edge_dirs(2D)
+   hidden │ data   │  1.0845e+07 │             105 │               0 │             3 │ edge_length(1D), edge_dirs(2D)
+   ───────┴────────┴─────────────┴─────────────────┴─────────────────┴───────────────┴───────────────────────────────
+
+
+📊 Attribute distributions
+
+   Type │ Source          │        Name │         Dtype │        Min. │         Mean │    Max. │ Std. dev.
+   ─────┼─────────────────┼─────────────┼───────────────┼─────────────┼──────────────┼─────────┼──────────
+   Node │ data            │ area_weight │ torch.float32 │           1 │            1 │       1 │         0
+   Node │ hidden          │ area_weight │ torch.float32 │ 3.24433e-05 │   0.00437464 │       1 │ 0.0511701
+   Edge │ data-->hidden   │ edge_length │ torch.float32 │  0.00150557 │      2.82795 │ 4.24225 │         1
+   Edge │ data-->hidden   │   edge_dirs │ torch.float32 │    -1.41421 │ -0.000498008 │ 1.41421 │         1
+   Edge │ hidden-->hidden │ edge_length │ torch.float32 │    0.737077 │      1.17625 │ 27.8114 │   1.00005
+   Edge │ hidden-->hidden │   edge_dirs │ torch.float32 │    -1.41421 │ -0.000399524 │ 1.41421 │   1.00003
+   Edge │ hidden-->data   │ edge_length │ torch.float32 │  0.00101731 │       2.7792 │ 4.77459 │         1
+   Edge │ hidden-->data   │   edge_dirs │ torch.float32 │    -1.41421 │  0.000361579 │ 1.41421 │         1
+   ─────┴─────────────────┴─────────────┴───────────────┴─────────────┴──────────────┴─────────┴──────────
+
+🔋 Graph ready.
+
+/home/matem/.venv/lib/python3.10/site-packages/anemoi/graphs/inspect.py:52: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.graph = torch.load(self.path)
+2026-02-05 22:41:44 INFO Saving interactive plots of isolated nodes ...
+2026-02-05 22:41:44 INFO Saving interactive plots of subgraphs ...
+2026-02-05 22:45:58 INFO Saving distribution plots of node ande edge attributes ...
+
