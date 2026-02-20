@@ -1,0 +1,450 @@
+data:
+  frequency: 15m
+  timestep: 15m
+  format: zarr
+  datasets:
+    data:
+      dataset:  ${system.input.dataset}
+      forcing: []
+      diagnostic: []
+      processors:
+        normalizer:
+          _target_: anemoi.models.preprocessing.normalizer.InputNormalizer
+          config:
+            default: "std"
+        imputer:
+          _target_: anemoi.models.preprocessing.imputer.DynamicInputImputer
+          config:
+            default: "mean"
+  num_features: null
+
+dataloader:
+  dataset: ${system.input.dataset}
+  model_run_info: null
+  validation_rollout: 1
+  prefetch_factor: 2
+  pin_memory: true
+  read_group_size: ${system.hardware.num_gpus_per_model}
+  num_workers:
+    training: 1
+    validation: 1
+    test: 1
+  batch_size:
+    training: 1
+    validation: 1
+    test: 1
+  training:
+    datasets:
+      data:
+        dataset: ${dataloader.dataset}
+        start: 2020-11-13
+        end: 2024-11-13
+        frequency: 15m
+  validation:
+    datasets:
+      data:
+        dataset: ${dataloader.dataset}
+        start: 2024-11-14
+        end: 2024-11-15
+        frequency: 15m
+  test:
+    datasets:
+      data:
+        dataset: ${dataloader.dataset}
+        start: 2025-04-13
+        end: 2025-04-13
+        frequency: 15m
+  limit_batches:
+    training: null
+    validation: null
+    test: null
+  grid_indices:
+    datasets:
+      data:
+        _target_: anemoi.training.data.grid_indices.FullGrid
+        nodes_name: ${graph.data}
+
+diagnostics:
+  benchmark_profiler:
+    memory:
+      enabled: False
+      steps: 5
+      warmup: 2
+      extra_plots: False
+      trace_rank0_only: False
+    time:
+      enabled: True
+      verbose: False
+    speed:
+      enabled: True
+    system:
+      enabled: False
+    model_summary:
+      enabled: False
+    snapshot:
+      enabled: False
+      steps: 4
+      warmup: 0
+  plot:
+    parameters: [ lwe_precipitation_rate ]
+    sample_idx: 0
+    precip_and_related_fields: [ lwe_precipitation_rate ]
+    asynchronous: True # Whether to plot asynchronously
+    datashader: True # Choose which technique to use for plotting
+    frequency: # Frequency of the plotting
+      batch: 750
+      epoch: 1
+    colormaps:
+      precip:
+        _target_: anemoi.training.utils.custom_colormaps.MatplotlibColormapClevels
+        clevels: ["#ffffff", "#04e9e7", "#019ff4", "#0300f4", "#02fd02", "#01c501", "#008e00", "#fdf802", "#e5bc00", "#fd9500", "#fd0000", "#d40000", "#bc0000", "#f800fd"]
+        variables: ${diagnostics.plot.precip_and_related_fields}
+    datasets_to_plot: ["nordic_radar"]
+    callbacks:
+      - _target_: anemoi.training.diagnostics.callbacks.plot.PlotSample
+        dataset_names: ["nordic_radar"] 
+        sample_idx: ${diagnostics.plot.sample_idx}
+        per_sample : 6
+        parameters: ${diagnostics.plot.parameters}
+        output_steps: ${training.multistep_output}
+        every_n_batches: ${diagnostics.plot.frequency.batch}
+        accumulation_levels_plot: [0, 0.05, 0.1, 0.25, 0.5, 1, 1.5, 2, 3, 4, 5, 6, 7, 100] # in mm
+        precip_and_related_fields: ${diagnostics.plot.precip_and_related_fields}
+        colormaps: ${diagnostics.plot.colormaps}
+  callbacks: []
+  debug:
+    anomaly_detection: false
+  enable_checkpointing: false
+  checkpoint:
+    every_n_minutes: {save_frequency: 0, num_models_saved: 0}
+    every_n_epochs: {save_frequency: 0, num_models_saved: -1}
+    every_n_train_steps: {save_frequency: 0, num_models_saved: 0}
+  log:
+    wandb:
+      enabled: false
+      offline: false
+      log_model: false
+      project: Anemoi
+      entity: null
+      gradients: false
+      parameters: false
+    tensorboard:
+      enabled: false
+    mlflow:
+      enabled: false
+      offline: false
+      authentication: false
+      log_model: false
+      tracking_uri: https://servicedepl.meteoswiss.ch/mlstore/
+      experiment_name: weather_interpolator
+      project_name: ML-Weather-Generator
+      system: false
+      terminal: false
+      run_name: lam_only
+      on_resume_create_child: false
+      http_max_retries: 10
+      expand_hyperparams: [config]
+    interval: 1
+  enable_progress_bar: true
+  print_memory_summary: true
+
+system:
+  output:
+    root: /leonardo_scratch/large/userexternal/omiralle/anemoi/
+    logs:
+      root: logs
+      wandb: wandb
+      mlflow: mlflow
+      tensorboard: tensorboard
+    checkpoints:
+      root: checkpoint
+      every_n_epochs: anemoi-by_epoch-epoch_{epoch:03d}-step_{step:06d}
+      every_n_train_steps: anemoi-by_step-epoch_{epoch:03d}-step_{step:06d}
+      every_n_minutes: anemoi-by_time-epoch_{epoch:03d}-step_{step:06d}
+    plots: plots
+    profiler: profiler
+  input:
+    truncation: null
+    truncation_inv: null
+    warm_start: null
+    dataset: 
+      dataset: /leonardo_work/EUHPC_R06_263/bris/datasets/radar/nordic-radar-2020-2025-1km-5m.zarr
+      select: "lwe_precipitation_rate"
+    graph: ${system.output.root}graph/nordic.pt
+  hardware:
+    accelerator: auto
+    num_gpus_per_node: 4
+    num_gpus_per_ensemble: 8
+    num_nodes: ${oc.decode:${oc.env:SLURM_NNODES}}
+    num_gpus_per_model: 4
+
+graph:
+  overwrite: true
+  data: data
+  hidden: hidden
+  nodes:
+    data:
+      node_builder:
+        _target_: anemoi.graphs.nodes.AnemoiDatasetNodes
+        dataset: ${dataloader.dataset}
+      attributes: ${graph.attributes.nodes}
+    hidden:
+      node_builder:
+        _target_: anemoi.graphs.nodes.TriNodes
+        resolution: 7
+  edges:
+    - source_name: ${graph.data}
+      target_name: ${graph.hidden}
+      edge_builders:
+      - _target_: anemoi.graphs.edges.CutOffEdges
+        cutoff_factor: 1.5
+        source_mask_attr_name: null
+        target_mask_attr_name: null
+      attributes: ${graph.attributes.edges}
+    - source_name: ${graph.hidden}
+      target_name: ${graph.hidden}
+      edge_builders:
+        - _target_: anemoi.graphs.edges.MultiScaleEdges
+          x_hops: 1
+          scale_resolutions: ${graph.nodes.hidden.node_builder.resolution}
+          source_mask_attr_name: null
+          target_mask_attr_name: null
+      attributes: ${graph.attributes.edges}
+    - source_name: ${graph.hidden}
+      target_name: ${graph.data}
+      edge_builders:
+        - _target_: anemoi.graphs.edges.KNNEdges
+          num_nearest_neighbours: 3
+          source_mask_attr_name: null
+          target_mask_attr_name: null
+      attributes: ${graph.attributes.edges}
+  attributes:
+    nodes:
+      area_weight:
+        _target_: anemoi.graphs.nodes.attributes.UniformWeights
+        norm: unit-max
+    edges:
+      edge_length:
+        _target_: anemoi.graphs.edges.attributes.EdgeLength
+        norm: unit-std
+      edge_dirs:
+        _target_: anemoi.graphs.edges.attributes.EdgeDirection
+        norm: unit-std
+  post_processors:
+  - _target_: anemoi.graphs.processors.RemoveUnconnectedNodes
+    nodes_name: data
+model:
+  num_channels: 1024
+  condition_on_residual: False
+  output_mask:
+    _target_: anemoi.training.utils.masks.NoOutputMask
+  cpu_offload: False
+  keep_batch_sharded: false
+  model:
+    _target_: anemoi.models.models.AnemoiEnsModelEncProcDec
+  noise_injector:
+    _target_: anemoi.models.layers.ensemble.NoiseConditioning
+    noise_std: 1
+    noise_channels_dim: 4
+    noise_mlp_hidden_dim: 32
+    noise_matrix: null
+    row_normalize_noise_matrix: false
+    autocast: false
+    layer_kernels:
+      Activation:
+        _target_: torch.nn.GELU
+  layer_kernels:
+    LayerNorm:
+      _target_: torch.nn.LayerNorm
+    Linear:
+      _target_: torch.nn.Linear
+    Activation:
+      _target_: torch.nn.GELU
+    QueryNorm:
+      _target_: anemoi.models.layers.normalization.AutocastLayerNorm
+      bias: False
+    KeyNorm:
+      _target_: anemoi.models.layers.normalization.AutocastLayerNorm
+      bias: False
+  processor:
+    _target_: anemoi.models.layers.processor.GraphTransformerProcessor
+    trainable_size: ${model.trainable_parameters.hidden2hidden}
+    sub_graph_edge_attributes: ${model.attributes.edges}
+    num_layers: 16
+    num_chunks: 2
+    mlp_hidden_ratio: 4 # GraphTransformer or Transformer only
+    num_heads: 16 # GraphTransformer or Transformer only
+    qk_norm: True # Transformer and GraphTransformer only
+    cpu_offload: ${model.cpu_offload}
+    gradient_checkpointing: True
+    graph_attention_backend: "triton"  # Options: "triton", "pyg"
+    edge_pre_mlp: False
+    layer_kernels:
+      LayerNorm:
+        _target_: anemoi.models.layers.normalization.ConditionalLayerNorm
+        normalized_shape: ${model.num_channels}
+        condition_shape: ${model.noise_injector.noise_channels_dim}
+        zero_init: True
+        autocast: false
+      Linear:
+        _target_: torch.nn.Linear
+      Activation:
+        _target_: torch.nn.GELU
+      QueryNorm:
+        _target_: anemoi.models.layers.normalization.AutocastLayerNorm
+        bias: False
+      KeyNorm:
+        _target_: anemoi.models.layers.normalization.AutocastLayerNorm
+        bias: False
+  encoder:
+    _target_: anemoi.models.layers.mapper.GraphTransformerForwardMapper
+    trainable_size: ${model.trainable_parameters.data2hidden}
+    sub_graph_edge_attributes: ${model.attributes.edges}
+    num_chunks: 4
+    mlp_hidden_ratio: 4 # GraphTransformer or Transformer only
+    num_heads: 16 # GraphTransformer or Transformer only
+    qk_norm: False
+    cpu_offload: ${model.cpu_offload}
+    gradient_checkpointing: True
+    layer_kernels: ${model.layer_kernels}
+    shard_strategy: "edges"
+    graph_attention_backend: "triton"  # Options: "triton", "pyg"
+    edge_pre_mlp: False
+  decoder:
+    _target_: anemoi.models.layers.mapper.GraphTransformerBackwardMapper
+    trainable_size: ${model.trainable_parameters.hidden2data}
+    sub_graph_edge_attributes: ${model.attributes.edges}
+    num_chunks: 4
+    mlp_hidden_ratio: 4 # GraphTransformer or Transformer only
+    num_heads: 16 # GraphTransformer or Transformer only
+    initialise_data_extractor_zero: False
+    qk_norm: False
+    cpu_offload: ${model.cpu_offload}
+    gradient_checkpointing: True
+    layer_kernels: ${model.layer_kernels}
+    shard_strategy: "edges"
+    graph_attention_backend: "triton"  # Options: "triton", "pyg"
+    edge_pre_mlp: False
+  residual:
+    _target_: anemoi.models.layers.residual.SkipConnection # options: SkipConnection, TruncatedConnection
+    step: -1 # use the latest step as skip connection
+  trainable_parameters:
+    data: 2
+    hidden: 2
+    data2hidden: 2
+    hidden2data: 2
+    hidden2hidden: 2
+  attributes:
+    edges:
+      - edge_length
+      - edge_dirs
+    nodes: []
+  # Torch compile configuration
+  # A list of modules present in the model, which will be compiled
+  # You can optionally pass options to torch.compile with the 'options' key
+  #
+  # Below is an explanation of some common parameters to torch.compile
+  # For a full list of possible parameters, consult the documenation for torch compile
+  #       https://docs.pytorch.org/docs/stable/generated/torch.compile.html
+  #
+  # dynamic (bool): When True, it will try to avoid recompilation by generating
+  #       as general a kernel as possible. But the performance of the general
+  #       kernel might be worse. When False, it will generate a specific
+  #       kernel for each input shape (until the configurable recompile
+  #       limit has been hit), leading to possibly better performance but
+  #       more recompilations
+  # mode (str): Different compilation modes, allowing you to trade off
+  #       compilation time versus potential performance. See the
+  #       torch.compile documentation for list of possible modes
+  # fullgraph (bool): When True, torch.compile will error when it hits a
+  #       section of code it can't compile. When False, it will fallback to
+  #       non-compiled ("eager") execution for those lines.
+  # options (dict): a dict of further options which can be passed to torch.compile
+  compile:
+    - module: anemoi.models.layers.conv.GraphTransformerConv
+    - module: anemoi.models.layers.normalization.ConditionalLayerNorm
+  bounding:
+    - _target_: anemoi.models.layers.bounding.ReluBounding
+      variables: [lwe_precipitation_rate]
+
+training:
+  multistep_output: 1
+  update_ds_stats_on_ckpt_load:
+    states: False 
+    tendencies: True 
+  scalers:
+    datasets:
+      data:
+        general_variable:
+          _target_: anemoi.training.losses.scalers.GeneralVariableLossScaler
+          weights: {default: 1}
+        nan_mask_weights:
+          _target_: anemoi.training.losses.scalers.NaNMaskScaler
+        node_weights:
+          _target_: anemoi.training.losses.scalers.GraphNodeAttributeScaler
+          nodes_name: ${graph.data}
+          nodes_attribute_name: area_weight
+          norm: unit-sum
+  variable_groups:
+    datasets:
+      data:
+        default: sfc
+        pl: []
+  run_id: null
+  fork_run_id: null
+  load_weights_only: false
+  transfer_learning: false
+  deterministic: false
+  precision: bf16-mixed
+  recompile_limit: 32
+  accum_grad_batches: 1
+  num_sanity_val_steps: 0
+  gradient_clip: {val: 32.0, algorithm: value}
+  swa: {enabled: false, lr: 0.0001}
+  optimizer:
+    _target_: torch.optim.AdamW
+    betas: [0.9, 0.95]
+  model_task: anemoi.training.train.tasks.GraphEnsForecaster
+  ensemble_size_per_device: 1
+  strategy:
+    _target_: anemoi.training.distributed.strategy.DDPEnsGroupStrategy
+    num_gpus_per_ensemble: ${system.hardware.num_gpus_per_ensemble}
+    num_gpus_per_model: ${system.hardware.num_gpus_per_model}
+    read_group_size: ${dataloader.read_group_size}
+  training_loss:
+    datasets:
+      data:
+        _target_: anemoi.training.losses.AlmostFairKernelCRPS
+        x_dim: 2134
+        y_dim: 1694
+        transform: "fft2d"
+        scalers: ["node_weights"]
+        ignore_nans: true
+  validation_metrics:
+    datasets:
+      data:
+        mse:
+          _target_: anemoi.training.losses.AlmostFairKernelCRPS
+          x_dim: 2134 
+          y_dim: 1694
+          transform: "fft2d"
+          scalers: ["node_weights"]
+          ignore_nans: True
+  loss_gradient_scaling: false
+  max_epochs: 20
+  max_steps: 200000
+  lr:
+    warmup: 1000
+    iterations: ${training.max_steps}
+    rate: 6.25e-6
+    min: 3.0e-8
+  multistep_input: 6
+  metrics: 
+    datasets:
+      data: []
+  submodules_to_freeze: []
+  rollout:
+    start: 1
+    epoch_increment: 0
+    max: 1
+config_validation: false
