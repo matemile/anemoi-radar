@@ -1,0 +1,20 @@
+checkpoint: /scratch/project_465002688/omiralle/bris_multisource/checkpoint/a7f566f1-70b0-4acb-b31b-150b757d0770/inference-last.ckpt
+
+date: 2024-01-01T00:00:00
+lead_time: 6h
+input:
+  dataset: /scratch/project_465002688/datasets/nordic-radar-2020-2025-1km-5m.zarr
+
+output:
+  netcdf:
+    path: /scratch/project_465002688/omiralle/inference/a7f566f1-70b0-4acb-b31b-150b757d0770/inference/ai_output.nc
+    variables:
+      - tp
+
+post_processors:
+  - accumulate_from_start_of_forecast:
+      accumulations:
+        - tp
+
+output_frequency: "5m"
+runner: default

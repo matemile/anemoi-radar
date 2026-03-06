@@ -1,1522 +1,1518 @@
-Training: |
-| 0/? [00:00<?, ?it/s]Epoch 0: |
-| 0/? [00:00<?, ?it/s] Epoch 0: |
-| 1/? [00:43<00:00,  0.02it/s]Epoch 0: |
-| 1/? [00:43<00:00,  0.02it/s, train_multi_dataset_loss_step=0.0655]Epoch 0: |
-| 2/? [00:46<00:00,  0.04it/s, train_multi_dataset_loss_step=0.0655]Epoch 0: |
-| 2/? [00:46<00:00,  0.04it/s, train_multi_dataset_loss_step=0.0867]Epoch 0: |
-| 3/? [00:49<00:00,  0.06it/s, train_multi_dataset_loss_step=0.0867]Epoch 0: |
-| 3/? [00:49<00:00,  0.06it/s, train_multi_dataset_loss_step=0.102] Epoch 0: |
-| 4/? [00:52<00:00,  0.08it/s, train_multi_dataset_loss_step=0.102]Epoch 0: |
-| 4/? [00:52<00:00,  0.08it/s, train_multi_dataset_loss_step=0.0855]Epoch 0: |
-| 5/? [00:55<00:00,  0.09it/s, train_multi_dataset_loss_step=0.0855]Epoch 0: |
-| 5/? [00:55<00:00,  0.09it/s, train_multi_dataset_loss_step=0.0418]Epoch 0: |
-| 6/? [00:58<00:00,  0.10it/s, train_multi_dataset_loss_step=0.0418]Epoch 0: |
-| 6/? [00:58<00:00,  0.10it/s, train_multi_dataset_loss_step=0.0551]Epoch 0: |
-| 7/? [01:01<00:00,  0.11it/s, train_multi_dataset_loss_step=0.0551]Epoch 0: |
-| 7/? [01:01<00:00,  0.11it/s, train_multi_dataset_loss_step=0.0825]Epoch 0: |
-| 8/? [01:04<00:00,  0.12it/s, train_multi_dataset_loss_step=0.0825]Epoch 0: |
-| 8/? [01:04<00:00,  0.12it/s, train_multi_dataset_loss_step=0.0478]Epoch 0: |
-| 9/? [01:06<00:00,  0.13it/s, train_multi_dataset_loss_step=0.0478]Epoch 0: |
-| 9/? [01:06<00:00,  0.13it/s, train_multi_dataset_loss_step=0.0776]Epoch 0: |
-| 10/? [01:09<00:00,  0.14it/s, train_multi_dataset_loss_step=0.0776]Epoch 0: |
-| 10/? [01:09<00:00,  0.14it/s, train_multi_dataset_loss_step=0.0503]Epoch 0: |
-| 11/? [01:12<00:00,  0.15it/s, train_multi_dataset_loss_step=0.0503]Epoch 0: |
-| 11/? [01:12<00:00,  0.15it/s, train_multi_dataset_loss_step=0.0646]Epoch 0: |
-| 12/? [01:15<00:00,  0.16it/s, train_multi_dataset_loss_step=0.0646]Epoch 0: |
-| 12/? [01:15<00:00,  0.16it/s, train_multi_dataset_loss_step=0.0382]Epoch 0: |
-| 13/? [01:17<00:00,  0.17it/s, train_multi_dataset_loss_step=0.0382]Epoch 0: |
-| 13/? [01:17<00:00,  0.17it/s, train_multi_dataset_loss_step=0.0484]Epoch 0: |
-| 14/? [01:20<00:00,  0.17it/s, train_multi_dataset_loss_step=0.0484]Epoch 0: |
-| 14/? [01:20<00:00,  0.17it/s, train_multi_dataset_loss_step=0.0704]Epoch 0: |
-| 15/? [01:23<00:00,  0.18it/s, train_multi_dataset_loss_step=0.0704]Epoch 0: |
-| 15/? [01:23<00:00,  0.18it/s, train_multi_dataset_loss_step=0.0466]Epoch 0: |
-| 16/? [01:26<00:00,  0.19it/s, train_multi_dataset_loss_step=0.0466]Epoch 0: |
-| 16/? [01:26<00:00,  0.19it/s, train_multi_dataset_loss_step=0.062] Epoch 0: |
-| 17/? [01:28<00:00,  0.19it/s, train_multi_dataset_loss_step=0.062]Epoch 0: |
-| 17/? [01:28<00:00,  0.19it/s, train_multi_dataset_loss_step=0.0396]Epoch 0: |
-| 18/? [01:31<00:00,  0.20it/s, train_multi_dataset_loss_step=0.0396]Epoch 0: |
-| 18/? [01:31<00:00,  0.20it/s, train_multi_dataset_loss_step=0.0557]Epoch 0: |
-| 19/? [01:34<00:00,  0.20it/s, train_multi_dataset_loss_step=0.0557]Epoch 0: |
-| 19/? [01:34<00:00,  0.20it/s, train_multi_dataset_loss_step=0.0559]Epoch 0: |
-| 20/? [01:37<00:00,  0.21it/s, train_multi_dataset_loss_step=0.0559]Epoch 0: |
-| 20/? [01:37<00:00,  0.21it/s, train_multi_dataset_loss_step=0.0343]Epoch 0: |
-| 21/? [01:39<00:00,  0.21it/s, train_multi_dataset_loss_step=0.0343]Epoch 0: |
-| 21/? [01:39<00:00,  0.21it/s, train_multi_dataset_loss_step=0.0582]Epoch 0: |
-| 22/? [01:42<00:00,  0.21it/s, train_multi_dataset_loss_step=0.0582]Epoch 0: |
-| 22/? [01:42<00:00,  0.21it/s, train_multi_dataset_loss_step=0.0762]Epoch 0: |
-| 23/? [01:45<00:00,  0.22it/s, train_multi_dataset_loss_step=0.0762]Epoch 0: |
-| 23/? [01:45<00:00,  0.22it/s, train_multi_dataset_loss_step=0.0339]Epoch 0: |
-| 24/? [01:48<00:00,  0.22it/s, train_multi_dataset_loss_step=0.0339]Epoch 0: |
-| 24/? [01:48<00:00,  0.22it/s, train_multi_dataset_loss_step=0.0489]Epoch 0: |
-| 25/? [01:50<00:00,  0.23it/s, train_multi_dataset_loss_step=0.0489]Epoch 0: |
-| 25/? [01:50<00:00,  0.23it/s, train_multi_dataset_loss_step=0.0937]Epoch 0: |
-| 26/? [01:53<00:00,  0.23it/s, train_multi_dataset_loss_step=0.0937]Epoch 0: |
-| 26/? [01:53<00:00,  0.23it/s, train_multi_dataset_loss_step=0.0436]Epoch 0: |
-| 27/? [01:56<00:00,  0.23it/s, train_multi_dataset_loss_step=0.0436]Epoch 0: |
-| 27/? [01:56<00:00,  0.23it/s, train_multi_dataset_loss_step=0.0634]Epoch 0: |
-| 28/? [01:59<00:00,  0.24it/s, train_multi_dataset_loss_step=0.0634]Epoch 0: |
-| 28/? [01:59<00:00,  0.24it/s, train_multi_dataset_loss_step=0.0664]Epoch 0: |
-| 29/? [02:01<00:00,  0.24it/s, train_multi_dataset_loss_step=0.0664]Epoch 0: |
-| 29/? [02:01<00:00,  0.24it/s, train_multi_dataset_loss_step=0.0658]Epoch 0: |
-| 30/? [02:04<00:00,  0.24it/s, train_multi_dataset_loss_step=0.0658]Epoch 0: |
-| 30/? [02:04<00:00,  0.24it/s, train_multi_dataset_loss_step=0.0452]Epoch 0: |
-| 31/? [02:07<00:00,  0.24it/s, train_multi_dataset_loss_step=0.0452]Epoch 0: |
-| 31/? [02:07<00:00,  0.24it/s, train_multi_dataset_loss_step=0.0411]Epoch 0: |
-| 32/? [02:10<00:00,  0.25it/s, train_multi_dataset_loss_step=0.0411]Epoch 0: |
-| 32/? [02:10<00:00,  0.25it/s, train_multi_dataset_loss_step=0.0658]Epoch 0: |
-| 33/? [02:12<00:00,  0.25it/s, train_multi_dataset_loss_step=0.0658]Epoch 0: |
-| 33/? [02:12<00:00,  0.25it/s, train_multi_dataset_loss_step=0.0935]Epoch 0: |
-| 34/? [02:15<00:00,  0.25it/s, train_multi_dataset_loss_step=0.0935]Epoch 0: |
-| 34/? [02:15<00:00,  0.25it/s, train_multi_dataset_loss_step=0.0624]Epoch 0: |
-| 35/? [02:18<00:00,  0.25it/s, train_multi_dataset_loss_step=0.0624]Epoch 0: |
-| 35/? [02:18<00:00,  0.25it/s, train_multi_dataset_loss_step=0.0576]Epoch 0: |
-| 36/? [02:21<00:00,  0.26it/s, train_multi_dataset_loss_step=0.0576]Epoch 0: |
-| 36/? [02:21<00:00,  0.26it/s, train_multi_dataset_loss_step=0.0503]Epoch 0: |
-| 37/? [02:23<00:00,  0.26it/s, train_multi_dataset_loss_step=0.0503]Epoch 0: |
-| 37/? [02:23<00:00,  0.26it/s, train_multi_dataset_loss_step=0.042] Epoch 0: |
-| 38/? [02:26<00:00,  0.26it/s, train_multi_dataset_loss_step=0.042]Epoch 0: |
-| 38/? [02:26<00:00,  0.26it/s, train_multi_dataset_loss_step=0.0555]Epoch 0: |
-| 39/? [02:29<00:00,  0.26it/s, train_multi_dataset_loss_step=0.0555]Epoch 0: |
-| 39/? [02:29<00:00,  0.26it/s, train_multi_dataset_loss_step=0.0579]Epoch 0: |
-| 40/? [02:32<00:00,  0.26it/s, train_multi_dataset_loss_step=0.0579]Epoch 0: |
-| 40/? [02:32<00:00,  0.26it/s, train_multi_dataset_loss_step=0.0809]Epoch 0: |
-| 41/? [02:35<00:00,  0.26it/s, train_multi_dataset_loss_step=0.0809]Epoch 0: |
-| 41/? [02:35<00:00,  0.26it/s, train_multi_dataset_loss_step=0.0634]Epoch 0: |
-| 42/? [02:37<00:00,  0.27it/s, train_multi_dataset_loss_step=0.0634]Epoch 0: |
-| 42/? [02:37<00:00,  0.27it/s, train_multi_dataset_loss_step=0.0472]Epoch 0: |
-| 43/? [02:40<00:00,  0.27it/s, train_multi_dataset_loss_step=0.0472]Epoch 0: |
-| 43/? [02:41<00:00,  0.27it/s, train_multi_dataset_loss_step=0.0846]Epoch 0: |
-| 44/? [02:43<00:00,  0.27it/s, train_multi_dataset_loss_step=0.0846]Epoch 0: |
-| 44/? [02:43<00:00,  0.27it/s, train_multi_dataset_loss_step=0.105] Epoch 0: |
-| 45/? [02:46<00:00,  0.27it/s, train_multi_dataset_loss_step=0.105]Epoch 0: |
-| 45/? [02:46<00:00,  0.27it/s, train_multi_dataset_loss_step=0.0379]Epoch 0: |
-| 46/? [02:49<00:00,  0.27it/s, train_multi_dataset_loss_step=0.0379]Epoch 0: |
-| 46/? [02:49<00:00,  0.27it/s, train_multi_dataset_loss_step=0.0542]Epoch 0: |
-| 47/? [02:52<00:00,  0.27it/s, train_multi_dataset_loss_step=0.0542]Epoch 0: |
-| 47/? [02:52<00:00,  0.27it/s, train_multi_dataset_loss_step=0.0375]Epoch 0: |
-| 48/? [02:55<00:00,  0.27it/s, train_multi_dataset_loss_step=0.0375]Epoch 0: |
-| 48/? [02:55<00:00,  0.27it/s, train_multi_dataset_loss_step=0.0473]Epoch 0: |
-| 49/? [02:58<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0473]Epoch 0: |
-| 49/? [02:58<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0413]Epoch 0: |
-| 50/? [03:00<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0413]Epoch 0: |
-| 50/? [03:00<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0796]Epoch 0: |
-| 51/? [03:03<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0796]Epoch 0: |
-| 51/? [03:03<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0496]Epoch 0: |
-| 52/? [03:06<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0496]Epoch 0: |
-| 52/? [03:06<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0343]Epoch 0: |
-| 53/? [03:09<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0343]Epoch 0: |
-| 53/? [03:09<00:00,  0.28it/s, train_multi_dataset_loss_step=0.052] Epoch 0: |
-| 54/? [03:11<00:00,  0.28it/s, train_multi_dataset_loss_step=0.052]Epoch 0: |
-| 54/? [03:11<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0607]Epoch 0: |
-| 55/? [03:14<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0607]Epoch 0: |
-| 55/? [03:14<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0883]Epoch 0: |
-| 56/? [03:17<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0883]Epoch 0: |
-| 56/? [03:17<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0509]Epoch 0: |
-| 57/? [03:20<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0509]Epoch 0: |
-| 57/? [03:20<00:00,  0.28it/s, train_multi_dataset_loss_step=0.0407]Epoch 0: |
-| 58/? [03:22<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0407]Epoch 0: |
-| 58/? [03:22<00:00,  0.29it/s, train_multi_dataset_loss_step=0.103] Epoch 0: |
-| 59/? [03:25<00:00,  0.29it/s, train_multi_dataset_loss_step=0.103]Epoch 0: |
-| 59/? [03:25<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0319]Epoch 0: |
-| 60/? [03:28<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0319]Epoch 0: |
-| 60/? [03:28<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0701]Epoch 0: |
-| 61/? [03:31<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0701]Epoch 0: |
-| 61/? [03:31<00:00,  0.29it/s, train_multi_dataset_loss_step=0.108] Epoch 0: |
-| 62/? [03:33<00:00,  0.29it/s, train_multi_dataset_loss_step=0.108]Epoch 0: |
-| 62/? [03:33<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0724]Epoch 0: |
-| 63/? [03:36<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0724]Epoch 0: |
-| 63/? [03:36<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0437]Epoch 0: |
-| 64/? [03:39<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0437]Epoch 0: |
-| 64/? [03:39<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0342]Epoch 0: |
-| 65/? [03:42<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0342]Epoch 0: |
-| 65/? [03:42<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0557]Epoch 0: |
-| 66/? [03:44<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0557]Epoch 0: |
-| 66/? [03:44<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0599]Epoch 0: |
-| 67/? [03:47<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0599]Epoch 0: |
-| 67/? [03:47<00:00,  0.29it/s, train_multi_dataset_loss_step=0.0452]Epoch 0: |
-| 68/? [03:50<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0452]Epoch 0: |
-| 68/? [03:50<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0687]Epoch 0: |
-| 69/? [03:53<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0687]Epoch 0: |
-| 69/? [03:53<00:00,  0.30it/s, train_multi_dataset_loss_step=0.066] Epoch 0: |
-| 70/? [03:55<00:00,  0.30it/s, train_multi_dataset_loss_step=0.066]Epoch 0: |
-| 70/? [03:55<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0401]Epoch 0: |
-| 71/? [03:58<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0401]Epoch 0: |
-| 71/? [03:58<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0504]Epoch 0: |
-| 72/? [04:01<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0504]Epoch 0: |
-| 72/? [04:01<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0511]Epoch 0: |
-| 73/? [04:04<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0511]Epoch 0: |
-| 73/? [04:04<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0585]Epoch 0: |
-| 74/? [04:06<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0585]Epoch 0: |
-| 74/? [04:06<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0645]Epoch 0: |
-| 75/? [04:09<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0645]Epoch 0: |
-| 75/? [04:09<00:00,  0.30it/s, train_multi_dataset_loss_step=0.049] Epoch 0: |
-| 76/? [04:12<00:00,  0.30it/s, train_multi_dataset_loss_step=0.049]Epoch 0: |
-| 76/? [04:12<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0843]Epoch 0: |
-| 77/? [04:15<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0843]Epoch 0: |
-| 77/? [04:15<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0459]Epoch 0: |
-| 78/? [04:17<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0459]Epoch 0: |
-| 78/? [04:17<00:00,  0.30it/s, train_multi_dataset_loss_step=0.075] Epoch 0: |
-| 79/? [04:20<00:00,  0.30it/s, train_multi_dataset_loss_step=0.075]Epoch 0: |
-| 79/? [04:20<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0702]Epoch 0: |
-| 80/? [04:23<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0702]Epoch 0: |
-| 80/? [04:23<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0593]Epoch 0: |
-| 81/? [04:26<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0593]Epoch 0: |
-| 81/? [04:26<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0578]Epoch 0: |
-| 82/? [04:28<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0578]Epoch 0: |
-| 82/? [04:28<00:00,  0.30it/s, train_multi_dataset_loss_step=0.0401]Epoch 0: |
-| 83/? [04:31<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0401]Epoch 0: |
-| 83/? [04:31<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0397]Epoch 0: |
-| 84/? [04:34<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0397]Epoch 0: |
-| 84/? [04:34<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0579]Epoch 0: |
-| 85/? [04:38<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0579]Epoch 0: |
-| 85/? [04:38<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0498]Epoch 0: |
-| 86/? [04:41<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0498]Epoch 0: |
-| 86/? [04:41<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0574]Epoch 0: |
-| 87/? [04:43<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0574]Epoch 0: |
-| 87/? [04:43<00:00,  0.31it/s, train_multi_dataset_loss_step=0.094] Epoch 0: |
-| 88/? [04:46<00:00,  0.31it/s, train_multi_dataset_loss_step=0.094]Epoch 0: |
-| 88/? [04:46<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0294]Epoch 0: |
-| 89/? [04:49<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0294]Epoch 0: |
-| 89/? [04:49<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0737]Epoch 0: |
-| 90/? [04:52<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0737]Epoch 0: |
-| 90/? [04:52<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0341]Epoch 0: |
-| 91/? [04:54<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0341]Epoch 0: |
-| 91/? [04:54<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0458]Epoch 0: |
-| 92/? [04:57<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0458]Epoch 0: |
-| 92/? [04:57<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0541]Epoch 0: |
-| 93/? [05:00<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0541]Epoch 0: |
-| 93/? [05:00<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0634]Epoch 0: |
-| 94/? [05:03<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0634]Epoch 0: |
-| 94/? [05:03<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0684]Epoch 0: |
-| 95/? [05:05<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0684]Epoch 0: |
-| 95/? [05:05<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0704]Epoch 0: |
-| 96/? [05:08<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0704]Epoch 0: |
-| 96/? [05:08<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0875]Epoch 0: |
-| 97/? [05:11<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0875]Epoch 0: |
-| 97/? [05:11<00:00,  0.31it/s, train_multi_dataset_loss_step=0.074] Epoch 0: |
-| 98/? [05:14<00:00,  0.31it/s, train_multi_dataset_loss_step=0.074]Epoch 0: |
-| 98/? [05:14<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0425]Epoch 0: |
-| 99/? [05:16<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0425]Epoch 0: |
-| 99/? [05:16<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0375]Epoch 0: |
-| 100/? [05:19<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0375]Epoch 0: |
-| 100/? [05:19<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0526]Epoch 0: |
-| 101/? [05:22<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0526]Epoch 0: |
-| 101/? [05:22<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0651]Epoch 0: |
-| 102/? [05:25<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0651]Epoch 0: |
-| 102/? [05:25<00:00,  0.31it/s, train_multi_dataset_loss_step=0.107] Epoch 0: |
-| 103/? [05:27<00:00,  0.31it/s, train_multi_dataset_loss_step=0.107]Epoch 0: |
-| 103/? [05:27<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0624]Epoch 0: |
-| 104/? [05:30<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0624]Epoch 0: |
-| 104/? [05:30<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0489]Epoch 0: |
-| 105/? [05:33<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0489]Epoch 0: |
-| 105/? [05:33<00:00,  0.31it/s, train_multi_dataset_loss_step=0.0452]Epoch 0: |
-| 106/? [05:36<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0452]Epoch 0: |
-| 106/? [05:36<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0473]Epoch 0: |
-| 107/? [05:38<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0473]Epoch 0: |
-| 107/? [05:38<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0493]Epoch 0: |
-| 108/? [05:41<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0493]Epoch 0: |
-| 108/? [05:41<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0671]Epoch 0: |
-| 109/? [05:44<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0671]Epoch 0: |
-| 109/? [05:44<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0563]Epoch 0: |
-| 110/? [05:47<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0563]Epoch 0: |
-| 110/? [05:47<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0498]Epoch 0: |
-| 111/? [05:49<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0498]Epoch 0: |
-| 111/? [05:49<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0813]Epoch 0: |
-| 112/? [05:52<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0813]Epoch 0: |
-| 112/? [05:52<00:00,  0.32it/s, train_multi_dataset_loss_step=0.066] Epoch 0: |
-| 113/? [05:55<00:00,  0.32it/s, train_multi_dataset_loss_step=0.066]Epoch 0: |
-| 113/? [05:55<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0409]Epoch 0: |
-| 114/? [05:58<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0409]Epoch 0: |
-| 114/? [05:58<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0785]Epoch 0: |
-| 115/? [06:00<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0785]Epoch 0: |
-| 115/? [06:00<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0351]Epoch 0: |
-| 116/? [06:03<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0351]Epoch 0: |
-| 116/? [06:03<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0423]Epoch 0: |
-| 117/? [06:06<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0423]Epoch 0: |
-| 117/? [06:06<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0411]Epoch 0: |
-| 118/? [06:09<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0411]Epoch 0: |
-| 118/? [06:09<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0327]Epoch 0: |
-| 119/? [06:12<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0327]Epoch 0: |
-| 119/? [06:12<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0399]Epoch 0: |
-| 120/? [06:14<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0399]Epoch 0: |
-| 120/? [06:14<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0419]Epoch 0: |
-| 121/? [06:17<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0419]Epoch 0: |
-| 121/? [06:17<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0526]Epoch 0: |
-| 122/? [06:20<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0526]Epoch 0: |
-| 122/? [06:20<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0343]Epoch 0: |
-| 123/? [06:23<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0343]Epoch 0: |
-| 123/? [06:23<00:00,  0.32it/s, train_multi_dataset_loss_step=0.054] Epoch 0: |
-| 124/? [06:26<00:00,  0.32it/s, train_multi_dataset_loss_step=0.054]Epoch 0: |
-| 124/? [06:26<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0497]Epoch 0: |
-| 125/? [06:29<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0497]Epoch 0: |
-| 125/? [06:29<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0539]Epoch 0: |
-| 126/? [06:32<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0539]Epoch 0: |
-| 126/? [06:32<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0403]Epoch 0: |
-| 127/? [06:35<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0403]Epoch 0: |
-| 127/? [06:35<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0613]Epoch 0: |
-| 128/? [06:38<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0613]Epoch 0: |
-| 128/? [06:38<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0563]Epoch 0: |
-| 129/? [06:41<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0563]Epoch 0: |
-| 129/? [06:41<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0734]Epoch 0: |
-| 130/? [06:43<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0734]Epoch 0: |
-| 130/? [06:43<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0482]Epoch 0: |
-| 131/? [06:46<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0482]Epoch 0: |
-| 131/? [06:46<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0443]Epoch 0: |
-| 132/? [06:49<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0443]Epoch 0: |
-| 132/? [06:49<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0526]Epoch 0: |
-| 133/? [06:52<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0526]Epoch 0: |
-| 133/? [06:52<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0487]Epoch 0: |
-| 134/? [06:54<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0487]Epoch 0: |
-| 134/? [06:54<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0347]Epoch 0: |
-| 135/? [06:57<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0347]Epoch 0: |
-| 135/? [06:57<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0645]Epoch 0: |
-| 136/? [07:00<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0645]Epoch 0: |
-| 136/? [07:00<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0709]Epoch 0: |
-| 137/? [07:03<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0709]Epoch 0: |
-| 137/? [07:03<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0269]Epoch 0: |
-| 138/? [07:05<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0269]Epoch 0: |
-| 138/? [07:05<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0649]Epoch 0: |
-| 139/? [07:08<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0649]Epoch 0: |
-| 139/? [07:08<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0739]Epoch 0: |
-| 140/? [07:11<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0739]Epoch 0: |
-| 140/? [07:11<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0436]Epoch 0: |
-| 141/? [07:14<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0436]Epoch 0: |
-| 141/? [07:14<00:00,  0.32it/s, train_multi_dataset_loss_step=0.0401]Epoch 0: |
-| 142/? [07:16<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0401]Epoch 0: |
-| 142/? [07:16<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0535]Epoch 0: |
-| 143/? [07:19<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0535]Epoch 0: |
-| 143/? [07:19<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0803]Epoch 0: |
-| 144/? [07:22<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0803]Epoch 0: |
-| 144/? [07:22<00:00,  0.33it/s, train_multi_dataset_loss_step=0.055] Epoch 0: |
-| 145/? [07:25<00:00,  0.33it/s, train_multi_dataset_loss_step=0.055]Epoch 0: |
-| 145/? [07:25<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0399]Epoch 0: |
-| 146/? [07:27<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0399]Epoch 0: |
-| 146/? [07:27<00:00,  0.33it/s, train_multi_dataset_loss_step=0.070] Epoch 0: |
-| 147/? [07:30<00:00,  0.33it/s, train_multi_dataset_loss_step=0.070]Epoch 0: |
-| 147/? [07:30<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0299]Epoch 0: |
-| 148/? [07:33<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0299]Epoch 0: |
-| 148/? [07:33<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0685]Epoch 0: |
-| 149/? [07:36<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0685]Epoch 0: |
-| 149/? [07:36<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0484]Epoch 0: |
-| 150/? [07:38<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0484]Epoch 0: |
-| 150/? [07:38<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0598]Epoch 0: |
-| 151/? [07:41<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0598]Epoch 0: |
-| 151/? [07:41<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0666]Epoch 0: |
-| 152/? [07:44<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0666]Epoch 0: |
-| 152/? [07:44<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0817]Epoch 0: |
-| 153/? [07:47<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0817]Epoch 0: |
-| 153/? [07:47<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0595]Epoch 0: |
-| 154/? [07:49<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0595]Epoch 0: |
-| 154/? [07:49<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0533]Epoch 0: |
-| 155/? [07:52<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0533]Epoch 0: |
-| 155/? [07:52<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0633]Epoch 0: |
-| 156/? [07:55<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0633]Epoch 0: |
-| 156/? [07:55<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0604]Epoch 0: |
-| 157/? [07:58<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0604]Epoch 0: |
-| 157/? [07:58<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0751]Epoch 0: |
-| 158/? [08:01<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0751]Epoch 0: |
-| 158/? [08:01<00:00,  0.33it/s, train_multi_dataset_loss_step=0.047] Epoch 0: |
-| 159/? [08:03<00:00,  0.33it/s, train_multi_dataset_loss_step=0.047]Epoch 0: |
-| 159/? [08:03<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0398]Epoch 0: |
-| 160/? [08:06<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0398]Epoch 0: |
-| 160/? [08:06<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0813]Epoch 0: |
-| 161/? [08:09<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0813]Epoch 0: |
-| 161/? [08:09<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0343]Epoch 0: |
-| 162/? [08:12<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0343]Epoch 0: |
-| 162/? [08:12<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0714]Epoch 0: |
-| 163/? [08:14<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0714]Epoch 0: |
-| 163/? [08:14<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0724]Epoch 0: |
-| 164/? [08:18<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0724]Epoch 0: |
-| 164/? [08:18<00:00,  0.33it/s, train_multi_dataset_loss_step=0.060] Epoch 0: |
-| 165/? [08:21<00:00,  0.33it/s, train_multi_dataset_loss_step=0.060]Epoch 0: |
-| 165/? [08:21<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0616]Epoch 0: |
-| 166/? [08:23<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0616]Epoch 0: |
-| 166/? [08:23<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0714]Epoch 0: |
-| 167/? [08:26<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0714]Epoch 0: |
-| 167/? [08:26<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0675]Epoch 0: |
-| 168/? [08:29<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0675]Epoch 0: |
-| 168/? [08:29<00:00,  0.33it/s, train_multi_dataset_loss_step=0.057] Epoch 0: |
-| 169/? [08:32<00:00,  0.33it/s, train_multi_dataset_loss_step=0.057]Epoch 0: |
-| 169/? [08:32<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0798]Epoch 0: |
-| 170/? [08:35<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0798]Epoch 0: |
-| 170/? [08:35<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0894]Epoch 0: |
-| 171/? [08:37<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0894]Epoch 0: |
-| 171/? [08:37<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0828]Epoch 0: |
-| 172/? [08:40<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0828]Epoch 0: |
-| 172/? [08:40<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0349]Epoch 0: |
-| 173/? [08:43<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0349]Epoch 0: |
-| 173/? [08:43<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0705]Epoch 0: |
-| 174/? [08:46<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0705]Epoch 0: |
-| 174/? [08:46<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0543]Epoch 0: |
-| 175/? [08:48<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0543]Epoch 0: |
-| 175/? [08:48<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0355]Epoch 0: |
-| 176/? [08:51<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0355]Epoch 0: |
-| 176/? [08:51<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0344]Epoch 0: |
-| 177/? [08:54<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0344]Epoch 0: |
-| 177/? [08:54<00:00,  0.33it/s, train_multi_dataset_loss_step=0.121] Epoch 0: |
-| 178/? [08:57<00:00,  0.33it/s, train_multi_dataset_loss_step=0.121]Epoch 0: |
-| 178/? [08:57<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0532]Epoch 0: |
-| 179/? [08:59<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0532]Epoch 0: |
-| 179/? [08:59<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0526]Epoch 0: |
-| 180/? [09:02<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0526]Epoch 0: |
-| 180/? [09:02<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0735]Epoch 0: |
-| 181/? [09:05<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0735]Epoch 0: |
-| 181/? [09:05<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0498]Epoch 0: |
-| 182/? [09:08<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0498]Epoch 0: |
-| 182/? [09:08<00:00,  0.33it/s, train_multi_dataset_loss_step=0.076] Epoch 0: |
-| 183/? [09:10<00:00,  0.33it/s, train_multi_dataset_loss_step=0.076]Epoch 0: |
-| 183/? [09:10<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0535]Epoch 0: |
-| 184/? [09:13<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0535]Epoch 0: |
-| 184/? [09:13<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0785]Epoch 0: |
-| 185/? [09:16<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0785]Epoch 0: |
-| 185/? [09:16<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0318]Epoch 0: |
-| 186/? [09:19<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0318]Epoch 0: |
-| 186/? [09:19<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0896]Epoch 0: |
-| 187/? [09:21<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0896]Epoch 0: |
-| 187/? [09:21<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0295]Epoch 0: |
-| 188/? [09:24<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0295]Epoch 0: |
-| 188/? [09:24<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0749]Epoch 0: |
-| 189/? [09:27<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0749]Epoch 0: |
-| 189/? [09:27<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0498]Epoch 0: |
-| 190/? [09:30<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0498]Epoch 0: |
-| 190/? [09:30<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0686]Epoch 0: |
-| 191/? [09:32<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0686]Epoch 0: |
-| 191/? [09:32<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0514]Epoch 0: |
-| 192/? [09:35<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0514]Epoch 0: |
-| 192/? [09:35<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0811]Epoch 0: |
-| 193/? [09:38<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0811]Epoch 0: |
-| 193/? [09:38<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0437]Epoch 0: |
-| 194/? [09:41<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0437]Epoch 0: |
-| 194/? [09:41<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0527]Epoch 0: |
-| 195/? [09:43<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0527]Epoch 0: |
-| 195/? [09:43<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0958]Epoch 0: |
-| 196/? [09:46<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0958]Epoch 0: |
-| 196/? [09:46<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0338]Epoch 0: |
-| 197/? [09:49<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0338]Epoch 0: |
-| 197/? [09:49<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0455]Epoch 0: |
-| 198/? [09:52<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0455]Epoch 0: |
-| 198/? [09:52<00:00,  0.33it/s, train_multi_dataset_loss_step=0.033] Epoch 0: |
-| 199/? [09:55<00:00,  0.33it/s, train_multi_dataset_loss_step=0.033]Epoch 0: |
-| 199/? [09:55<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0461]Epoch 0: |
-| 200/? [09:57<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0461]Epoch 0: |
-| 200/? [09:57<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0584]Epoch 0: |
-| 201/? [10:00<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0584]Epoch 0: |
-| 201/? [10:00<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0706]Epoch 0: |
-| 202/? [10:03<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0706]Epoch 0: |
-| 202/? [10:03<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0362]Epoch 0: |
-| 203/? [10:06<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0362]Epoch 0: |
-| 203/? [10:06<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0685]Epoch 0: |
-| 204/? [10:09<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0685]Epoch 0: |
-| 204/? [10:09<00:00,  0.33it/s, train_multi_dataset_loss_step=0.0869]Epoch 0: |
-| 205/? [10:11<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0869]Epoch 0: |
-| 205/? [10:11<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0945]Epoch 0: |
-| 206/? [10:14<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0945]Epoch 0: |
-| 206/? [10:14<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0787]Epoch 0: |
-| 207/? [10:17<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0787]Epoch 0: |
-| 207/? [10:17<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0267]Epoch 0: |
-| 208/? [10:20<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0267]Epoch 0: |
-| 208/? [10:20<00:00,  0.34it/s, train_multi_dataset_loss_step=0.042] Epoch 0: |
-| 209/? [10:23<00:00,  0.34it/s, train_multi_dataset_loss_step=0.042]Epoch 0: |
-| 209/? [10:23<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0373]Epoch 0: |
-| 210/? [10:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0373]Epoch 0: |
-| 210/? [10:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0696]Epoch 0: |
-| 211/? [10:28<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0696]Epoch 0: |
-| 211/? [10:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0468]Epoch 0: |
-| 212/? [10:31<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0468]Epoch 0: |
-| 212/? [10:31<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0325]Epoch 0: |
-| 213/? [10:34<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0325]Epoch 0: |
-| 213/? [10:34<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0788]Epoch 0: |
-| 214/? [10:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0788]Epoch 0: |
-| 214/? [10:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0565]Epoch 0: |
-| 215/? [10:39<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0565]Epoch 0: |
-| 215/? [10:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0556]Epoch 0: |
-| 216/? [10:42<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0556]Epoch 0: |
-| 216/? [10:42<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0572]Epoch 0: |
-| 217/? [10:45<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0572]Epoch 0: |
-| 217/? [10:45<00:00,  0.34it/s, train_multi_dataset_loss_step=0.044] Epoch 0: |
-| 218/? [10:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.044]Epoch 0: |
-| 218/? [10:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0485]Epoch 0: |
-| 219/? [10:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0485]Epoch 0: |
-| 219/? [10:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0281]Epoch 0: |
-| 220/? [10:53<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0281]Epoch 0: |
-| 220/? [10:53<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0451]Epoch 0: |
-| 221/? [10:56<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0451]Epoch 0: |
-| 221/? [10:56<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0466]Epoch 0: |
-| 222/? [10:59<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0466]Epoch 0: |
-| 222/? [10:59<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0384]Epoch 0: |
-| 223/? [11:02<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0384]Epoch 0: |
-| 223/? [11:02<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0812]Epoch 0: |
-| 224/? [11:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0812]Epoch 0: |
-| 224/? [11:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0435]Epoch 0: |
-| 225/? [11:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0435]Epoch 0: |
-| 225/? [11:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0828]Epoch 0: |
-| 226/? [11:10<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0828]Epoch 0: |
-| 226/? [11:10<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0449]Epoch 0: |
-| 227/? [11:13<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0449]Epoch 0: |
-| 227/? [11:13<00:00,  0.34it/s, train_multi_dataset_loss_step=0.038] Epoch 0: |
-| 228/? [11:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.038]Epoch 0: |
-| 228/? [11:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0788]Epoch 0: |
-| 229/? [11:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0788]Epoch 0: |
-| 229/? [11:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.138] Epoch 0: |
-| 230/? [11:21<00:00,  0.34it/s, train_multi_dataset_loss_step=0.138]Epoch 0: |
-| 230/? [11:21<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0431]Epoch 0: |
-| 231/? [11:24<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0431]Epoch 0: |
-| 231/? [11:24<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0843]Epoch 0: |
-| 232/? [11:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0843]Epoch 0: |
-| 232/? [11:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0762]Epoch 0: |
-| 233/? [11:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0762]Epoch 0: |
-| 233/? [11:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0601]Epoch 0: |
-| 234/? [11:32<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0601]Epoch 0: |
-| 234/? [11:32<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0351]Epoch 0: |
-| 235/? [11:35<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0351]Epoch 0: |
-| 235/? [11:35<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0478]Epoch 0: |
-| 236/? [11:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0478]Epoch 0: |
-| 236/? [11:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0488]Epoch 0: |
-| 237/? [11:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0488]Epoch 0: |
-| 237/? [11:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0323]Epoch 0: |
-| 238/? [11:43<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0323]Epoch 0: |
-| 238/? [11:43<00:00,  0.34it/s, train_multi_dataset_loss_step=0.035] Epoch 0: |
-| 239/? [11:46<00:00,  0.34it/s, train_multi_dataset_loss_step=0.035]Epoch 0: |
-| 239/? [11:46<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0549]Epoch 0: |
-| 240/? [11:49<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0549]Epoch 0: |
-| 240/? [11:49<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0707]Epoch 0: |
-| 241/? [11:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0707]Epoch 0: |
-| 241/? [11:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0576]Epoch 0: |
-| 242/? [11:54<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0576]Epoch 0: |
-| 242/? [11:54<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0913]Epoch 0: |
-| 243/? [11:57<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0913]Epoch 0: |
-| 243/? [11:57<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0407]Epoch 0: |
-| 244/? [12:00<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0407]Epoch 0: |
-| 244/? [12:00<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0335]Epoch 0: |
-| 245/? [12:03<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0335]Epoch 0: |
-| 245/? [12:03<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0439]Epoch 0: |
-| 246/? [12:06<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0439]Epoch 0: |
-| 246/? [12:06<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0746]Epoch 0: |
-| 247/? [12:09<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0746]Epoch 0: |
-| 247/? [12:09<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0621]Epoch 0: |
-| 248/? [12:12<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0621]Epoch 0: |
-| 248/? [12:12<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0518]Epoch 0: |
-| 249/? [12:14<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0518]Epoch 0: |
-| 249/? [12:14<00:00,  0.34it/s, train_multi_dataset_loss_step=0.042] Epoch 0: |
-| 250/? [12:17<00:00,  0.34it/s, train_multi_dataset_loss_step=0.042]Epoch 0: |
-| 251/? [12:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0534]Epoch 0: |
-| 251/? [12:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0444]Epoch 0: |
-| 252/? [12:31<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0444]Epoch 0: |
-| 252/? [12:31<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0349]Epoch 0: |
-| 253/? [12:34<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0349]Epoch 0: |
-| 253/? [12:34<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0382]Epoch 0: |
-| 254/? [12:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0382]Epoch 0: |
-| 254/? [12:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0527]Epoch 0: |
-| 255/? [12:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0527]Epoch 0: |
-| 255/? [12:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0401]Epoch 0: |
-| 256/? [12:42<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0401]Epoch 0: |
-| 256/? [12:42<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0574]Epoch 0: |
-| 257/? [12:45<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0574]Epoch 0: |
-| 257/? [12:45<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0772]Epoch 0: |
-| 258/? [12:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0772]Epoch 0: |
-| 258/? [12:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0551]Epoch 0: |
-| 259/? [12:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0551]Epoch 0: |
-| 259/? [12:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0527]Epoch 0: |
-| 260/? [12:53<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0527]Epoch 0: |
-| 260/? [12:53<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0323]Epoch 0: |
-| 261/? [12:56<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0323]Epoch 0: |
-| 261/? [12:56<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0408]Epoch 0: |
-| 262/? [12:59<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0408]Epoch 0: |
-| 262/? [12:59<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0706]Epoch 0: |
-| 263/? [13:02<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0706]Epoch 0: |
-| 263/? [13:02<00:00,  0.34it/s, train_multi_dataset_loss_step=0.024] Epoch 0: |
-| 264/? [13:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.024]Epoch 0: |
-| 264/? [13:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0362]Epoch 0: |
-| 265/? [13:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0362]Epoch 0: |
-| 265/? [13:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0538]Epoch 0: |
-| 266/? [13:10<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0538]Epoch 0: |
-| 266/? [13:10<00:00,  0.34it/s, train_multi_dataset_loss_step=0.069] Epoch 0: |
-| 267/? [13:13<00:00,  0.34it/s, train_multi_dataset_loss_step=0.069]Epoch 0: |
-| 267/? [13:13<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0414]Epoch 0: |
-| 268/? [13:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0414]Epoch 0: |
-| 268/? [13:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.053] Epoch 0: |
-| 269/? [13:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.053]Epoch 0: |
-| 269/? [13:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0524]Epoch 0: |
-| 270/? [13:21<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0524]Epoch 0: |
-| 270/? [13:21<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0714]Epoch 0: |
-| 271/? [13:24<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0714]Epoch 0: |
-| 271/? [13:24<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0539]Epoch 0: |
-| 272/? [13:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0539]Epoch 0: |
-| 272/? [13:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0548]Epoch 0: |
-| 273/? [13:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0548]Epoch 0: |
-| 273/? [13:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0496]Epoch 0: |
-| 274/? [13:32<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0496]Epoch 0: |
-| 274/? [13:32<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0594]Epoch 0: |
-| 275/? [13:35<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0594]Epoch 0: |
-| 275/? [13:35<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0441]Epoch 0: |
-| 276/? [13:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0441]Epoch 0: |
-| 276/? [13:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0844]Epoch 0: |
-| 277/? [13:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0844]Epoch 0: |
-| 277/? [13:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0485]Epoch 0: |
-| 278/? [13:43<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0485]Epoch 0: |
-| 278/? [13:43<00:00,  0.34it/s, train_multi_dataset_loss_step=0.032] Epoch 0: |
-| 279/? [13:46<00:00,  0.34it/s, train_multi_dataset_loss_step=0.032]Epoch 0: |
-| 279/? [13:46<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0295]Epoch 0: |
-| 280/? [13:49<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0295]Epoch 0: |
-| 280/? [13:49<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0389]Epoch 0: |
-| 281/? [13:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0389]Epoch 0: |
-| 281/? [13:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0307]Epoch 0: |
-| 282/? [13:54<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0307]Epoch 0: |
-| 282/? [13:55<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0693]Epoch 0: |
-| 283/? [13:57<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0693]Epoch 0: |
-| 283/? [13:57<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0722]Epoch 0: |
-| 284/? [14:00<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0722]Epoch 0: |
-| 284/? [14:00<00:00,  0.34it/s, train_multi_dataset_loss_step=0.027] Epoch 0: |
-| 285/? [14:03<00:00,  0.34it/s, train_multi_dataset_loss_step=0.027]Epoch 0: |
-| 285/? [14:03<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0694]Epoch 0: |
-| 286/? [14:06<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0694]Epoch 0: |
-| 286/? [14:06<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0586]Epoch 0: |
-| 287/? [14:09<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0586]Epoch 0: |
-| 287/? [14:09<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0398]Epoch 0: |
-| 288/? [14:12<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0398]Epoch 0: |
-| 288/? [14:12<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0333]Epoch 0: |
-| 289/? [14:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0333]Epoch 0: |
-| 289/? [14:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.107] Epoch 0: |
-| 290/? [14:17<00:00,  0.34it/s, train_multi_dataset_loss_step=0.107]Epoch 0: |
-| 290/? [14:17<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0394]Epoch 0: |
-| 291/? [14:20<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0394]Epoch 0: |
-| 291/? [14:20<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0391]Epoch 0: |
-| 292/? [14:23<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0391]Epoch 0: |
-| 292/? [14:23<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0396]Epoch 0: |
-| 293/? [14:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0396]Epoch 0: |
-| 293/? [14:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.151] Epoch 0: |
-| 294/? [14:28<00:00,  0.34it/s, train_multi_dataset_loss_step=0.151]Epoch 0: |
-| 294/? [14:28<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0374]Epoch 0: |
-| 295/? [14:31<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0374]Epoch 0: |
-| 295/? [14:31<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0712]Epoch 0: |
-| 296/? [14:34<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0712]Epoch 0: |
-| 296/? [14:34<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0757]Epoch 0: |
-| 297/? [14:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0757]Epoch 0: |
-| 297/? [14:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0736]Epoch 0: |
-| 298/? [14:39<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0736]Epoch 0: |
-| 298/? [14:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0421]Epoch 0: |
-| 299/? [14:42<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0421]Epoch 0: |
-| 299/? [14:42<00:00,  0.34it/s, train_multi_dataset_loss_step=0.056] Epoch 0: |
-| 300/? [14:45<00:00,  0.34it/s, train_multi_dataset_loss_step=0.056]Epoch 0: |
-| 300/? [14:45<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0861]Epoch 0: |
-| 301/? [14:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0861]Epoch 0: |
-| 301/? [14:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0515]Epoch 0: |
-| 302/? [14:50<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0515]Epoch 0: |
-| 302/? [14:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0606]Epoch 0: |
-| 303/? [14:53<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0606]Epoch 0: |
-| 303/? [14:53<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0313]Epoch 0: |
-| 304/? [14:56<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0313]Epoch 0: |
-| 304/? [14:56<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0385]Epoch 0: |
-| 305/? [14:59<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0385]Epoch 0: |
-| 305/? [14:59<00:00,  0.34it/s, train_multi_dataset_loss_step=0.056] Epoch 0: |
-| 306/? [15:01<00:00,  0.34it/s, train_multi_dataset_loss_step=0.056]Epoch 0: |
-| 306/? [15:02<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0849]Epoch 0: |
-| 307/? [15:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0849]Epoch 0: |
-| 307/? [15:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0414]Epoch 0: |
-| 308/? [15:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0414]Epoch 0: |
-| 308/? [15:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0443]Epoch 0: |
-| 309/? [15:10<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0443]Epoch 0: |
-| 309/? [15:10<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0708]Epoch 0: |
-| 310/? [15:13<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0708]Epoch 0: |
-| 310/? [15:13<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0432]Epoch 0: |
-| 311/? [15:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0432]Epoch 0: |
-| 311/? [15:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0452]Epoch 0: |
-| 312/? [15:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0452]Epoch 0: |
-| 312/? [15:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0368]Epoch 0: |
-| 313/? [15:21<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0368]Epoch 0: |
-| 313/? [15:21<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0574]Epoch 0: |
-| 314/? [15:24<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0574]Epoch 0: |
-| 314/? [15:24<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0344]Epoch 0: |
-| 315/? [15:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0344]Epoch 0: |
-| 315/? [15:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.033] Epoch 0: |
-| 316/? [15:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.033]Epoch 0: |
-| 316/? [15:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.055]Epoch 0: |
-| 317/? [15:32<00:00,  0.34it/s, train_multi_dataset_loss_step=0.055]Epoch 0: |
-| 317/? [15:32<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0546]Epoch 0: |
-| 318/? [15:35<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0546]Epoch 0: |
-| 318/? [15:35<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0333]Epoch 0: |
-| 319/? [15:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0333]Epoch 0: |
-| 319/? [15:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0433]Epoch 0: |
-| 320/? [15:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0433]Epoch 0: |
-| 320/? [15:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0843]Epoch 0: |
-| 321/? [15:43<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0843]Epoch 0: |
-| 321/? [15:43<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0365]Epoch 0: |
-| 322/? [15:46<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0365]Epoch 0: |
-| 322/? [15:46<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0405]Epoch 0: |
-| 323/? [15:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0405]Epoch 0: |
-| 323/? [15:49<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0533]Epoch 0: |
-| 324/? [15:52<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0533]Epoch 0: |
-| 324/? [15:52<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0329]Epoch 0: |
-| 325/? [15:55<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0329]Epoch 0: |
-| 325/? [15:55<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0815]Epoch 0: |
-| 326/? [15:58<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0815]Epoch 0: |
-| 326/? [15:58<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0694]Epoch 0: |
-| 327/? [16:01<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0694]Epoch 0: |
-| 327/? [16:01<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0295]Epoch 0: |
-| 328/? [16:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0295]Epoch 0: |
-| 328/? [16:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0465]Epoch 0: |
-| 329/? [16:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0465]Epoch 0: |
-| 329/? [16:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0624]Epoch 0: |
-| 330/? [16:09<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0624]Epoch 0: |
-| 330/? [16:09<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0879]Epoch 0: |
-| 331/? [16:12<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0879]Epoch 0: |
-| 331/? [16:12<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0342]Epoch 0: |
-| 332/? [16:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0342]Epoch 0: |
-| 332/? [16:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0528]Epoch 0: |
-| 333/? [16:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0528]Epoch 0: |
-| 333/? [16:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0237]Epoch 0: |
-| 334/? [16:20<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0237]Epoch 0: |
-| 334/? [16:20<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0516]Epoch 0: |
-| 335/? [16:23<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0516]Epoch 0: |
-| 335/? [16:23<00:00,  0.34it/s, train_multi_dataset_loss_step=0.097] Epoch 0: |
-| 336/? [16:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.097]Epoch 0: |
-| 336/? [16:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.031]Epoch 0: |
-| 337/? [16:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.031]Epoch 0: |
-| 337/? [16:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0465]Epoch 0: |
-| 338/? [16:31<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0465]Epoch 0: |
-| 338/? [16:31<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0301]Epoch 0: |
-| 339/? [16:34<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0301]Epoch 0: |
-| 339/? [16:34<00:00,  0.34it/s, train_multi_dataset_loss_step=0.060] Epoch 0: |
-| 340/? [16:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.060]Epoch 0: |
-| 340/? [16:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.088]Epoch 0: |
-| 341/? [16:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.088]Epoch 0: |
-| 341/? [16:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0359]Epoch 0: |
-| 342/? [16:42<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0359]Epoch 0: |
-| 342/? [16:42<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0713]Epoch 0: |
-| 343/? [16:45<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0713]Epoch 0: |
-| 343/? [16:45<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0252]Epoch 0: |
-| 344/? [16:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0252]Epoch 0: |
-| 344/? [16:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0223]Epoch 0: |
-| 345/? [16:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0223]Epoch 0: |
-| 345/? [16:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.150] Epoch 0: |
-| 346/? [16:53<00:00,  0.34it/s, train_multi_dataset_loss_step=0.150]Epoch 0: |
-| 346/? [16:53<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0483]Epoch 0: |
-| 347/? [16:56<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0483]Epoch 0: |
-| 347/? [16:56<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0603]Epoch 0: |
-| 348/? [16:59<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0603]Epoch 0: |
-| 348/? [16:59<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0861]Epoch 0: |
-| 349/? [17:02<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0861]Epoch 0: |
-| 349/? [17:02<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0351]Epoch 0: |
-| 350/? [17:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0351]Epoch 0: |
-| 350/? [17:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.036] Epoch 0: |
-| 351/? [17:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.036]Epoch 0: |
-| 351/? [17:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.045]Epoch 0: |
-| 352/? [17:10<00:00,  0.34it/s, train_multi_dataset_loss_step=0.045]Epoch 0: |
-| 352/? [17:10<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0326]Epoch 0: |
-| 353/? [17:13<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0326]Epoch 0: |
-| 353/? [17:13<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0325]Epoch 0: |
-| 354/? [17:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0325]Epoch 0: |
-| 354/? [17:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0366]Epoch 0: |
-| 355/? [17:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0366]Epoch 0: |
-| 355/? [17:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0559]Epoch 0: |
-| 356/? [17:21<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0559]Epoch 0: |
-| 356/? [17:21<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0432]Epoch 0: |
-| 357/? [17:24<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0432]Epoch 0: |
-| 357/? [17:24<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0348]Epoch 0: |
-| 358/? [17:27<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0348]Epoch 0: |
-| 358/? [17:27<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0372]Epoch 0: |
-| 359/? [17:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0372]Epoch 0: |
-| 359/? [17:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0783]Epoch 0: |
-| 360/? [17:32<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0783]Epoch 0: |
-| 360/? [17:32<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0338]Epoch 0: |
-| 361/? [17:35<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0338]Epoch 0: |
-| 361/? [17:35<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0235]Epoch 0: |
-| 362/? [17:38<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0235]Epoch 0: |
-| 362/? [17:38<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0487]Epoch 0: |
-| 363/? [17:41<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0487]Epoch 0: |
-| 363/? [17:41<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0241]Epoch 0: |
-| 364/? [17:44<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0241]Epoch 0: |
-| 364/? [17:44<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0454]Epoch 0: |
-| 365/? [17:46<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0454]Epoch 0: |
-| 365/? [17:47<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0662]Epoch 0: |
-| 366/? [17:50<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0662]Epoch 0: |
-| 366/? [17:50<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0513]Epoch 0: |
-| 367/? [17:53<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0513]Epoch 0: |
-| 367/? [17:53<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0315]Epoch 0: |
-| 368/? [17:55<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0315]Epoch 0: |
-| 368/? [17:55<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0765]Epoch 0: |
-| 369/? [17:58<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0765]Epoch 0: |
-| 369/? [17:58<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0311]Epoch 0: |
-| 370/? [18:01<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0311]Epoch 0: |
-| 370/? [18:01<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0448]Epoch 0: |
-| 371/? [18:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0448]Epoch 0: |
-| 371/? [18:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0462]Epoch 0: |
-| 372/? [18:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0462]Epoch 0: |
-| 372/? [18:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.083] Epoch 0: |
-| 373/? [18:09<00:00,  0.34it/s, train_multi_dataset_loss_step=0.083]Epoch 0: |
-| 373/? [18:09<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0292]Epoch 0: |
-| 374/? [18:12<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0292]Epoch 0: |
-| 374/? [18:12<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0455]Epoch 0: |
-| 375/? [18:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0455]Epoch 0: |
-| 375/? [18:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0308]Epoch 0: |
-| 376/? [18:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0308]Epoch 0: |
-| 376/? [18:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0324]Epoch 0: |
-| 377/? [18:20<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0324]Epoch 0: |
-| 377/? [18:20<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0537]Epoch 0: |
-| 378/? [18:23<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0537]Epoch 0: |
-| 378/? [18:23<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0232]Epoch 0: |
-| 379/? [18:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0232]Epoch 0: |
-| 379/? [18:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0811]Epoch 0: |
-| 380/? [18:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0811]Epoch 0: |
-| 380/? [18:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0371]Epoch 0: |
-| 381/? [18:31<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0371]Epoch 0: |
-| 381/? [18:31<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0273]Epoch 0: |
-| 382/? [18:34<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0273]Epoch 0: |
-| 382/? [18:34<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0291]Epoch 0: |
-| 383/? [18:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0291]Epoch 0: |
-| 383/? [18:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0329]Epoch 0: |
-| 384/? [18:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0329]Epoch 0: |
-| 384/? [18:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0763]Epoch 0: |
-| 385/? [18:42<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0763]Epoch 0: |
-| 385/? [18:42<00:00,  0.34it/s, train_multi_dataset_loss_step=0.100] Epoch 0: |
-| 386/? [18:45<00:00,  0.34it/s, train_multi_dataset_loss_step=0.100]Epoch 0: |
-| 386/? [18:45<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0753]Epoch 0: |
-| 387/? [18:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0753]Epoch 0: |
-| 387/? [18:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0778]Epoch 0: |
-| 388/? [18:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0778]Epoch 0: |
-| 388/? [18:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0687]Epoch 0: |
-| 389/? [18:53<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0687]Epoch 0: |
-| 389/? [18:53<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0498]Epoch 0: |
-| 390/? [18:56<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0498]Epoch 0: |
-| 390/? [18:56<00:00,  0.34it/s, train_multi_dataset_loss_step=0.119] Epoch 0: |
-| 391/? [18:59<00:00,  0.34it/s, train_multi_dataset_loss_step=0.119]Epoch 0: |
-| 391/? [18:59<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0293]Epoch 0: |
-| 392/? [19:02<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0293]Epoch 0: |
-| 392/? [19:02<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0215]Epoch 0: |
-| 393/? [19:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0215]Epoch 0: |
-| 393/? [19:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0461]Epoch 0: |
-| 394/? [19:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0461]Epoch 0: |
-| 394/? [19:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0477]Epoch 0: |
-| 395/? [19:10<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0477]Epoch 0: |
-| 395/? [19:10<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0509]Epoch 0: |
-| 396/? [19:13<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0509]Epoch 0: |
-| 396/? [19:13<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0248]Epoch 0: |
-| 397/? [19:16<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0248]Epoch 0: |
-| 397/? [19:16<00:00,  0.34it/s, train_multi_dataset_loss_step=0.032] Epoch 0: |
-| 398/? [19:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.032]Epoch 0: |
-| 398/? [19:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0364]Epoch 0: |
-| 399/? [19:21<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0364]Epoch 0: |
-| 399/? [19:21<00:00,  0.34it/s, train_multi_dataset_loss_step=0.047] Epoch 0: |
-| 400/? [19:24<00:00,  0.34it/s, train_multi_dataset_loss_step=0.047]Epoch 0: |
-| 400/? [19:24<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0549]Epoch 0: |
-| 401/? [19:27<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0549]Epoch 0: |
-| 401/? [19:27<00:00,  0.34it/s, train_multi_dataset_loss_step=0.066] Epoch 0: |
-| 402/? [19:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.066]Epoch 0: |
-| 402/? [19:30<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0332]Epoch 0: |
-| 403/? [19:33<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0332]Epoch 0: |
-| 403/? [19:33<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0953]Epoch 0: |
-| 404/? [19:35<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0953]Epoch 0: |
-| 404/? [19:35<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0663]Epoch 0: |
-| 405/? [19:38<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0663]Epoch 0: |
-| 405/? [19:38<00:00,  0.34it/s, train_multi_dataset_loss_step=0.065] Epoch 0: |
-| 406/? [19:41<00:00,  0.34it/s, train_multi_dataset_loss_step=0.065]Epoch 0: |
-| 406/? [19:41<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0282]Epoch 0: |
-| 407/? [19:44<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0282]Epoch 0: |
-| 407/? [19:44<00:00,  0.34it/s, train_multi_dataset_loss_step=0.034] Epoch 0: |
-| 408/? [19:47<00:00,  0.34it/s, train_multi_dataset_loss_step=0.034]Epoch 0: |
-| 408/? [19:47<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0353]Epoch 0: |
-| 409/? [19:50<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0353]Epoch 0: |
-| 409/? [19:50<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0754]Epoch 0: |
-| 410/? [19:52<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0754]Epoch 0: |
-| 410/? [19:52<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0219]Epoch 0: |
-| 411/? [19:55<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0219]Epoch 0: |
-| 411/? [19:55<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0328]Epoch 0: |
-| 412/? [19:58<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0328]Epoch 0: |
-| 412/? [19:58<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0278]Epoch 0: |
-| 413/? [20:01<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0278]Epoch 0: |
-| 413/? [20:01<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0318]Epoch 0: |
-| 414/? [20:03<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0318]Epoch 0: |
-| 414/? [20:03<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0825]Epoch 0: |
-| 415/? [20:06<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0825]Epoch 0: |
-| 415/? [20:06<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0852]Epoch 0: |
-| 416/? [20:09<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0852]Epoch 0: |
-| 416/? [20:09<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0527]Epoch 0: |
-| 417/? [20:12<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0527]Epoch 0: |
-| 417/? [20:12<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0549]Epoch 0: |
-| 418/? [20:14<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0549]Epoch 0: |
-| 418/? [20:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0199]Epoch 0: |
-| 419/? [20:17<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0199]Epoch 0: |
-| 419/? [20:17<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0469]Epoch 0: |
-| 420/? [20:20<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0469]Epoch 0: |
-| 420/? [20:20<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0214]Epoch 0: |
-| 421/? [20:23<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0214]Epoch 0: |
-| 421/? [20:23<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0321]Epoch 0: |
-| 422/? [20:25<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0321]Epoch 0: |
-| 422/? [20:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0223]Epoch 0: |
-| 423/? [20:28<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0223]Epoch 0: |
-| 423/? [20:28<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0674]Epoch 0: |
-| 424/? [20:31<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0674]Epoch 0: |
-| 424/? [20:31<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0329]Epoch 0: |
-| 425/? [20:34<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0329]Epoch 0: |
-| 425/? [20:34<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0555]Epoch 0: |
-| 426/? [20:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0555]Epoch 0: |
-| 426/? [20:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0265]Epoch 0: |
-| 427/? [20:39<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0265]Epoch 0: |
-| 427/? [20:39<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0627]Epoch 0: |
-| 428/? [20:42<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0627]Epoch 0: |
-| 428/? [20:42<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0328]Epoch 0: |
-| 429/? [20:45<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0328]Epoch 0: |
-| 429/? [20:45<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0351]Epoch 0: |
-| 430/? [20:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0351]Epoch 0: |
-| 430/? [20:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0726]Epoch 0: |
-| 431/? [20:50<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0726]Epoch 0: |
-| 431/? [20:50<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0514]Epoch 0: |
-| 432/? [20:53<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0514]Epoch 0: |
-| 432/? [20:53<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0397]Epoch 0: |
-| 433/? [20:56<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0397]Epoch 0: |
-| 433/? [20:56<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0375]Epoch 0: |
-| 434/? [20:59<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0375]Epoch 0: |
-| 434/? [20:59<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0282]Epoch 0: |
-| 435/? [21:01<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0282]Epoch 0: |
-| 435/? [21:01<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0626]Epoch 0: |
-| 436/? [21:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0626]Epoch 0: |
-| 436/? [21:04<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0235]Epoch 0: |
-| 437/? [21:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0235]Epoch 0: |
-| 437/? [21:07<00:00,  0.34it/s, train_multi_dataset_loss_step=0.027] Epoch 0: |
-| 438/? [21:10<00:00,  0.34it/s, train_multi_dataset_loss_step=0.027]Epoch 0: |
-| 438/? [21:10<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0338]Epoch 0: |
-| 439/? [21:13<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0338]Epoch 0: |
-| 439/? [21:13<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0331]Epoch 0: |
-| 440/? [21:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0331]Epoch 0: |
-| 440/? [21:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0734]Epoch 0: |
-| 441/? [21:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0734]Epoch 0: |
-| 441/? [21:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0457]Epoch 0: |
-| 442/? [21:21<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0457]Epoch 0: |
-| 442/? [21:21<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0518]Epoch 0: |
-| 443/? [21:24<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0518]Epoch 0: |
-| 443/? [21:24<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0425]Epoch 0: |
-| 444/? [21:27<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0425]Epoch 0: |
-| 444/? [21:27<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0642]Epoch 0: |
-| 445/? [21:30<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0642]Epoch 0: |
-| 445/? [21:30<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0557]Epoch 0: |
-| 446/? [21:33<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0557]Epoch 0: |
-| 446/? [21:33<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0867]Epoch 0: |
-| 447/? [21:36<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0867]Epoch 0: |
-| 447/? [21:36<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0474]Epoch 0: |
-| 448/? [21:38<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0474]Epoch 0: |
-| 448/? [21:38<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0654]Epoch 0: |
-| 449/? [21:41<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0654]Epoch 0: |
-| 449/? [21:41<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0307]Epoch 0: |
-| 450/? [21:44<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0307]Epoch 0: |
-| 450/? [21:44<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0625]Epoch 0: |
-| 451/? [21:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0625]Epoch 0: |
-| 451/? [21:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0644]Epoch 0: |
-| 452/? [21:49<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0644]Epoch 0: |
-| 452/? [21:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0495]Epoch 0: |
-| 453/? [21:52<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0495]Epoch 0: |
-| 453/? [21:52<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0412]Epoch 0: |
-| 454/? [21:55<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0412]Epoch 0: |
-| 454/? [21:55<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0392]Epoch 0: |
-| 455/? [21:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0392]Epoch 0: |
-| 455/? [21:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0267]Epoch 0: |
-| 456/? [22:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0267]Epoch 0: |
-| 456/? [22:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.033] Epoch 0: |
-| 457/? [22:03<00:00,  0.35it/s, train_multi_dataset_loss_step=0.033]Epoch 0: |
-| 457/? [22:03<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0356]Epoch 0: |
-| 458/? [22:06<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0356]Epoch 0: |
-| 458/? [22:06<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0381]Epoch 0: |
-| 459/? [22:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0381]Epoch 0: |
-| 459/? [22:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0548]Epoch 0: |
-| 460/? [22:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0548]Epoch 0: |
-| 460/? [22:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0256]Epoch 0: |
-| 461/? [22:14<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0256]Epoch 0: |
-| 461/? [22:14<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0366]Epoch 0: |
-| 462/? [22:17<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0366]Epoch 0: |
-| 462/? [22:17<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0472]Epoch 0: |
-| 463/? [22:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0472]Epoch 0: |
-| 463/? [22:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0712]Epoch 0: |
-| 464/? [22:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0712]Epoch 0: |
-| 464/? [22:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.089] Epoch 0: |
-| 465/? [22:25<00:00,  0.35it/s, train_multi_dataset_loss_step=0.089]Epoch 0: |
-| 465/? [22:25<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0709]Epoch 0: |
-| 466/? [22:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0709]Epoch 0: |
-| 466/? [22:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0739]Epoch 0: |
-| 467/? [22:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0739]Epoch 0: |
-| 467/? [22:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0612]Epoch 0: |
-| 468/? [22:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0612]Epoch 0: |
-| 468/? [22:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0421]Epoch 0: |
-| 469/? [22:36<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0421]Epoch 0: |
-| 469/? [22:36<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0872]Epoch 0: |
-| 470/? [22:39<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0872]Epoch 0: |
-| 470/? [22:39<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0604]Epoch 0: |
-| 471/? [22:42<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0604]Epoch 0: |
-| 471/? [22:42<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0605]Epoch 0: |
-| 472/? [22:45<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0605]Epoch 0: |
-| 472/? [22:45<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0358]Epoch 0: |
-| 473/? [22:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0358]Epoch 0: |
-| 473/? [22:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0463]Epoch 0: |
-| 474/? [22:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0463]Epoch 0: |
-| 474/? [22:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0197]Epoch 0: |
-| 475/? [22:53<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0197]Epoch 0: |
-| 475/? [22:53<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0258]Epoch 0: |
-| 476/? [22:56<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0258]Epoch 0: |
-| 476/? [22:56<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0319]Epoch 0: |
-| 477/? [22:59<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0319]Epoch 0: |
-| 477/? [22:59<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0478]Epoch 0: |
-| 478/? [23:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0478]Epoch 0: |
-| 478/? [23:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0565]Epoch 0: |
-| 479/? [23:04<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0565]Epoch 0: |
-| 479/? [23:04<00:00,  0.35it/s, train_multi_dataset_loss_step=0.080] Epoch 0: |
-| 480/? [23:07<00:00,  0.35it/s, train_multi_dataset_loss_step=0.080]Epoch 0: |
-| 480/? [23:07<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0482]Epoch 0: |
-| 481/? [23:10<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0482]Epoch 0: |
-| 481/? [23:10<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0353]Epoch 0: |
-| 482/? [23:13<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0353]Epoch 0: |
-| 482/? [23:13<00:00,  0.35it/s, train_multi_dataset_loss_step=0.039] Epoch 0: |
-| 483/? [23:15<00:00,  0.35it/s, train_multi_dataset_loss_step=0.039]Epoch 0: |
-| 483/? [23:15<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0507]Epoch 0: |
-| 484/? [23:18<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0507]Epoch 0: |
-| 484/? [23:18<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0807]Epoch 0: |
-| 485/? [23:21<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0807]Epoch 0: |
-| 485/? [23:21<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0322]Epoch 0: |
-| 486/? [23:24<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0322]Epoch 0: |
-| 486/? [23:24<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0387]Epoch 0: |
-| 487/? [23:27<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0387]Epoch 0: |
-| 487/? [23:27<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0254]Epoch 0: |
-| 488/? [23:30<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0254]Epoch 0: |
-| 488/? [23:30<00:00,  0.35it/s, train_multi_dataset_loss_step=0.050] Epoch 0: |
-| 489/? [23:33<00:00,  0.35it/s, train_multi_dataset_loss_step=0.050]Epoch 0: |
-| 489/? [23:33<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0697]Epoch 0: |
-| 490/? [23:36<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0697]Epoch 0: |
-| 490/? [23:36<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0332]Epoch 0: |
-| 491/? [23:39<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0332]Epoch 0: |
-| 491/? [23:39<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0299]Epoch 0: |
-| 492/? [23:41<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0299]Epoch 0: |
-| 492/? [23:41<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0436]Epoch 0: |
-| 493/? [23:44<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0436]Epoch 0: |
-| 493/? [23:44<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0341]Epoch 0: |
-| 494/? [23:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0341]Epoch 0: |
-| 494/? [23:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0268]Epoch 0: |
-| 495/? [23:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0268]Epoch 0: |
-| 495/? [23:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0575]Epoch 0: |
-| 496/? [23:52<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0575]Epoch 0: |
-| 496/? [23:52<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0446]Epoch 0: |
-| 497/? [23:55<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0446]Epoch 0: |
-| 497/? [23:55<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0697]Epoch 0: |
-| 498/? [23:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0697]Epoch 0: |
-| 498/? [23:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0843]Epoch 0: |
-| 499/? [24:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0843]Epoch 0: |
-| 499/? [24:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0595]Epoch 0: |
-| 500/? [24:03<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0595]Epoch 0: |
-| 501/? [24:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.042]Epoch 0: |
-| 501/? [24:15<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0264]Epoch 0: |
-| 502/? [24:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0264]Epoch 0: |
-| 502/? [24:18<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0294]Epoch 0: |
-| 503/? [24:21<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0294]Epoch 0: |
-| 503/? [24:21<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0408]Epoch 0: |
-| 504/? [24:24<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0408]Epoch 0: |
-| 504/? [24:24<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0152]Epoch 0: |
-| 505/? [24:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0152]Epoch 0: |
-| 505/? [24:26<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0395]Epoch 0: |
-| 506/? [24:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0395]Epoch 0: |
-| 506/? [24:29<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0394]Epoch 0: |
-| 507/? [24:32<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0394]Epoch 0: |
-| 507/? [24:32<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0274]Epoch 0: |
-| 508/? [24:35<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0274]Epoch 0: |
-| 508/? [24:35<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0279]Epoch 0: |
-| 509/? [24:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0279]Epoch 0: |
-| 509/? [24:37<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0601]Epoch 0: |
-| 510/? [24:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0601]Epoch 0: |
-| 510/? [24:40<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0519]Epoch 0: |
-| 511/? [24:43<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0519]Epoch 0: |
-| 511/? [24:43<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0397]Epoch 0: |
-| 512/? [24:46<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0397]Epoch 0: |
-| 512/? [24:46<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0332]Epoch 0: |
-| 513/? [24:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0332]Epoch 0: |
-| 513/? [24:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0346]Epoch 0: |
-| 514/? [24:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0346]Epoch 0: |
-| 514/? [24:51<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0407]Epoch 0: |
-| 515/? [24:54<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0407]Epoch 0: |
-| 515/? [24:54<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0418]Epoch 0: |
-| 516/? [24:57<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0418]Epoch 0: |
-| 516/? [24:57<00:00,  0.34it/s, train_multi_dataset_loss_step=0.111] Epoch 0: |
-| 517/? [24:59<00:00,  0.34it/s, train_multi_dataset_loss_step=0.111]Epoch 0: |
-| 517/? [24:59<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0915]Epoch 0: |
-| 518/? [25:02<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0915]Epoch 0: |
-| 518/? [25:02<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0462]Epoch 0: |
-| 519/? [25:05<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0462]Epoch 0: |
-| 519/? [25:05<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0382]Epoch 0: |
-| 520/? [25:08<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0382]Epoch 0: |
-| 520/? [25:08<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0378]Epoch 0: |
-| 521/? [25:10<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0378]Epoch 0: |
-| 521/? [25:10<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0458]Epoch 0: |
-| 522/? [25:13<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0458]Epoch 0: |
-| 522/? [25:13<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0306]Epoch 0: |
-| 523/? [25:16<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0306]Epoch 0: |
-| 523/? [25:16<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0534]Epoch 0: |
-| 524/? [25:19<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0534]Epoch 0: |
-| 524/? [25:19<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0403]Epoch 0: |
-| 525/? [25:22<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0403]Epoch 0: |
-| 525/? [25:22<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0162]Epoch 0: |
-| 526/? [25:25<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0162]Epoch 0: |
-| 526/? [25:25<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0361]Epoch 0: |
-| 527/? [25:28<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0361]Epoch 0: |
-| 527/? [25:28<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0571]Epoch 0: |
-| 528/? [25:31<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0571]Epoch 0: |
-| 528/? [25:31<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0261]Epoch 0: |
-| 529/? [25:34<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0261]Epoch 0: |
-| 529/? [25:34<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0241]Epoch 0: |
-| 530/? [25:36<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0241]Epoch 0: |
-| 530/? [25:36<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0396]Epoch 0: |
-| 531/? [25:39<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0396]Epoch 0: |
-| 531/? [25:39<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0395]Epoch 0: |
-| 532/? [25:42<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0395]Epoch 0: |
-| 532/? [25:42<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0391]Epoch 0: |
-| 533/? [25:45<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0391]Epoch 0: |
-| 533/? [25:45<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0205]Epoch 0: |
-| 534/? [25:47<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0205]Epoch 0: |
-| 534/? [25:48<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0358]Epoch 0: |
-| 535/? [25:50<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0358]Epoch 0: |
-| 535/? [25:50<00:00,  0.34it/s, train_multi_dataset_loss_step=0.0337]Epoch 0: |
-| 536/? [25:53<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0337]Epoch 0: |
-| 536/? [25:53<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0397]Epoch 0: |
-| 537/? [25:56<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0397]Epoch 0: |
-| 537/? [25:56<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0568]Epoch 0: |
-| 538/? [25:59<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0568]Epoch 0: |
-| 538/? [25:59<00:00,  0.35it/s, train_multi_dataset_loss_step=0.148] Epoch 0: |
-| 539/? [26:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.148]Epoch 0: |
-| 539/? [26:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.041]Epoch 0: |
-| 540/? [26:04<00:00,  0.35it/s, train_multi_dataset_loss_step=0.041]Epoch 0: |
-| 540/? [26:04<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0299]Epoch 0: |
-| 541/? [26:07<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0299]Epoch 0: |
-| 541/? [26:07<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0277]Epoch 0: |
-| 542/? [26:10<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0277]Epoch 0: |
-| 542/? [26:10<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0852]Epoch 0: |
-| 543/? [26:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0852]Epoch 0: |
-| 543/? [26:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0352]Epoch 0: |
-| 544/? [26:15<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0352]Epoch 0: |
-| 544/? [26:15<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0273]Epoch 0: |
-| 545/? [26:18<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0273]Epoch 0: |
-| 545/? [26:18<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0678]Epoch 0: |
-| 546/? [26:21<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0678]Epoch 0: |
-| 546/? [26:21<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0252]Epoch 0: |
-| 547/? [26:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0252]Epoch 0: |
-| 547/? [26:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0349]Epoch 0: |
-| 548/? [26:26<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0349]Epoch 0: |
-| 548/? [26:26<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0725]Epoch 0: |
-| 549/? [26:29<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0725]Epoch 0: |
-| 549/? [26:29<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0482]Epoch 0: |
-| 550/? [26:32<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0482]Epoch 0: |
-| 550/? [26:32<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0345]Epoch 0: |
-| 551/? [26:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0345]Epoch 0: |
-| 551/? [26:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0238]Epoch 0: |
-| 552/? [26:37<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0238]Epoch 0: |
-| 552/? [26:37<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0261]Epoch 0: |
-| 553/? [26:40<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0261]Epoch 0: |
-| 553/? [26:40<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0438]Epoch 0: |
-| 554/? [26:43<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0438]Epoch 0: |
-| 554/? [26:43<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0264]Epoch 0: |
-| 555/? [26:45<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0264]Epoch 0: |
-| 555/? [26:45<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0449]Epoch 0: |
-| 556/? [26:48<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0449]Epoch 0: |
-| 556/? [26:48<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0186]Epoch 0: |
-| 557/? [26:51<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0186]Epoch 0: |
-| 557/? [26:51<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0459]Epoch 0: |
-| 558/? [26:54<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0459]Epoch 0: |
-| 558/? [26:54<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0384]Epoch 0: |
-| 559/? [26:56<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0384]Epoch 0: |
-| 559/? [26:56<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0174]Epoch 0: |
-| 560/? [26:59<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0174]Epoch 0: |
-| 560/? [26:59<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0432]Epoch 0: |
-| 561/? [27:02<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0432]Epoch 0: |
-| 561/? [27:02<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0307]Epoch 0: |
-| 562/? [27:05<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0307]Epoch 0: |
-| 562/? [27:05<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0463]Epoch 0: |
-| 563/? [27:08<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0463]Epoch 0: |
-| 563/? [27:08<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0473]Epoch 0: |
-| 564/? [27:11<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0473]Epoch 0: |
-| 564/? [27:11<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0516]Epoch 0: |
-| 565/? [27:13<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0516]Epoch 0: |
-| 565/? [27:13<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0532]Epoch 0: |
-| 566/? [27:16<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0532]Epoch 0: |
-| 566/? [27:16<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0517]Epoch 0: |
-| 567/? [27:19<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0517]Epoch 0: |
-| 567/? [27:19<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0418]Epoch 0: |
-| 568/? [27:22<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0418]Epoch 0: |
-| 568/? [27:22<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0631]Epoch 0: |
-| 569/? [27:25<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0631]Epoch 0: |
-| 569/? [27:25<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0943]Epoch 0: |
-| 570/? [27:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0943]Epoch 0: |
-| 570/? [27:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0243]Epoch 0: |
-| 571/? [27:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0243]Epoch 0: |
-| 571/? [27:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.024] Epoch 0: |
-| 572/? [27:33<00:00,  0.35it/s, train_multi_dataset_loss_step=0.024]Epoch 0: |
-| 572/? [27:33<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0485]Epoch 0: |
-| 573/? [27:36<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0485]Epoch 0: |
-| 573/? [27:36<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0774]Epoch 0: |
-| 574/? [27:39<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0774]Epoch 0: |
-| 574/? [27:39<00:00,  0.35it/s, train_multi_dataset_loss_step=0.039] Epoch 0: |
-| 575/? [27:42<00:00,  0.35it/s, train_multi_dataset_loss_step=0.039]Epoch 0: |
-| 575/? [27:42<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0872]Epoch 0: |
-| 576/? [27:44<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0872]Epoch 0: |
-| 576/? [27:44<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0435]Epoch 0: |
-| 577/? [27:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0435]Epoch 0: |
-| 577/? [27:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0442]Epoch 0: |
-| 578/? [27:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0442]Epoch 0: |
-| 578/? [27:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0395]Epoch 0: |
-| 579/? [27:53<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0395]Epoch 0: |
-| 579/? [27:53<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0327]Epoch 0: |
-| 580/? [27:55<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0327]Epoch 0: |
-| 580/? [27:55<00:00,  0.35it/s, train_multi_dataset_loss_step=0.039] Epoch 0: |
-| 581/? [27:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.039]Epoch 0: |
-| 581/? [27:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.036]Epoch 0: |
-| 582/? [28:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.036]Epoch 0: |
-| 582/? [28:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0376]Epoch 0: |
-| 583/? [28:04<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0376]Epoch 0: |
-| 583/? [28:04<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0714]Epoch 0: |
-| 584/? [28:06<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0714]Epoch 0: |
-| 584/? [28:06<00:00,  0.35it/s, train_multi_dataset_loss_step=0.091] Epoch 0: |
-| 585/? [28:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.091]Epoch 0: |
-| 585/? [28:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0337]Epoch 0: |
-| 586/? [28:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0337]Epoch 0: |
-| 586/? [28:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0287]Epoch 0: |
-| 587/? [28:15<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0287]Epoch 0: |
-| 587/? [28:15<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0711]Epoch 0: |
-| 588/? [28:17<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0711]Epoch 0: |
-| 588/? [28:17<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0606]Epoch 0: |
-| 589/? [28:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0606]Epoch 0: |
-| 589/? [28:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0522]Epoch 0: |
-| 590/? [28:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0522]Epoch 0: |
-| 590/? [28:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0277]Epoch 0: |
-| 591/? [28:26<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0277]Epoch 0: |
-| 591/? [28:26<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0499]Epoch 0: |
-| 592/? [28:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0499]Epoch 0: |
-| 592/? [28:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.046] Epoch 0: |
-| 593/? [28:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.046]Epoch 0: |
-| 593/? [28:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0177]Epoch 0: |
-| 594/? [28:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0177]Epoch 0: |
-| 594/? [28:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0136]Epoch 0: |
-| 595/? [28:37<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0136]Epoch 0: |
-| 595/? [28:37<00:00,  0.35it/s, train_multi_dataset_loss_step=0.027] Epoch 0: |
-| 596/? [28:40<00:00,  0.35it/s, train_multi_dataset_loss_step=0.027]Epoch 0: |
-| 596/? [28:40<00:00,  0.35it/s, train_multi_dataset_loss_step=0.108]Epoch 0: |
-| 597/? [28:42<00:00,  0.35it/s, train_multi_dataset_loss_step=0.108]Epoch 0: |
-| 597/? [28:42<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0159]Epoch 0: |
-| 598/? [28:45<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0159]Epoch 0: |
-| 598/? [28:45<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0535]Epoch 0: |
-| 599/? [28:48<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0535]Epoch 0: |
-| 599/? [28:48<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0318]Epoch 0: |
-| 600/? [28:51<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0318]Epoch 0: |
-| 600/? [28:51<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0521]Epoch 0: |
-| 601/? [28:53<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0521]Epoch 0: |
-| 601/? [28:53<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0413]Epoch 0: |
-| 602/? [28:56<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0413]Epoch 0: |
-| 602/? [28:56<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0953]Epoch 0: |
-| 603/? [28:59<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0953]Epoch 0: |
-| 603/? [28:59<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0337]Epoch 0: |
-| 604/? [29:02<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0337]Epoch 0: |
-| 604/? [29:02<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0185]Epoch 0: |
-| 605/? [29:05<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0185]Epoch 0: |
-| 605/? [29:05<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0565]Epoch 0: |
-| 606/? [29:08<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0565]Epoch 0: |
-| 606/? [29:08<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0485]Epoch 0: |
-| 607/? [29:11<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0485]Epoch 0: |
-| 607/? [29:11<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0336]Epoch 0: |
-| 608/? [29:14<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0336]Epoch 0: |
-| 608/? [29:14<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0162]Epoch 0: |
-| 609/? [29:17<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0162]Epoch 0: |
-| 609/? [29:17<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0387]Epoch 0: |
-| 610/? [29:19<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0387]Epoch 0: |
-| 610/? [29:19<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0761]Epoch 0: |
-| 611/? [29:22<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0761]Epoch 0: |
-| 611/? [29:22<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0352]Epoch 0: |
-| 612/? [29:25<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0352]Epoch 0: |
-| 612/? [29:25<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0298]Epoch 0: |
-| 613/? [29:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0298]Epoch 0: |
-| 613/? [29:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0214]Epoch 0: |
-| 614/? [29:30<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0214]Epoch 0: |
-| 614/? [29:30<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0517]Epoch 0: |
-| 615/? [29:33<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0517]Epoch 0: |
-| 615/? [29:33<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0326]Epoch 0: |
-| 616/? [29:36<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0326]Epoch 0: |
-| 616/? [29:36<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0299]Epoch 0: |
-| 617/? [29:39<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0299]Epoch 0: |
-| 617/? [29:39<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0652]Epoch 0: |
-| 618/? [29:41<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0652]Epoch 0: |
-| 618/? [29:41<00:00,  0.35it/s, train_multi_dataset_loss_step=0.055] Epoch 0: |
-| 619/? [29:44<00:00,  0.35it/s, train_multi_dataset_loss_step=0.055]Epoch 0: |
-| 619/? [29:44<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0344]Epoch 0: |
-| 620/? [29:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0344]Epoch 0: |
-| 620/? [29:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0243]Epoch 0: |
-| 621/? [29:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0243]Epoch 0: |
-| 621/? [29:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0531]Epoch 0: |
-| 622/? [29:52<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0531]Epoch 0: |
-| 622/? [29:53<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0522]Epoch 0: |
-| 623/? [29:55<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0522]Epoch 0: |
-| 623/? [29:55<00:00,  0.35it/s, train_multi_dataset_loss_step=0.049] Epoch 0: |
-| 624/? [29:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.049]Epoch 0: |
-| 624/? [29:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0702]Epoch 0: |
-| 625/? [30:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0702]Epoch 0: |
-| 625/? [30:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0326]Epoch 0: |
-| 626/? [30:04<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0326]Epoch 0: |
-| 626/? [30:04<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0445]Epoch 0: |
-| 627/? [30:06<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0445]Epoch 0: |
-| 627/? [30:06<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0395]Epoch 0: |
-| 628/? [30:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0395]Epoch 0: |
-| 628/? [30:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0572]Epoch 0: |
-| 629/? [30:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0572]Epoch 0: |
-| 629/? [30:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0686]Epoch 0: |
-| 630/? [30:15<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0686]Epoch 0: |
-| 630/? [30:15<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0363]Epoch 0: |
-| 631/? [30:17<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0363]Epoch 0: |
-| 631/? [30:17<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0227]Epoch 0: |
-| 632/? [30:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0227]Epoch 0: |
-| 632/? [30:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0235]Epoch 0: |
-| 633/? [30:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0235]Epoch 0: |
-| 633/? [30:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0429]Epoch 0: |
-| 634/? [30:26<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0429]Epoch 0: |
-| 634/? [30:26<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0356]Epoch 0: |
-| 635/? [30:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0356]Epoch 0: |
-| 635/? [30:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0205]Epoch 0: |
-| 636/? [30:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0205]Epoch 0: |
-| 636/? [30:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0397]Epoch 0: |
-| 637/? [30:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0397]Epoch 0: |
-| 637/? [30:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0516]Epoch 0: |
-| 638/? [30:37<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0516]Epoch 0: |
-| 638/? [30:37<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0197]Epoch 0: |
-| 639/? [30:40<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0197]Epoch 0: |
-| 639/? [30:40<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0592]Epoch 0: |
-| 640/? [30:42<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0592]Epoch 0: |
-| 640/? [30:42<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0657]Epoch 0: |
-| 641/? [30:45<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0657]Epoch 0: |
-| 641/? [30:46<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0599]Epoch 0: |
-| 642/? [30:48<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0599]Epoch 0: |
-| 642/? [30:48<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0217]Epoch 0: |
-| 643/? [30:51<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0217]Epoch 0: |
-| 643/? [30:51<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0791]Epoch 0: |
-| 644/? [30:54<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0791]Epoch 0: |
-| 644/? [30:54<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0606]Epoch 0: |
-| 645/? [30:57<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0606]Epoch 0: |
-| 645/? [30:57<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0968]Epoch 0: |
-| 646/? [31:00<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0968]Epoch 0: |
-| 646/? [31:00<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0101]Epoch 0: |
-| 647/? [31:03<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0101]Epoch 0: |
-| 647/? [31:03<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0272]Epoch 0: |
-| 648/? [31:06<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0272]Epoch 0: |
-| 648/? [31:06<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0398]Epoch 0: |
-| 649/? [31:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0398]Epoch 0: |
-| 649/? [31:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0166]Epoch 0: |
-| 650/? [31:11<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0166]Epoch 0: |
-| 650/? [31:11<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0363]Epoch 0: |
-| 651/? [31:14<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0363]Epoch 0: |
-| 651/? [31:14<00:00,  0.35it/s, train_multi_dataset_loss_step=0.027] Epoch 0: |
-| 652/? [31:17<00:00,  0.35it/s, train_multi_dataset_loss_step=0.027]Epoch 0: |
-| 652/? [31:17<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0265]Epoch 0: |
-| 653/? [31:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0265]Epoch 0: |
-| 653/? [31:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0169]Epoch 0: |
-| 654/? [31:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0169]Epoch 0: |
-| 654/? [31:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0255]Epoch 0: |
-| 655/? [31:25<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0255]Epoch 0: |
-| 655/? [31:25<00:00,  0.35it/s, train_multi_dataset_loss_step=0.039] Epoch 0: |
-| 656/? [31:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.039]Epoch 0: |
-| 656/? [31:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0148]Epoch 0: |
-| 657/? [31:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0148]Epoch 0: |
-| 657/? [31:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.141] Epoch 0: |
-| 658/? [31:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.141]Epoch 0: |
-| 658/? [31:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0166]Epoch 0: |
-| 659/? [31:36<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0166]Epoch 0: |
-| 659/? [31:36<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0208]Epoch 0: |
-| 660/? [31:39<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0208]Epoch 0: |
-| 660/? [31:39<00:00,  0.35it/s, train_multi_dataset_loss_step=0.038] Epoch 0: |
-| 661/? [31:42<00:00,  0.35it/s, train_multi_dataset_loss_step=0.038]Epoch 0: |
-| 661/? [31:42<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0455]Epoch 0: |
-| 662/? [31:45<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0455]Epoch 0: |
-| 662/? [31:45<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0257]Epoch 0: |
-| 663/? [31:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0257]Epoch 0: |
-| 663/? [31:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0317]Epoch 0: |
-| 664/? [31:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0317]Epoch 0: |
-| 664/? [31:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0297]Epoch 0: |
-| 665/? [31:53<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0297]Epoch 0: |
-| 665/? [31:53<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0746]Epoch 0: |
-| 666/? [31:56<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0746]Epoch 0: |
-| 666/? [31:56<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0413]Epoch 0: |
-| 667/? [31:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0413]Epoch 0: |
-| 667/? [31:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0425]Epoch 0: |
-| 668/? [32:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0425]Epoch 0: |
-| 668/? [32:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0538]Epoch 0: |
-| 669/? [32:04<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0538]Epoch 0: |
-| 669/? [32:04<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0596]Epoch 0: |
-| 670/? [32:07<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0596]Epoch 0: |
-| 670/? [32:07<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0294]Epoch 0: |
-| 671/? [32:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0294]Epoch 0: |
-| 671/? [32:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0403]Epoch 0: |
-| 672/? [32:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0403]Epoch 0: |
-| 672/? [32:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0259]Epoch 0: |
-| 673/? [32:15<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0259]Epoch 0: |
-| 673/? [32:15<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0845]Epoch 0: |
-| 674/? [32:18<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0845]Epoch 0: |
-| 674/? [32:18<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0221]Epoch 0: |
-| 675/? [32:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0221]Epoch 0: |
-| 675/? [32:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.028] Epoch 0: |
-| 676/? [32:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.028]Epoch 0: |
-| 676/? [32:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0386]Epoch 0: |
-| 677/? [32:26<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0386]Epoch 0: |
-| 677/? [32:26<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0172]Epoch 0: |
-| 678/? [32:29<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0172]Epoch 0: |
-| 678/? [32:29<00:00,  0.35it/s, train_multi_dataset_loss_step=0.032] Epoch 0: |
-| 679/? [32:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.032]Epoch 0: |
-| 679/? [32:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0332]Epoch 0: |
-| 680/? [32:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0332]Epoch 0: |
-| 680/? [32:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0386]Epoch 0: |
-| 681/? [32:37<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0386]Epoch 0: |
-| 681/? [32:37<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0464]Epoch 0: |
-| 682/? [32:40<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0464]Epoch 0: |
-| 682/? [32:40<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0681]Epoch 0: |
-| 683/? [32:43<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0681]Epoch 0: |
-| 683/? [32:43<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0255]Epoch 0: |
-| 684/? [32:46<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0255]Epoch 0: |
-| 684/? [32:46<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0222]Epoch 0: |
-| 685/? [32:49<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0222]Epoch 0: |
-| 685/? [32:49<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0443]Epoch 0: |
-| 686/? [32:52<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0443]Epoch 0: |
-| 686/? [32:52<00:00,  0.35it/s, train_multi_dataset_loss_step=0.090] Epoch 0: |
-| 687/? [32:55<00:00,  0.35it/s, train_multi_dataset_loss_step=0.090]Epoch 0: |
-| 687/? [32:55<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0752]Epoch 0: |
-| 688/? [32:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0752]Epoch 0: |
-| 688/? [32:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0346]Epoch 0: |
-| 689/? [33:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0346]Epoch 0: |
-| 689/? [33:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0279]Epoch 0: |
-| 690/? [33:03<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0279]Epoch 0: |
-| 690/? [33:03<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0462]Epoch 0: |
-| 691/? [33:06<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0462]Epoch 0: |
-| 691/? [33:06<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0339]Epoch 0: |
-| 692/? [33:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0339]Epoch 0: |
-| 692/? [33:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0378]Epoch 0: |
-| 693/? [33:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0378]Epoch 0: |
-| 693/? [33:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.030] Epoch 0: |
-| 694/? [33:14<00:00,  0.35it/s, train_multi_dataset_loss_step=0.030]Epoch 0: |
-| 694/? [33:14<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0325]Epoch 0: |
-| 695/? [33:17<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0325]Epoch 0: |
-| 695/? [33:17<00:00,  0.35it/s, train_multi_dataset_loss_step=0.022] Epoch 0: |
-| 696/? [33:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.022]Epoch 0: |
-| 696/? [33:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0735]Epoch 0: |
-| 697/? [33:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0735]Epoch 0: |
-| 697/? [33:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0614]Epoch 0: |
-| 698/? [33:25<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0614]Epoch 0: |
-| 698/? [33:25<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0179]Epoch 0: |
-| 699/? [33:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0179]Epoch 0: |
-| 699/? [33:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0584]Epoch 0: |
-| 700/? [33:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0584]Epoch 0: |
-| 700/? [33:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0204]Epoch 0: |
-| 701/? [33:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0204]Epoch 0: |
-| 701/? [33:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0468]Epoch 0: |
-| 702/? [33:36<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0468]Epoch 0: |
-| 702/? [33:36<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0224]Epoch 0: |
-| 703/? [33:39<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0224]Epoch 0: |
-| 703/? [33:39<00:00,  0.35it/s, train_multi_dataset_loss_step=0.019] Epoch 0: |
-| 704/? [33:42<00:00,  0.35it/s, train_multi_dataset_loss_step=0.019]Epoch 0: |
-| 704/? [33:42<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0447]Epoch 0: |
-| 705/? [33:45<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0447]Epoch 0: |
-| 705/? [33:45<00:00,  0.35it/s, train_multi_dataset_loss_step=0.069] Epoch 0: |
-| 706/? [33:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.069]Epoch 0: |
-| 706/? [33:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.025]Epoch 0: |
-| 707/? [33:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.025]Epoch 0: |
-| 707/? [33:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0213]Epoch 0: |
-| 708/? [33:53<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0213]Epoch 0: |
-| 708/? [33:53<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0431]Epoch 0: |
-| 709/? [33:56<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0431]Epoch 0: |
-| 709/? [33:56<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0284]Epoch 0: |
-| 710/? [33:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0284]Epoch 0: |
-| 710/? [33:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0439]Epoch 0: |
-| 711/? [34:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0439]Epoch 0: |
-| 711/? [34:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0191]Epoch 0: |
-| 712/? [34:04<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0191]Epoch 0: |
-| 712/? [34:04<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0685]Epoch 0: |
-| 713/? [34:07<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0685]Epoch 0: |
-| 713/? [34:07<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0184]Epoch 0: |
-| 714/? [34:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0184]Epoch 0: |
-| 714/? [34:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0316]Epoch 0: |
-| 715/? [34:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0316]Epoch 0: |
-| 715/? [34:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0174]Epoch 0: |
-| 716/? [34:15<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0174]Epoch 0: |
-| 716/? [34:15<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0294]Epoch 0: |
-| 717/? [34:18<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0294]Epoch 0: |
-| 717/? [34:18<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0226]Epoch 0: |
-| 718/? [34:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0226]Epoch 0: |
-| 718/? [34:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0172]Epoch 0: |
-| 719/? [34:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0172]Epoch 0: |
-| 719/? [34:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0144]Epoch 0: |
-| 720/? [34:26<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0144]Epoch 0: |
-| 720/? [34:26<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0235]Epoch 0: |
-| 721/? [34:29<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0235]Epoch 0: |
-| 721/? [34:29<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0534]Epoch 0: |
-| 722/? [34:32<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0534]Epoch 0: |
-| 722/? [34:32<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0215]Epoch 0: |
-| 723/? [34:35<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0215]Epoch 0: |
-| 723/? [34:35<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0554]Epoch 0: |
-| 724/? [34:38<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0554]Epoch 0: |
-| 724/? [34:38<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0654]Epoch 0: |
-| 725/? [34:40<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0654]Epoch 0: |
-| 725/? [34:41<00:00,  0.35it/s, train_multi_dataset_loss_step=0.034] Epoch 0: |
-| 726/? [34:44<00:00,  0.35it/s, train_multi_dataset_loss_step=0.034]Epoch 0: |
-| 726/? [34:44<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0289]Epoch 0: |
-| 727/? [34:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0289]Epoch 0: |
-| 727/? [34:47<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0463]Epoch 0: |
-| 728/? [34:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0463]Epoch 0: |
-| 728/? [34:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0574]Epoch 0: |
-| 729/? [34:52<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0574]Epoch 0: |
-| 729/? [34:52<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0593]Epoch 0: |
-| 730/? [34:55<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0593]Epoch 0: |
-| 730/? [34:55<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0334]Epoch 0: |
-| 731/? [34:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0334]Epoch 0: |
-| 731/? [34:58<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0232]Epoch 0: |
-| 732/? [35:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0232]Epoch 0: |
-| 732/? [35:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0252]Epoch 0: |
-| 733/? [35:03<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0252]Epoch 0: |
-| 733/? [35:03<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0225]Epoch 0: |
-| 734/? [35:06<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0225]Epoch 0: |
-| 734/? [35:06<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0586]Epoch 0: |
-| 735/? [35:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0586]Epoch 0: |
-| 735/? [35:09<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0495]Epoch 0: |
-| 736/? [35:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0495]Epoch 0: |
-| 736/? [35:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0641]Epoch 0: |
-| 737/? [35:14<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0641]Epoch 0: |
-| 737/? [35:14<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0427]Epoch 0: |
-| 738/? [35:17<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0427]Epoch 0: |
-| 738/? [35:17<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0193]Epoch 0: |
-| 739/? [35:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0193]Epoch 0: |
-| 739/? [35:20<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0179]Epoch 0: |
-| 740/? [35:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0179]Epoch 0: |
-| 740/? [35:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.026] Epoch 0: |
-| 741/? [35:25<00:00,  0.35it/s, train_multi_dataset_loss_step=0.026]Epoch 0: |
-| 741/? [35:26<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0595]Epoch 0: |
-| 742/? [35:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0595]Epoch 0: |
-| 742/? [35:28<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0402]Epoch 0: |
-| 743/? [35:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0402]Epoch 0: |
-| 743/? [35:31<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0516]Epoch 0: |
-| 744/? [35:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0516]Epoch 0: |
-| 744/? [35:34<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0459]Epoch 0: |
-| 745/? [35:37<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0459]Epoch 0: |
-| 745/? [35:37<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0166]Epoch 0: |
-| 746/? [35:39<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0166]Epoch 0: |
-| 746/? [35:39<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0216]Epoch 0: |
-| 747/? [35:42<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0216]Epoch 0: |
-| 747/? [35:42<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0328]Epoch 0: |
-| 748/? [35:45<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0328]Epoch 0: |
-| 748/? [35:45<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0257]Epoch 0: |
-| 749/? [35:48<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0257]Epoch 0: |
-| 749/? [35:48<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0433]Epoch 0: |
-| 750/? [35:50<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0433]Epoch 0: |
-| 751/? [36:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0204]Epoch 0: |
-| 751/? [36:01<00:00,  0.35it/s, train_multi_dataset_loss_step=0.020] Epoch 0: |
-| 752/? [36:04<00:00,  0.35it/s, train_multi_dataset_loss_step=0.020]Epoch 0: |
-| 752/? [36:04<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0637]Epoch 0: |
-| 753/? [36:07<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0637]Epoch 0: |
-| 753/? [36:07<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0221]Epoch 0: |
-| 754/? [36:10<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0221]Epoch 0: |
-| 754/? [36:10<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0696]Epoch 0: |
-| 755/? [36:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0696]Epoch 0: |
-| 755/? [36:12<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0267]Epoch 0: |
-| 756/? [36:15<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0267]Epoch 0: |
-| 756/? [36:15<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0328]Epoch 0: |
-| 757/? [36:18<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0328]Epoch 0: |
-| 757/? [36:18<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0365]Epoch 0: |
-| 758/? [36:21<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0365]Epoch 0: |
-| 758/? [36:21<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0382]Epoch 0: |
-| 759/? [36:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0382]Epoch 0: |
-| 759/? [36:23<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0159]Epoch 0: |
-| 760/? [36:26<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0159]Epoch 0: |
-| 760/? [36:26<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0199]Epoch 0: |
-| 761/? [36:29<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0199]Epoch 0: |
-| 761/? [36:29<00:00,  0.35it/s, train_multi_dataset_loss_step=0.0657]Epoch 0: |
+ 1 00:43 00:00 0.02 0.0655 
+ 2 00:46 00:00 0.04 0.0655 
+ 2 00:46 00:00 0.04 0.0867 
+ 3 00:49 00:00 0.06 0.0867 
+ 3 00:49 00:00 0.06 0.102 
+ 4 00:52 00:00 0.08 0.102 
+ 4 00:52 00:00 0.08 0.0855 
+ 5 00:55 00:00 0.09 0.0855 
+ 5 00:55 00:00 0.09 0.0418 
+ 6 00:58 00:00 0.10 0.0418 
+ 6 00:58 00:00 0.10 0.0551 
+ 7 01:01 00:00 0.11 0.0551 
+ 7 01:01 00:00 0.11 0.0825 
+ 8 01:04 00:00 0.12 0.0825 
+ 8 01:04 00:00 0.12 0.0478 
+ 9 01:06 00:00 0.13 0.0478 
+ 9 01:06 00:00 0.13 0.0776 
+ 10 01:09 00:00 0.14 0.0776 
+ 10 01:09 00:00 0.14 0.0503 
+ 11 01:12 00:00 0.15 0.0503 
+ 11 01:12 00:00 0.15 0.0646 
+ 12 01:15 00:00 0.16 0.0646 
+ 12 01:15 00:00 0.16 0.0382 
+ 13 01:17 00:00 0.17 0.0382 
+ 13 01:17 00:00 0.17 0.0484 
+ 14 01:20 00:00 0.17 0.0484 
+ 14 01:20 00:00 0.17 0.0704 
+ 15 01:23 00:00 0.18 0.0704 
+ 15 01:23 00:00 0.18 0.0466 
+ 16 01:26 00:00 0.19 0.0466 
+ 16 01:26 00:00 0.19 0.062 
+ 17 01:28 00:00 0.19 0.062 
+ 17 01:28 00:00 0.19 0.0396 
+ 18 01:31 00:00 0.20 0.0396 
+ 18 01:31 00:00 0.20 0.0557 
+ 19 01:34 00:00 0.20 0.0557 
+ 19 01:34 00:00 0.20 0.0559 
+ 20 01:37 00:00 0.21 0.0559 
+ 20 01:37 00:00 0.21 0.0343 
+ 21 01:39 00:00 0.21 0.0343 
+ 21 01:39 00:00 0.21 0.0582 
+ 22 01:42 00:00 0.21 0.0582 
+ 22 01:42 00:00 0.21 0.0762 
+ 23 01:45 00:00 0.22 0.0762 
+ 23 01:45 00:00 0.22 0.0339 
+ 24 01:48 00:00 0.22 0.0339 
+ 24 01:48 00:00 0.22 0.0489 
+ 25 01:50 00:00 0.23 0.0489 
+ 25 01:50 00:00 0.23 0.0937 
+ 26 01:53 00:00 0.23 0.0937 
+ 26 01:53 00:00 0.23 0.0436 
+ 27 01:56 00:00 0.23 0.0436 
+ 27 01:56 00:00 0.23 0.0634 
+ 28 01:59 00:00 0.24 0.0634 
+ 28 01:59 00:00 0.24 0.0664 
+ 29 02:01 00:00 0.24 0.0664 
+ 29 02:01 00:00 0.24 0.0658 
+ 30 02:04 00:00 0.24 0.0658 
+ 30 02:04 00:00 0.24 0.0452 
+ 31 02:07 00:00 0.24 0.0452 
+ 31 02:07 00:00 0.24 0.0411 
+ 32 02:10 00:00 0.25 0.0411 
+ 32 02:10 00:00 0.25 0.0658 
+ 33 02:12 00:00 0.25 0.0658 
+ 33 02:12 00:00 0.25 0.0935 
+ 34 02:15 00:00 0.25 0.0935 
+ 34 02:15 00:00 0.25 0.0624 
+ 35 02:18 00:00 0.25 0.0624 
+ 35 02:18 00:00 0.25 0.0576 
+ 36 02:21 00:00 0.26 0.0576 
+ 36 02:21 00:00 0.26 0.0503 
+ 37 02:23 00:00 0.26 0.0503 
+ 37 02:23 00:00 0.26 0.042 
+ 38 02:26 00:00 0.26 0.042 
+ 38 02:26 00:00 0.26 0.0555 
+ 39 02:29 00:00 0.26 0.0555 
+ 39 02:29 00:00 0.26 0.0579 
+ 40 02:32 00:00 0.26 0.0579 
+ 40 02:32 00:00 0.26 0.0809 
+ 41 02:35 00:00 0.26 0.0809 
+ 41 02:35 00:00 0.26 0.0634 
+ 42 02:37 00:00 0.27 0.0634 
+ 42 02:37 00:00 0.27 0.0472 
+ 43 02:40 00:00 0.27 0.0472 
+ 43 02:41 00:00 0.27 0.0846 
+ 44 02:43 00:00 0.27 0.0846 
+ 44 02:43 00:00 0.27 0.105 
+ 45 02:46 00:00 0.27 0.105 
+ 45 02:46 00:00 0.27 0.0379 
+ 46 02:49 00:00 0.27 0.0379 
+ 46 02:49 00:00 0.27 0.0542 
+ 47 02:52 00:00 0.27 0.0542 
+ 47 02:52 00:00 0.27 0.0375 
+ 48 02:55 00:00 0.27 0.0375 
+ 48 02:55 00:00 0.27 0.0473 
+ 49 02:58 00:00 0.28 0.0473 
+ 49 02:58 00:00 0.28 0.0413 
+ 50 03:00 00:00 0.28 0.0413 
+ 50 03:00 00:00 0.28 0.0796 
+ 51 03:03 00:00 0.28 0.0796 
+ 51 03:03 00:00 0.28 0.0496 
+ 52 03:06 00:00 0.28 0.0496 
+ 52 03:06 00:00 0.28 0.0343 
+ 53 03:09 00:00 0.28 0.0343 
+ 53 03:09 00:00 0.28 0.052 
+ 54 03:11 00:00 0.28 0.052 
+ 54 03:11 00:00 0.28 0.0607 
+ 55 03:14 00:00 0.28 0.0607 
+ 55 03:14 00:00 0.28 0.0883 
+ 56 03:17 00:00 0.28 0.0883 
+ 56 03:17 00:00 0.28 0.0509 
+ 57 03:20 00:00 0.28 0.0509 
+ 57 03:20 00:00 0.28 0.0407 
+ 58 03:22 00:00 0.29 0.0407 
+ 58 03:22 00:00 0.29 0.103 
+ 59 03:25 00:00 0.29 0.103 
+ 59 03:25 00:00 0.29 0.0319 
+ 60 03:28 00:00 0.29 0.0319 
+ 60 03:28 00:00 0.29 0.0701 
+ 61 03:31 00:00 0.29 0.0701 
+ 61 03:31 00:00 0.29 0.108 
+ 62 03:33 00:00 0.29 0.108 
+ 62 03:33 00:00 0.29 0.0724 
+ 63 03:36 00:00 0.29 0.0724 
+ 63 03:36 00:00 0.29 0.0437 
+ 64 03:39 00:00 0.29 0.0437 
+ 64 03:39 00:00 0.29 0.0342 
+ 65 03:42 00:00 0.29 0.0342 
+ 65 03:42 00:00 0.29 0.0557 
+ 66 03:44 00:00 0.29 0.0557 
+ 66 03:44 00:00 0.29 0.0599 
+ 67 03:47 00:00 0.29 0.0599 
+ 67 03:47 00:00 0.29 0.0452 
+ 68 03:50 00:00 0.30 0.0452 
+ 68 03:50 00:00 0.30 0.0687 
+ 69 03:53 00:00 0.30 0.0687 
+ 69 03:53 00:00 0.30 0.066 
+ 70 03:55 00:00 0.30 0.066 
+ 70 03:55 00:00 0.30 0.0401 
+ 71 03:58 00:00 0.30 0.0401 
+ 71 03:58 00:00 0.30 0.0504 
+ 72 04:01 00:00 0.30 0.0504 
+ 72 04:01 00:00 0.30 0.0511 
+ 73 04:04 00:00 0.30 0.0511 
+ 73 04:04 00:00 0.30 0.0585 
+ 74 04:06 00:00 0.30 0.0585 
+ 74 04:06 00:00 0.30 0.0645 
+ 75 04:09 00:00 0.30 0.0645 
+ 75 04:09 00:00 0.30 0.049 
+ 76 04:12 00:00 0.30 0.049 
+ 76 04:12 00:00 0.30 0.0843 
+ 77 04:15 00:00 0.30 0.0843 
+ 77 04:15 00:00 0.30 0.0459 
+ 78 04:17 00:00 0.30 0.0459 
+ 78 04:17 00:00 0.30 0.075 
+ 79 04:20 00:00 0.30 0.075 
+ 79 04:20 00:00 0.30 0.0702 
+ 80 04:23 00:00 0.30 0.0702 
+ 80 04:23 00:00 0.30 0.0593 
+ 81 04:26 00:00 0.30 0.0593 
+ 81 04:26 00:00 0.30 0.0578 
+ 82 04:28 00:00 0.30 0.0578 
+ 82 04:28 00:00 0.30 0.0401 
+ 83 04:31 00:00 0.31 0.0401 
+ 83 04:31 00:00 0.31 0.0397 
+ 84 04:34 00:00 0.31 0.0397 
+ 84 04:34 00:00 0.31 0.0579 
+ 85 04:38 00:00 0.31 0.0579 
+ 85 04:38 00:00 0.31 0.0498 
+ 86 04:41 00:00 0.31 0.0498 
+ 86 04:41 00:00 0.31 0.0574 
+ 87 04:43 00:00 0.31 0.0574 
+ 87 04:43 00:00 0.31 0.094 
+ 88 04:46 00:00 0.31 0.094 
+ 88 04:46 00:00 0.31 0.0294 
+ 89 04:49 00:00 0.31 0.0294 
+ 89 04:49 00:00 0.31 0.0737 
+ 90 04:52 00:00 0.31 0.0737 
+ 90 04:52 00:00 0.31 0.0341 
+ 91 04:54 00:00 0.31 0.0341 
+ 91 04:54 00:00 0.31 0.0458 
+ 92 04:57 00:00 0.31 0.0458 
+ 92 04:57 00:00 0.31 0.0541 
+ 93 05:00 00:00 0.31 0.0541 
+ 93 05:00 00:00 0.31 0.0634 
+ 94 05:03 00:00 0.31 0.0634 
+ 94 05:03 00:00 0.31 0.0684 
+ 95 05:05 00:00 0.31 0.0684 
+ 95 05:05 00:00 0.31 0.0704 
+ 96 05:08 00:00 0.31 0.0704 
+ 96 05:08 00:00 0.31 0.0875 
+ 97 05:11 00:00 0.31 0.0875 
+ 97 05:11 00:00 0.31 0.074 
+ 98 05:14 00:00 0.31 0.074 
+ 98 05:14 00:00 0.31 0.0425 
+ 99 05:16 00:00 0.31 0.0425 
+ 99 05:16 00:00 0.31 0.0375 
+ 100 05:19 00:00 0.31 0.0375 
+ 100 05:19 00:00 0.31 0.0526 
+ 101 05:22 00:00 0.31 0.0526 
+ 101 05:22 00:00 0.31 0.0651 
+ 102 05:25 00:00 0.31 0.0651 
+ 102 05:25 00:00 0.31 0.107 
+ 103 05:27 00:00 0.31 0.107 
+ 103 05:27 00:00 0.31 0.0624 
+ 104 05:30 00:00 0.31 0.0624 
+ 104 05:30 00:00 0.31 0.0489 
+ 105 05:33 00:00 0.31 0.0489 
+ 105 05:33 00:00 0.31 0.0452 
+ 106 05:36 00:00 0.32 0.0452 
+ 106 05:36 00:00 0.32 0.0473 
+ 107 05:38 00:00 0.32 0.0473 
+ 107 05:38 00:00 0.32 0.0493 
+ 108 05:41 00:00 0.32 0.0493 
+ 108 05:41 00:00 0.32 0.0671 
+ 109 05:44 00:00 0.32 0.0671 
+ 109 05:44 00:00 0.32 0.0563 
+ 110 05:47 00:00 0.32 0.0563 
+ 110 05:47 00:00 0.32 0.0498 
+ 111 05:49 00:00 0.32 0.0498 
+ 111 05:49 00:00 0.32 0.0813 
+ 112 05:52 00:00 0.32 0.0813 
+ 112 05:52 00:00 0.32 0.066 
+ 113 05:55 00:00 0.32 0.066 
+ 113 05:55 00:00 0.32 0.0409 
+ 114 05:58 00:00 0.32 0.0409 
+ 114 05:58 00:00 0.32 0.0785 
+ 115 06:00 00:00 0.32 0.0785 
+ 115 06:00 00:00 0.32 0.0351 
+ 116 06:03 00:00 0.32 0.0351 
+ 116 06:03 00:00 0.32 0.0423 
+ 117 06:06 00:00 0.32 0.0423 
+ 117 06:06 00:00 0.32 0.0411 
+ 118 06:09 00:00 0.32 0.0411 
+ 118 06:09 00:00 0.32 0.0327 
+ 119 06:12 00:00 0.32 0.0327 
+ 119 06:12 00:00 0.32 0.0399 
+ 120 06:14 00:00 0.32 0.0399 
+ 120 06:14 00:00 0.32 0.0419 
+ 121 06:17 00:00 0.32 0.0419 
+ 121 06:17 00:00 0.32 0.0526 
+ 122 06:20 00:00 0.32 0.0526 
+ 122 06:20 00:00 0.32 0.0343 
+ 123 06:23 00:00 0.32 0.0343 
+ 123 06:23 00:00 0.32 0.054 
+ 124 06:26 00:00 0.32 0.054 
+ 124 06:26 00:00 0.32 0.0497 
+ 125 06:29 00:00 0.32 0.0497 
+ 125 06:29 00:00 0.32 0.0539 
+ 126 06:32 00:00 0.32 0.0539 
+ 126 06:32 00:00 0.32 0.0403 
+ 127 06:35 00:00 0.32 0.0403 
+ 127 06:35 00:00 0.32 0.0613 
+ 128 06:38 00:00 0.32 0.0613 
+ 128 06:38 00:00 0.32 0.0563 
+ 129 06:41 00:00 0.32 0.0563 
+ 129 06:41 00:00 0.32 0.0734 
+ 130 06:43 00:00 0.32 0.0734 
+ 130 06:43 00:00 0.32 0.0482 
+ 131 06:46 00:00 0.32 0.0482 
+ 131 06:46 00:00 0.32 0.0443 
+ 132 06:49 00:00 0.32 0.0443 
+ 132 06:49 00:00 0.32 0.0526 
+ 133 06:52 00:00 0.32 0.0526 
+ 133 06:52 00:00 0.32 0.0487 
+ 134 06:54 00:00 0.32 0.0487 
+ 134 06:54 00:00 0.32 0.0347 
+ 135 06:57 00:00 0.32 0.0347 
+ 135 06:57 00:00 0.32 0.0645 
+ 136 07:00 00:00 0.32 0.0645 
+ 136 07:00 00:00 0.32 0.0709 
+ 137 07:03 00:00 0.32 0.0709 
+ 137 07:03 00:00 0.32 0.0269 
+ 138 07:05 00:00 0.32 0.0269 
+ 138 07:05 00:00 0.32 0.0649 
+ 139 07:08 00:00 0.32 0.0649 
+ 139 07:08 00:00 0.32 0.0739 
+ 140 07:11 00:00 0.32 0.0739 
+ 140 07:11 00:00 0.32 0.0436 
+ 141 07:14 00:00 0.32 0.0436 
+ 141 07:14 00:00 0.32 0.0401 
+ 142 07:16 00:00 0.33 0.0401 
+ 142 07:16 00:00 0.33 0.0535 
+ 143 07:19 00:00 0.33 0.0535 
+ 143 07:19 00:00 0.33 0.0803 
+ 144 07:22 00:00 0.33 0.0803 
+ 144 07:22 00:00 0.33 0.055 
+ 145 07:25 00:00 0.33 0.055 
+ 145 07:25 00:00 0.33 0.0399 
+ 146 07:27 00:00 0.33 0.0399 
+ 146 07:27 00:00 0.33 0.070 
+ 147 07:30 00:00 0.33 0.070 
+ 147 07:30 00:00 0.33 0.0299 
+ 148 07:33 00:00 0.33 0.0299 
+ 148 07:33 00:00 0.33 0.0685 
+ 149 07:36 00:00 0.33 0.0685 
+ 149 07:36 00:00 0.33 0.0484 
+ 150 07:38 00:00 0.33 0.0484 
+ 150 07:38 00:00 0.33 0.0598 
+ 151 07:41 00:00 0.33 0.0598 
+ 151 07:41 00:00 0.33 0.0666 
+ 152 07:44 00:00 0.33 0.0666 
+ 152 07:44 00:00 0.33 0.0817 
+ 153 07:47 00:00 0.33 0.0817 
+ 153 07:47 00:00 0.33 0.0595 
+ 154 07:49 00:00 0.33 0.0595 
+ 154 07:49 00:00 0.33 0.0533 
+ 155 07:52 00:00 0.33 0.0533 
+ 155 07:52 00:00 0.33 0.0633 
+ 156 07:55 00:00 0.33 0.0633 
+ 156 07:55 00:00 0.33 0.0604 
+ 157 07:58 00:00 0.33 0.0604 
+ 157 07:58 00:00 0.33 0.0751 
+ 158 08:01 00:00 0.33 0.0751 
+ 158 08:01 00:00 0.33 0.047 
+ 159 08:03 00:00 0.33 0.047 
+ 159 08:03 00:00 0.33 0.0398 
+ 160 08:06 00:00 0.33 0.0398 
+ 160 08:06 00:00 0.33 0.0813 
+ 161 08:09 00:00 0.33 0.0813 
+ 161 08:09 00:00 0.33 0.0343 
+ 162 08:12 00:00 0.33 0.0343 
+ 162 08:12 00:00 0.33 0.0714 
+ 163 08:14 00:00 0.33 0.0714 
+ 163 08:14 00:00 0.33 0.0724 
+ 164 08:18 00:00 0.33 0.0724 
+ 164 08:18 00:00 0.33 0.060 
+ 165 08:21 00:00 0.33 0.060 
+ 165 08:21 00:00 0.33 0.0616 
+ 166 08:23 00:00 0.33 0.0616 
+ 166 08:23 00:00 0.33 0.0714 
+ 167 08:26 00:00 0.33 0.0714 
+ 167 08:26 00:00 0.33 0.0675 
+ 168 08:29 00:00 0.33 0.0675 
+ 168 08:29 00:00 0.33 0.057 
+ 169 08:32 00:00 0.33 0.057 
+ 169 08:32 00:00 0.33 0.0798 
+ 170 08:35 00:00 0.33 0.0798 
+ 170 08:35 00:00 0.33 0.0894 
+ 171 08:37 00:00 0.33 0.0894 
+ 171 08:37 00:00 0.33 0.0828 
+ 172 08:40 00:00 0.33 0.0828 
+ 172 08:40 00:00 0.33 0.0349 
+ 173 08:43 00:00 0.33 0.0349 
+ 173 08:43 00:00 0.33 0.0705 
+ 174 08:46 00:00 0.33 0.0705 
+ 174 08:46 00:00 0.33 0.0543 
+ 175 08:48 00:00 0.33 0.0543 
+ 175 08:48 00:00 0.33 0.0355 
+ 176 08:51 00:00 0.33 0.0355 
+ 176 08:51 00:00 0.33 0.0344 
+ 177 08:54 00:00 0.33 0.0344 
+ 177 08:54 00:00 0.33 0.121 
+ 178 08:57 00:00 0.33 0.121 
+ 178 08:57 00:00 0.33 0.0532 
+ 179 08:59 00:00 0.33 0.0532 
+ 179 08:59 00:00 0.33 0.0526 
+ 180 09:02 00:00 0.33 0.0526 
+ 180 09:02 00:00 0.33 0.0735 
+ 181 09:05 00:00 0.33 0.0735 
+ 181 09:05 00:00 0.33 0.0498 
+ 182 09:08 00:00 0.33 0.0498 
+ 182 09:08 00:00 0.33 0.076 
+ 183 09:10 00:00 0.33 0.076 
+ 183 09:10 00:00 0.33 0.0535 
+ 184 09:13 00:00 0.33 0.0535 
+ 184 09:13 00:00 0.33 0.0785 
+ 185 09:16 00:00 0.33 0.0785 
+ 185 09:16 00:00 0.33 0.0318 
+ 186 09:19 00:00 0.33 0.0318 
+ 186 09:19 00:00 0.33 0.0896 
+ 187 09:21 00:00 0.33 0.0896 
+ 187 09:21 00:00 0.33 0.0295 
+ 188 09:24 00:00 0.33 0.0295 
+ 188 09:24 00:00 0.33 0.0749 
+ 189 09:27 00:00 0.33 0.0749 
+ 189 09:27 00:00 0.33 0.0498 
+ 190 09:30 00:00 0.33 0.0498 
+ 190 09:30 00:00 0.33 0.0686 
+ 191 09:32 00:00 0.33 0.0686 
+ 191 09:32 00:00 0.33 0.0514 
+ 192 09:35 00:00 0.33 0.0514 
+ 192 09:35 00:00 0.33 0.0811 
+ 193 09:38 00:00 0.33 0.0811 
+ 193 09:38 00:00 0.33 0.0437 
+ 194 09:41 00:00 0.33 0.0437 
+ 194 09:41 00:00 0.33 0.0527 
+ 195 09:43 00:00 0.33 0.0527 
+ 195 09:43 00:00 0.33 0.0958 
+ 196 09:46 00:00 0.33 0.0958 
+ 196 09:46 00:00 0.33 0.0338 
+ 197 09:49 00:00 0.33 0.0338 
+ 197 09:49 00:00 0.33 0.0455 
+ 198 09:52 00:00 0.33 0.0455 
+ 198 09:52 00:00 0.33 0.033 
+ 199 09:55 00:00 0.33 0.033 
+ 199 09:55 00:00 0.33 0.0461 
+ 200 09:57 00:00 0.33 0.0461 
+ 200 09:57 00:00 0.33 0.0584 
+ 201 10:00 00:00 0.33 0.0584 
+ 201 10:00 00:00 0.33 0.0706 
+ 202 10:03 00:00 0.33 0.0706 
+ 202 10:03 00:00 0.33 0.0362 
+ 203 10:06 00:00 0.33 0.0362 
+ 203 10:06 00:00 0.33 0.0685 
+ 204 10:09 00:00 0.33 0.0685 
+ 204 10:09 00:00 0.33 0.0869 
+ 205 10:11 00:00 0.34 0.0869 
+ 205 10:11 00:00 0.34 0.0945 
+ 206 10:14 00:00 0.34 0.0945 
+ 206 10:14 00:00 0.34 0.0787 
+ 207 10:17 00:00 0.34 0.0787 
+ 207 10:17 00:00 0.34 0.0267 
+ 208 10:20 00:00 0.34 0.0267 
+ 208 10:20 00:00 0.34 0.042 
+ 209 10:23 00:00 0.34 0.042 
+ 209 10:23 00:00 0.34 0.0373 
+ 210 10:26 00:00 0.34 0.0373 
+ 210 10:26 00:00 0.34 0.0696 
+ 211 10:28 00:00 0.34 0.0696 
+ 211 10:29 00:00 0.34 0.0468 
+ 212 10:31 00:00 0.34 0.0468 
+ 212 10:31 00:00 0.34 0.0325 
+ 213 10:34 00:00 0.34 0.0325 
+ 213 10:34 00:00 0.34 0.0788 
+ 214 10:37 00:00 0.34 0.0788 
+ 214 10:37 00:00 0.34 0.0565 
+ 215 10:39 00:00 0.34 0.0565 
+ 215 10:40 00:00 0.34 0.0556 
+ 216 10:42 00:00 0.34 0.0556 
+ 216 10:42 00:00 0.34 0.0572 
+ 217 10:45 00:00 0.34 0.0572 
+ 217 10:45 00:00 0.34 0.044 
+ 218 10:48 00:00 0.34 0.044 
+ 218 10:48 00:00 0.34 0.0485 
+ 219 10:51 00:00 0.34 0.0485 
+ 219 10:51 00:00 0.34 0.0281 
+ 220 10:53 00:00 0.34 0.0281 
+ 220 10:53 00:00 0.34 0.0451 
+ 221 10:56 00:00 0.34 0.0451 
+ 221 10:56 00:00 0.34 0.0466 
+ 222 10:59 00:00 0.34 0.0466 
+ 222 10:59 00:00 0.34 0.0384 
+ 223 11:02 00:00 0.34 0.0384 
+ 223 11:02 00:00 0.34 0.0812 
+ 224 11:04 00:00 0.34 0.0812 
+ 224 11:04 00:00 0.34 0.0435 
+ 225 11:07 00:00 0.34 0.0435 
+ 225 11:07 00:00 0.34 0.0828 
+ 226 11:10 00:00 0.34 0.0828 
+ 226 11:10 00:00 0.34 0.0449 
+ 227 11:13 00:00 0.34 0.0449 
+ 227 11:13 00:00 0.34 0.038 
+ 228 11:15 00:00 0.34 0.038 
+ 228 11:15 00:00 0.34 0.0788 
+ 229 11:18 00:00 0.34 0.0788 
+ 229 11:18 00:00 0.34 0.138 
+ 230 11:21 00:00 0.34 0.138 
+ 230 11:21 00:00 0.34 0.0431 
+ 231 11:24 00:00 0.34 0.0431 
+ 231 11:24 00:00 0.34 0.0843 
+ 232 11:26 00:00 0.34 0.0843 
+ 232 11:26 00:00 0.34 0.0762 
+ 233 11:29 00:00 0.34 0.0762 
+ 233 11:29 00:00 0.34 0.0601 
+ 234 11:32 00:00 0.34 0.0601 
+ 234 11:32 00:00 0.34 0.0351 
+ 235 11:35 00:00 0.34 0.0351 
+ 235 11:35 00:00 0.34 0.0478 
+ 236 11:37 00:00 0.34 0.0478 
+ 236 11:37 00:00 0.34 0.0488 
+ 237 11:40 00:00 0.34 0.0488 
+ 237 11:40 00:00 0.34 0.0323 
+ 238 11:43 00:00 0.34 0.0323 
+ 238 11:43 00:00 0.34 0.035 
+ 239 11:46 00:00 0.34 0.035 
+ 239 11:46 00:00 0.34 0.0549 
+ 240 11:49 00:00 0.34 0.0549 
+ 240 11:49 00:00 0.34 0.0707 
+ 241 11:51 00:00 0.34 0.0707 
+ 241 11:51 00:00 0.34 0.0576 
+ 242 11:54 00:00 0.34 0.0576 
+ 242 11:54 00:00 0.34 0.0913 
+ 243 11:57 00:00 0.34 0.0913 
+ 243 11:57 00:00 0.34 0.0407 
+ 244 12:00 00:00 0.34 0.0407 
+ 244 12:00 00:00 0.34 0.0335 
+ 245 12:03 00:00 0.34 0.0335 
+ 245 12:03 00:00 0.34 0.0439 
+ 246 12:06 00:00 0.34 0.0439 
+ 246 12:06 00:00 0.34 0.0746 
+ 247 12:09 00:00 0.34 0.0746 
+ 247 12:09 00:00 0.34 0.0621 
+ 248 12:12 00:00 0.34 0.0621 
+ 248 12:12 00:00 0.34 0.0518 
+ 249 12:14 00:00 0.34 0.0518 
+ 249 12:14 00:00 0.34 0.042 
+ 250 12:17 00:00 0.34 0.042 
+ 251 12:29 00:00 0.34 0.0534 
+ 251 12:29 00:00 0.34 0.0444 
+ 252 12:31 00:00 0.34 0.0444 
+ 252 12:31 00:00 0.34 0.0349 
+ 253 12:34 00:00 0.34 0.0349 
+ 253 12:34 00:00 0.34 0.0382 
+ 254 12:37 00:00 0.34 0.0382 
+ 254 12:37 00:00 0.34 0.0527 
+ 255 12:40 00:00 0.34 0.0527 
+ 255 12:40 00:00 0.34 0.0401 
+ 256 12:42 00:00 0.34 0.0401 
+ 256 12:42 00:00 0.34 0.0574 
+ 257 12:45 00:00 0.34 0.0574 
+ 257 12:45 00:00 0.34 0.0772 
+ 258 12:48 00:00 0.34 0.0772 
+ 258 12:48 00:00 0.34 0.0551 
+ 259 12:51 00:00 0.34 0.0551 
+ 259 12:51 00:00 0.34 0.0527 
+ 260 12:53 00:00 0.34 0.0527 
+ 260 12:53 00:00 0.34 0.0323 
+ 261 12:56 00:00 0.34 0.0323 
+ 261 12:56 00:00 0.34 0.0408 
+ 262 12:59 00:00 0.34 0.0408 
+ 262 12:59 00:00 0.34 0.0706 
+ 263 13:02 00:00 0.34 0.0706 
+ 263 13:02 00:00 0.34 0.024 
+ 264 13:04 00:00 0.34 0.024 
+ 264 13:04 00:00 0.34 0.0362 
+ 265 13:07 00:00 0.34 0.0362 
+ 265 13:07 00:00 0.34 0.0538 
+ 266 13:10 00:00 0.34 0.0538 
+ 266 13:10 00:00 0.34 0.069 
+ 267 13:13 00:00 0.34 0.069 
+ 267 13:13 00:00 0.34 0.0414 
+ 268 13:15 00:00 0.34 0.0414 
+ 268 13:15 00:00 0.34 0.053 
+ 269 13:18 00:00 0.34 0.053 
+ 269 13:18 00:00 0.34 0.0524 
+ 270 13:21 00:00 0.34 0.0524 
+ 270 13:21 00:00 0.34 0.0714 
+ 271 13:24 00:00 0.34 0.0714 
+ 271 13:24 00:00 0.34 0.0539 
+ 272 13:26 00:00 0.34 0.0539 
+ 272 13:26 00:00 0.34 0.0548 
+ 273 13:29 00:00 0.34 0.0548 
+ 273 13:29 00:00 0.34 0.0496 
+ 274 13:32 00:00 0.34 0.0496 
+ 274 13:32 00:00 0.34 0.0594 
+ 275 13:35 00:00 0.34 0.0594 
+ 275 13:35 00:00 0.34 0.0441 
+ 276 13:37 00:00 0.34 0.0441 
+ 276 13:37 00:00 0.34 0.0844 
+ 277 13:40 00:00 0.34 0.0844 
+ 277 13:40 00:00 0.34 0.0485 
+ 278 13:43 00:00 0.34 0.0485 
+ 278 13:43 00:00 0.34 0.032 
+ 279 13:46 00:00 0.34 0.032 
+ 279 13:46 00:00 0.34 0.0295 
+ 280 13:49 00:00 0.34 0.0295 
+ 280 13:49 00:00 0.34 0.0389 
+ 281 13:51 00:00 0.34 0.0389 
+ 281 13:51 00:00 0.34 0.0307 
+ 282 13:54 00:00 0.34 0.0307 
+ 282 13:55 00:00 0.34 0.0693 
+ 283 13:57 00:00 0.34 0.0693 
+ 283 13:57 00:00 0.34 0.0722 
+ 284 14:00 00:00 0.34 0.0722 
+ 284 14:00 00:00 0.34 0.027 
+ 285 14:03 00:00 0.34 0.027 
+ 285 14:03 00:00 0.34 0.0694 
+ 286 14:06 00:00 0.34 0.0694 
+ 286 14:06 00:00 0.34 0.0586 
+ 287 14:09 00:00 0.34 0.0586 
+ 287 14:09 00:00 0.34 0.0398 
+ 288 14:12 00:00 0.34 0.0398 
+ 288 14:12 00:00 0.34 0.0333 
+ 289 14:15 00:00 0.34 0.0333 
+ 289 14:15 00:00 0.34 0.107 
+ 290 14:17 00:00 0.34 0.107 
+ 290 14:17 00:00 0.34 0.0394 
+ 291 14:20 00:00 0.34 0.0394 
+ 291 14:20 00:00 0.34 0.0391 
+ 292 14:23 00:00 0.34 0.0391 
+ 292 14:23 00:00 0.34 0.0396 
+ 293 14:26 00:00 0.34 0.0396 
+ 293 14:26 00:00 0.34 0.151 
+ 294 14:28 00:00 0.34 0.151 
+ 294 14:28 00:00 0.34 0.0374 
+ 295 14:31 00:00 0.34 0.0374 
+ 295 14:31 00:00 0.34 0.0712 
+ 296 14:34 00:00 0.34 0.0712 
+ 296 14:34 00:00 0.34 0.0757 
+ 297 14:37 00:00 0.34 0.0757 
+ 297 14:37 00:00 0.34 0.0736 
+ 298 14:39 00:00 0.34 0.0736 
+ 298 14:40 00:00 0.34 0.0421 
+ 299 14:42 00:00 0.34 0.0421 
+ 299 14:42 00:00 0.34 0.056 
+ 300 14:45 00:00 0.34 0.056 
+ 300 14:45 00:00 0.34 0.0861 
+ 301 14:48 00:00 0.34 0.0861 
+ 301 14:48 00:00 0.34 0.0515 
+ 302 14:50 00:00 0.34 0.0515 
+ 302 14:51 00:00 0.34 0.0606 
+ 303 14:53 00:00 0.34 0.0606 
+ 303 14:53 00:00 0.34 0.0313 
+ 304 14:56 00:00 0.34 0.0313 
+ 304 14:56 00:00 0.34 0.0385 
+ 305 14:59 00:00 0.34 0.0385 
+ 305 14:59 00:00 0.34 0.056 
+ 306 15:01 00:00 0.34 0.056 
+ 306 15:02 00:00 0.34 0.0849 
+ 307 15:04 00:00 0.34 0.0849 
+ 307 15:04 00:00 0.34 0.0414 
+ 308 15:07 00:00 0.34 0.0414 
+ 308 15:07 00:00 0.34 0.0443 
+ 309 15:10 00:00 0.34 0.0443 
+ 309 15:10 00:00 0.34 0.0708 
+ 310 15:13 00:00 0.34 0.0708 
+ 310 15:13 00:00 0.34 0.0432 
+ 311 15:15 00:00 0.34 0.0432 
+ 311 15:15 00:00 0.34 0.0452 
+ 312 15:18 00:00 0.34 0.0452 
+ 312 15:18 00:00 0.34 0.0368 
+ 313 15:21 00:00 0.34 0.0368 
+ 313 15:21 00:00 0.34 0.0574 
+ 314 15:24 00:00 0.34 0.0574 
+ 314 15:24 00:00 0.34 0.0344 
+ 315 15:26 00:00 0.34 0.0344 
+ 315 15:26 00:00 0.34 0.033 
+ 316 15:29 00:00 0.34 0.033 
+ 316 15:29 00:00 0.34 0.055 
+ 317 15:32 00:00 0.34 0.055 
+ 317 15:32 00:00 0.34 0.0546 
+ 318 15:35 00:00 0.34 0.0546 
+ 318 15:35 00:00 0.34 0.0333 
+ 319 15:37 00:00 0.34 0.0333 
+ 319 15:37 00:00 0.34 0.0433 
+ 320 15:40 00:00 0.34 0.0433 
+ 320 15:40 00:00 0.34 0.0843 
+ 321 15:43 00:00 0.34 0.0843 
+ 321 15:43 00:00 0.34 0.0365 
+ 322 15:46 00:00 0.34 0.0365 
+ 322 15:46 00:00 0.34 0.0405 
+ 323 15:48 00:00 0.34 0.0405 
+ 323 15:49 00:00 0.34 0.0533 
+ 324 15:52 00:00 0.34 0.0533 
+ 324 15:52 00:00 0.34 0.0329 
+ 325 15:55 00:00 0.34 0.0329 
+ 325 15:55 00:00 0.34 0.0815 
+ 326 15:58 00:00 0.34 0.0815 
+ 326 15:58 00:00 0.34 0.0694 
+ 327 16:01 00:00 0.34 0.0694 
+ 327 16:01 00:00 0.34 0.0295 
+ 328 16:04 00:00 0.34 0.0295 
+ 328 16:04 00:00 0.34 0.0465 
+ 329 16:07 00:00 0.34 0.0465 
+ 329 16:07 00:00 0.34 0.0624 
+ 330 16:09 00:00 0.34 0.0624 
+ 330 16:09 00:00 0.34 0.0879 
+ 331 16:12 00:00 0.34 0.0879 
+ 331 16:12 00:00 0.34 0.0342 
+ 332 16:15 00:00 0.34 0.0342 
+ 332 16:15 00:00 0.34 0.0528 
+ 333 16:18 00:00 0.34 0.0528 
+ 333 16:18 00:00 0.34 0.0237 
+ 334 16:20 00:00 0.34 0.0237 
+ 334 16:20 00:00 0.34 0.0516 
+ 335 16:23 00:00 0.34 0.0516 
+ 335 16:23 00:00 0.34 0.097 
+ 336 16:26 00:00 0.34 0.097 
+ 336 16:26 00:00 0.34 0.031 
+ 337 16:29 00:00 0.34 0.031 
+ 337 16:29 00:00 0.34 0.0465 
+ 338 16:31 00:00 0.34 0.0465 
+ 338 16:31 00:00 0.34 0.0301 
+ 339 16:34 00:00 0.34 0.0301 
+ 339 16:34 00:00 0.34 0.060 
+ 340 16:37 00:00 0.34 0.060 
+ 340 16:37 00:00 0.34 0.088 
+ 341 16:40 00:00 0.34 0.088 
+ 341 16:40 00:00 0.34 0.0359 
+ 342 16:42 00:00 0.34 0.0359 
+ 342 16:42 00:00 0.34 0.0713 
+ 343 16:45 00:00 0.34 0.0713 
+ 343 16:45 00:00 0.34 0.0252 
+ 344 16:48 00:00 0.34 0.0252 
+ 344 16:48 00:00 0.34 0.0223 
+ 345 16:51 00:00 0.34 0.0223 
+ 345 16:51 00:00 0.34 0.150 
+ 346 16:53 00:00 0.34 0.150 
+ 346 16:53 00:00 0.34 0.0483 
+ 347 16:56 00:00 0.34 0.0483 
+ 347 16:56 00:00 0.34 0.0603 
+ 348 16:59 00:00 0.34 0.0603 
+ 348 16:59 00:00 0.34 0.0861 
+ 349 17:02 00:00 0.34 0.0861 
+ 349 17:02 00:00 0.34 0.0351 
+ 350 17:04 00:00 0.34 0.0351 
+ 350 17:04 00:00 0.34 0.036 
+ 351 17:07 00:00 0.34 0.036 
+ 351 17:07 00:00 0.34 0.045 
+ 352 17:10 00:00 0.34 0.045 
+ 352 17:10 00:00 0.34 0.0326 
+ 353 17:13 00:00 0.34 0.0326 
+ 353 17:13 00:00 0.34 0.0325 
+ 354 17:15 00:00 0.34 0.0325 
+ 354 17:15 00:00 0.34 0.0366 
+ 355 17:18 00:00 0.34 0.0366 
+ 355 17:18 00:00 0.34 0.0559 
+ 356 17:21 00:00 0.34 0.0559 
+ 356 17:21 00:00 0.34 0.0432 
+ 357 17:24 00:00 0.34 0.0432 
+ 357 17:24 00:00 0.34 0.0348 
+ 358 17:27 00:00 0.34 0.0348 
+ 358 17:27 00:00 0.34 0.0372 
+ 359 17:29 00:00 0.34 0.0372 
+ 359 17:29 00:00 0.34 0.0783 
+ 360 17:32 00:00 0.34 0.0783 
+ 360 17:32 00:00 0.34 0.0338 
+ 361 17:35 00:00 0.34 0.0338 
+ 361 17:35 00:00 0.34 0.0235 
+ 362 17:38 00:00 0.34 0.0235 
+ 362 17:38 00:00 0.34 0.0487 
+ 363 17:41 00:00 0.34 0.0487 
+ 363 17:41 00:00 0.34 0.0241 
+ 364 17:44 00:00 0.34 0.0241 
+ 364 17:44 00:00 0.34 0.0454 
+ 365 17:46 00:00 0.34 0.0454 
+ 365 17:47 00:00 0.34 0.0662 
+ 366 17:50 00:00 0.34 0.0662 
+ 366 17:50 00:00 0.34 0.0513 
+ 367 17:53 00:00 0.34 0.0513 
+ 367 17:53 00:00 0.34 0.0315 
+ 368 17:55 00:00 0.34 0.0315 
+ 368 17:55 00:00 0.34 0.0765 
+ 369 17:58 00:00 0.34 0.0765 
+ 369 17:58 00:00 0.34 0.0311 
+ 370 18:01 00:00 0.34 0.0311 
+ 370 18:01 00:00 0.34 0.0448 
+ 371 18:04 00:00 0.34 0.0448 
+ 371 18:04 00:00 0.34 0.0462 
+ 372 18:07 00:00 0.34 0.0462 
+ 372 18:07 00:00 0.34 0.083 
+ 373 18:09 00:00 0.34 0.083 
+ 373 18:09 00:00 0.34 0.0292 
+ 374 18:12 00:00 0.34 0.0292 
+ 374 18:12 00:00 0.34 0.0455 
+ 375 18:15 00:00 0.34 0.0455 
+ 375 18:15 00:00 0.34 0.0308 
+ 376 18:18 00:00 0.34 0.0308 
+ 376 18:18 00:00 0.34 0.0324 
+ 377 18:20 00:00 0.34 0.0324 
+ 377 18:20 00:00 0.34 0.0537 
+ 378 18:23 00:00 0.34 0.0537 
+ 378 18:23 00:00 0.34 0.0232 
+ 379 18:26 00:00 0.34 0.0232 
+ 379 18:26 00:00 0.34 0.0811 
+ 380 18:29 00:00 0.34 0.0811 
+ 380 18:29 00:00 0.34 0.0371 
+ 381 18:31 00:00 0.34 0.0371 
+ 381 18:31 00:00 0.34 0.0273 
+ 382 18:34 00:00 0.34 0.0273 
+ 382 18:34 00:00 0.34 0.0291 
+ 383 18:37 00:00 0.34 0.0291 
+ 383 18:37 00:00 0.34 0.0329 
+ 384 18:40 00:00 0.34 0.0329 
+ 384 18:40 00:00 0.34 0.0763 
+ 385 18:42 00:00 0.34 0.0763 
+ 385 18:42 00:00 0.34 0.100 
+ 386 18:45 00:00 0.34 0.100 
+ 386 18:45 00:00 0.34 0.0753 
+ 387 18:48 00:00 0.34 0.0753 
+ 387 18:48 00:00 0.34 0.0778 
+ 388 18:51 00:00 0.34 0.0778 
+ 388 18:51 00:00 0.34 0.0687 
+ 389 18:53 00:00 0.34 0.0687 
+ 389 18:53 00:00 0.34 0.0498 
+ 390 18:56 00:00 0.34 0.0498 
+ 390 18:56 00:00 0.34 0.119 
+ 391 18:59 00:00 0.34 0.119 
+ 391 18:59 00:00 0.34 0.0293 
+ 392 19:02 00:00 0.34 0.0293 
+ 392 19:02 00:00 0.34 0.0215 
+ 393 19:04 00:00 0.34 0.0215 
+ 393 19:04 00:00 0.34 0.0461 
+ 394 19:07 00:00 0.34 0.0461 
+ 394 19:07 00:00 0.34 0.0477 
+ 395 19:10 00:00 0.34 0.0477 
+ 395 19:10 00:00 0.34 0.0509 
+ 396 19:13 00:00 0.34 0.0509 
+ 396 19:13 00:00 0.34 0.0248 
+ 397 19:16 00:00 0.34 0.0248 
+ 397 19:16 00:00 0.34 0.032 
+ 398 19:18 00:00 0.34 0.032 
+ 398 19:18 00:00 0.34 0.0364 
+ 399 19:21 00:00 0.34 0.0364 
+ 399 19:21 00:00 0.34 0.047 
+ 400 19:24 00:00 0.34 0.047 
+ 400 19:24 00:00 0.34 0.0549 
+ 401 19:27 00:00 0.34 0.0549 
+ 401 19:27 00:00 0.34 0.066 
+ 402 19:29 00:00 0.34 0.066 
+ 402 19:30 00:00 0.34 0.0332 
+ 403 19:33 00:00 0.34 0.0332 
+ 403 19:33 00:00 0.34 0.0953 
+ 404 19:35 00:00 0.34 0.0953 
+ 404 19:35 00:00 0.34 0.0663 
+ 405 19:38 00:00 0.34 0.0663 
+ 405 19:38 00:00 0.34 0.065 
+ 406 19:41 00:00 0.34 0.065 
+ 406 19:41 00:00 0.34 0.0282 
+ 407 19:44 00:00 0.34 0.0282 
+ 407 19:44 00:00 0.34 0.034 
+ 408 19:47 00:00 0.34 0.034 
+ 408 19:47 00:00 0.34 0.0353 
+ 409 19:50 00:00 0.34 0.0353 
+ 409 19:50 00:00 0.34 0.0754 
+ 410 19:52 00:00 0.34 0.0754 
+ 410 19:52 00:00 0.34 0.0219 
+ 411 19:55 00:00 0.34 0.0219 
+ 411 19:55 00:00 0.34 0.0328 
+ 412 19:58 00:00 0.34 0.0328 
+ 412 19:58 00:00 0.34 0.0278 
+ 413 20:01 00:00 0.34 0.0278 
+ 413 20:01 00:00 0.34 0.0318 
+ 414 20:03 00:00 0.34 0.0318 
+ 414 20:03 00:00 0.34 0.0825 
+ 415 20:06 00:00 0.34 0.0825 
+ 415 20:06 00:00 0.34 0.0852 
+ 416 20:09 00:00 0.34 0.0852 
+ 416 20:09 00:00 0.34 0.0527 
+ 417 20:12 00:00 0.34 0.0527 
+ 417 20:12 00:00 0.34 0.0549 
+ 418 20:14 00:00 0.34 0.0549 
+ 418 20:15 00:00 0.34 0.0199 
+ 419 20:17 00:00 0.34 0.0199 
+ 419 20:17 00:00 0.34 0.0469 
+ 420 20:20 00:00 0.34 0.0469 
+ 420 20:20 00:00 0.34 0.0214 
+ 421 20:23 00:00 0.34 0.0214 
+ 421 20:23 00:00 0.34 0.0321 
+ 422 20:25 00:00 0.34 0.0321 
+ 422 20:26 00:00 0.34 0.0223 
+ 423 20:28 00:00 0.34 0.0223 
+ 423 20:28 00:00 0.34 0.0674 
+ 424 20:31 00:00 0.34 0.0674 
+ 424 20:31 00:00 0.34 0.0329 
+ 425 20:34 00:00 0.34 0.0329 
+ 425 20:34 00:00 0.34 0.0555 
+ 426 20:37 00:00 0.34 0.0555 
+ 426 20:37 00:00 0.34 0.0265 
+ 427 20:39 00:00 0.34 0.0265 
+ 427 20:39 00:00 0.34 0.0627 
+ 428 20:42 00:00 0.34 0.0627 
+ 428 20:42 00:00 0.34 0.0328 
+ 429 20:45 00:00 0.34 0.0328 
+ 429 20:45 00:00 0.34 0.0351 
+ 430 20:48 00:00 0.34 0.0351 
+ 430 20:48 00:00 0.34 0.0726 
+ 431 20:50 00:00 0.34 0.0726 
+ 431 20:50 00:00 0.34 0.0514 
+ 432 20:53 00:00 0.34 0.0514 
+ 432 20:53 00:00 0.34 0.0397 
+ 433 20:56 00:00 0.34 0.0397 
+ 433 20:56 00:00 0.34 0.0375 
+ 434 20:59 00:00 0.34 0.0375 
+ 434 20:59 00:00 0.34 0.0282 
+ 435 21:01 00:00 0.34 0.0282 
+ 435 21:01 00:00 0.34 0.0626 
+ 436 21:04 00:00 0.34 0.0626 
+ 436 21:04 00:00 0.34 0.0235 
+ 437 21:07 00:00 0.34 0.0235 
+ 437 21:07 00:00 0.34 0.027 
+ 438 21:10 00:00 0.34 0.027 
+ 438 21:10 00:00 0.34 0.0338 
+ 439 21:13 00:00 0.34 0.0338 
+ 439 21:13 00:00 0.34 0.0331 
+ 440 21:15 00:00 0.34 0.0331 
+ 440 21:15 00:00 0.34 0.0734 
+ 441 21:18 00:00 0.34 0.0734 
+ 441 21:18 00:00 0.34 0.0457 
+ 442 21:21 00:00 0.34 0.0457 
+ 442 21:21 00:00 0.34 0.0518 
+ 443 21:24 00:00 0.34 0.0518 
+ 443 21:24 00:00 0.34 0.0425 
+ 444 21:27 00:00 0.34 0.0425 
+ 444 21:27 00:00 0.34 0.0642 
+ 445 21:30 00:00 0.34 0.0642 
+ 445 21:30 00:00 0.34 0.0557 
+ 446 21:33 00:00 0.34 0.0557 
+ 446 21:33 00:00 0.34 0.0867 
+ 447 21:36 00:00 0.34 0.0867 
+ 447 21:36 00:00 0.34 0.0474 
+ 448 21:38 00:00 0.34 0.0474 
+ 448 21:38 00:00 0.34 0.0654 
+ 449 21:41 00:00 0.34 0.0654 
+ 449 21:41 00:00 0.34 0.0307 
+ 450 21:44 00:00 0.34 0.0307 
+ 450 21:44 00:00 0.34 0.0625 
+ 451 21:47 00:00 0.35 0.0625 
+ 451 21:47 00:00 0.35 0.0644 
+ 452 21:49 00:00 0.35 0.0644 
+ 452 21:50 00:00 0.35 0.0495 
+ 453 21:52 00:00 0.35 0.0495 
+ 453 21:52 00:00 0.35 0.0412 
+ 454 21:55 00:00 0.35 0.0412 
+ 454 21:55 00:00 0.35 0.0392 
+ 455 21:58 00:00 0.35 0.0392 
+ 455 21:58 00:00 0.35 0.0267 
+ 456 22:01 00:00 0.35 0.0267 
+ 456 22:01 00:00 0.35 0.033 
+ 457 22:03 00:00 0.35 0.033 
+ 457 22:03 00:00 0.35 0.0356 
+ 458 22:06 00:00 0.35 0.0356 
+ 458 22:06 00:00 0.35 0.0381 
+ 459 22:09 00:00 0.35 0.0381 
+ 459 22:09 00:00 0.35 0.0548 
+ 460 22:12 00:00 0.35 0.0548 
+ 460 22:12 00:00 0.35 0.0256 
+ 461 22:14 00:00 0.35 0.0256 
+ 461 22:14 00:00 0.35 0.0366 
+ 462 22:17 00:00 0.35 0.0366 
+ 462 22:17 00:00 0.35 0.0472 
+ 463 22:20 00:00 0.35 0.0472 
+ 463 22:20 00:00 0.35 0.0712 
+ 464 22:23 00:00 0.35 0.0712 
+ 464 22:23 00:00 0.35 0.089 
+ 465 22:25 00:00 0.35 0.089 
+ 465 22:25 00:00 0.35 0.0709 
+ 466 22:28 00:00 0.35 0.0709 
+ 466 22:28 00:00 0.35 0.0739 
+ 467 22:31 00:00 0.35 0.0739 
+ 467 22:31 00:00 0.35 0.0612 
+ 468 22:34 00:00 0.35 0.0612 
+ 468 22:34 00:00 0.35 0.0421 
+ 469 22:36 00:00 0.35 0.0421 
+ 469 22:36 00:00 0.35 0.0872 
+ 470 22:39 00:00 0.35 0.0872 
+ 470 22:39 00:00 0.35 0.0604 
+ 471 22:42 00:00 0.35 0.0604 
+ 471 22:42 00:00 0.35 0.0605 
+ 472 22:45 00:00 0.35 0.0605 
+ 472 22:45 00:00 0.35 0.0358 
+ 473 22:47 00:00 0.35 0.0358 
+ 473 22:47 00:00 0.35 0.0463 
+ 474 22:50 00:00 0.35 0.0463 
+ 474 22:50 00:00 0.35 0.0197 
+ 475 22:53 00:00 0.35 0.0197 
+ 475 22:53 00:00 0.35 0.0258 
+ 476 22:56 00:00 0.35 0.0258 
+ 476 22:56 00:00 0.35 0.0319 
+ 477 22:59 00:00 0.35 0.0319 
+ 477 22:59 00:00 0.35 0.0478 
+ 478 23:01 00:00 0.35 0.0478 
+ 478 23:01 00:00 0.35 0.0565 
+ 479 23:04 00:00 0.35 0.0565 
+ 479 23:04 00:00 0.35 0.080 
+ 480 23:07 00:00 0.35 0.080 
+ 480 23:07 00:00 0.35 0.0482 
+ 481 23:10 00:00 0.35 0.0482 
+ 481 23:10 00:00 0.35 0.0353 
+ 482 23:13 00:00 0.35 0.0353 
+ 482 23:13 00:00 0.35 0.039 
+ 483 23:15 00:00 0.35 0.039 
+ 483 23:15 00:00 0.35 0.0507 
+ 484 23:18 00:00 0.35 0.0507 
+ 484 23:18 00:00 0.35 0.0807 
+ 485 23:21 00:00 0.35 0.0807 
+ 485 23:21 00:00 0.35 0.0322 
+ 486 23:24 00:00 0.35 0.0322 
+ 486 23:24 00:00 0.35 0.0387 
+ 487 23:27 00:00 0.35 0.0387 
+ 487 23:27 00:00 0.35 0.0254 
+ 488 23:30 00:00 0.35 0.0254 
+ 488 23:30 00:00 0.35 0.050 
+ 489 23:33 00:00 0.35 0.050 
+ 489 23:33 00:00 0.35 0.0697 
+ 490 23:36 00:00 0.35 0.0697 
+ 490 23:36 00:00 0.35 0.0332 
+ 491 23:39 00:00 0.35 0.0332 
+ 491 23:39 00:00 0.35 0.0299 
+ 492 23:41 00:00 0.35 0.0299 
+ 492 23:41 00:00 0.35 0.0436 
+ 493 23:44 00:00 0.35 0.0436 
+ 493 23:44 00:00 0.35 0.0341 
+ 494 23:47 00:00 0.35 0.0341 
+ 494 23:47 00:00 0.35 0.0268 
+ 495 23:50 00:00 0.35 0.0268 
+ 495 23:50 00:00 0.35 0.0575 
+ 496 23:52 00:00 0.35 0.0575 
+ 496 23:52 00:00 0.35 0.0446 
+ 497 23:55 00:00 0.35 0.0446 
+ 497 23:55 00:00 0.35 0.0697 
+ 498 23:58 00:00 0.35 0.0697 
+ 498 23:58 00:00 0.35 0.0843 
+ 499 24:01 00:00 0.35 0.0843 
+ 499 24:01 00:00 0.35 0.0595 
+ 500 24:03 00:00 0.35 0.0595 
+ 501 24:15 00:00 0.34 0.042 
+ 501 24:15 00:00 0.34 0.0264 
+ 502 24:18 00:00 0.34 0.0264 
+ 502 24:18 00:00 0.34 0.0294 
+ 503 24:21 00:00 0.34 0.0294 
+ 503 24:21 00:00 0.34 0.0408 
+ 504 24:24 00:00 0.34 0.0408 
+ 504 24:24 00:00 0.34 0.0152 
+ 505 24:26 00:00 0.34 0.0152 
+ 505 24:26 00:00 0.34 0.0395 
+ 506 24:29 00:00 0.34 0.0395 
+ 506 24:29 00:00 0.34 0.0394 
+ 507 24:32 00:00 0.34 0.0394 
+ 507 24:32 00:00 0.34 0.0274 
+ 508 24:35 00:00 0.34 0.0274 
+ 508 24:35 00:00 0.34 0.0279 
+ 509 24:37 00:00 0.34 0.0279 
+ 509 24:37 00:00 0.34 0.0601 
+ 510 24:40 00:00 0.34 0.0601 
+ 510 24:40 00:00 0.34 0.0519 
+ 511 24:43 00:00 0.34 0.0519 
+ 511 24:43 00:00 0.34 0.0397 
+ 512 24:46 00:00 0.34 0.0397 
+ 512 24:46 00:00 0.34 0.0332 
+ 513 24:48 00:00 0.34 0.0332 
+ 513 24:48 00:00 0.34 0.0346 
+ 514 24:51 00:00 0.34 0.0346 
+ 514 24:51 00:00 0.34 0.0407 
+ 515 24:54 00:00 0.34 0.0407 
+ 515 24:54 00:00 0.34 0.0418 
+ 516 24:57 00:00 0.34 0.0418 
+ 516 24:57 00:00 0.34 0.111 
+ 517 24:59 00:00 0.34 0.111 
+ 517 24:59 00:00 0.34 0.0915 
+ 518 25:02 00:00 0.34 0.0915 
+ 518 25:02 00:00 0.34 0.0462 
+ 519 25:05 00:00 0.34 0.0462 
+ 519 25:05 00:00 0.34 0.0382 
+ 520 25:08 00:00 0.34 0.0382 
+ 520 25:08 00:00 0.34 0.0378 
+ 521 25:10 00:00 0.34 0.0378 
+ 521 25:10 00:00 0.34 0.0458 
+ 522 25:13 00:00 0.34 0.0458 
+ 522 25:13 00:00 0.34 0.0306 
+ 523 25:16 00:00 0.34 0.0306 
+ 523 25:16 00:00 0.34 0.0534 
+ 524 25:19 00:00 0.34 0.0534 
+ 524 25:19 00:00 0.34 0.0403 
+ 525 25:22 00:00 0.34 0.0403 
+ 525 25:22 00:00 0.34 0.0162 
+ 526 25:25 00:00 0.34 0.0162 
+ 526 25:25 00:00 0.34 0.0361 
+ 527 25:28 00:00 0.34 0.0361 
+ 527 25:28 00:00 0.34 0.0571 
+ 528 25:31 00:00 0.34 0.0571 
+ 528 25:31 00:00 0.34 0.0261 
+ 529 25:34 00:00 0.34 0.0261 
+ 529 25:34 00:00 0.34 0.0241 
+ 530 25:36 00:00 0.34 0.0241 
+ 530 25:36 00:00 0.34 0.0396 
+ 531 25:39 00:00 0.34 0.0396 
+ 531 25:39 00:00 0.34 0.0395 
+ 532 25:42 00:00 0.34 0.0395 
+ 532 25:42 00:00 0.34 0.0391 
+ 533 25:45 00:00 0.34 0.0391 
+ 533 25:45 00:00 0.34 0.0205 
+ 534 25:47 00:00 0.34 0.0205 
+ 534 25:48 00:00 0.34 0.0358 
+ 535 25:50 00:00 0.34 0.0358 
+ 535 25:50 00:00 0.34 0.0337 
+ 536 25:53 00:00 0.35 0.0337 
+ 536 25:53 00:00 0.35 0.0397 
+ 537 25:56 00:00 0.35 0.0397 
+ 537 25:56 00:00 0.35 0.0568 
+ 538 25:59 00:00 0.35 0.0568 
+ 538 25:59 00:00 0.35 0.148 
+ 539 26:01 00:00 0.35 0.148 
+ 539 26:01 00:00 0.35 0.041 
+ 540 26:04 00:00 0.35 0.041 
+ 540 26:04 00:00 0.35 0.0299 
+ 541 26:07 00:00 0.35 0.0299 
+ 541 26:07 00:00 0.35 0.0277 
+ 542 26:10 00:00 0.35 0.0277 
+ 542 26:10 00:00 0.35 0.0852 
+ 543 26:12 00:00 0.35 0.0852 
+ 543 26:12 00:00 0.35 0.0352 
+ 544 26:15 00:00 0.35 0.0352 
+ 544 26:15 00:00 0.35 0.0273 
+ 545 26:18 00:00 0.35 0.0273 
+ 545 26:18 00:00 0.35 0.0678 
+ 546 26:21 00:00 0.35 0.0678 
+ 546 26:21 00:00 0.35 0.0252 
+ 547 26:23 00:00 0.35 0.0252 
+ 547 26:23 00:00 0.35 0.0349 
+ 548 26:26 00:00 0.35 0.0349 
+ 548 26:26 00:00 0.35 0.0725 
+ 549 26:29 00:00 0.35 0.0725 
+ 549 26:29 00:00 0.35 0.0482 
+ 550 26:32 00:00 0.35 0.0482 
+ 550 26:32 00:00 0.35 0.0345 
+ 551 26:34 00:00 0.35 0.0345 
+ 551 26:34 00:00 0.35 0.0238 
+ 552 26:37 00:00 0.35 0.0238 
+ 552 26:37 00:00 0.35 0.0261 
+ 553 26:40 00:00 0.35 0.0261 
+ 553 26:40 00:00 0.35 0.0438 
+ 554 26:43 00:00 0.35 0.0438 
+ 554 26:43 00:00 0.35 0.0264 
+ 555 26:45 00:00 0.35 0.0264 
+ 555 26:45 00:00 0.35 0.0449 
+ 556 26:48 00:00 0.35 0.0449 
+ 556 26:48 00:00 0.35 0.0186 
+ 557 26:51 00:00 0.35 0.0186 
+ 557 26:51 00:00 0.35 0.0459 
+ 558 26:54 00:00 0.35 0.0459 
+ 558 26:54 00:00 0.35 0.0384 
+ 559 26:56 00:00 0.35 0.0384 
+ 559 26:56 00:00 0.35 0.0174 
+ 560 26:59 00:00 0.35 0.0174 
+ 560 26:59 00:00 0.35 0.0432 
+ 561 27:02 00:00 0.35 0.0432 
+ 561 27:02 00:00 0.35 0.0307 
+ 562 27:05 00:00 0.35 0.0307 
+ 562 27:05 00:00 0.35 0.0463 
+ 563 27:08 00:00 0.35 0.0463 
+ 563 27:08 00:00 0.35 0.0473 
+ 564 27:11 00:00 0.35 0.0473 
+ 564 27:11 00:00 0.35 0.0516 
+ 565 27:13 00:00 0.35 0.0516 
+ 565 27:13 00:00 0.35 0.0532 
+ 566 27:16 00:00 0.35 0.0532 
+ 566 27:16 00:00 0.35 0.0517 
+ 567 27:19 00:00 0.35 0.0517 
+ 567 27:19 00:00 0.35 0.0418 
+ 568 27:22 00:00 0.35 0.0418 
+ 568 27:22 00:00 0.35 0.0631 
+ 569 27:25 00:00 0.35 0.0631 
+ 569 27:25 00:00 0.35 0.0943 
+ 570 27:28 00:00 0.35 0.0943 
+ 570 27:28 00:00 0.35 0.0243 
+ 571 27:31 00:00 0.35 0.0243 
+ 571 27:31 00:00 0.35 0.024 
+ 572 27:33 00:00 0.35 0.024 
+ 572 27:33 00:00 0.35 0.0485 
+ 573 27:36 00:00 0.35 0.0485 
+ 573 27:36 00:00 0.35 0.0774 
+ 574 27:39 00:00 0.35 0.0774 
+ 574 27:39 00:00 0.35 0.039 
+ 575 27:42 00:00 0.35 0.039 
+ 575 27:42 00:00 0.35 0.0872 
+ 576 27:44 00:00 0.35 0.0872 
+ 576 27:44 00:00 0.35 0.0435 
+ 577 27:47 00:00 0.35 0.0435 
+ 577 27:47 00:00 0.35 0.0442 
+ 578 27:50 00:00 0.35 0.0442 
+ 578 27:50 00:00 0.35 0.0395 
+ 579 27:53 00:00 0.35 0.0395 
+ 579 27:53 00:00 0.35 0.0327 
+ 580 27:55 00:00 0.35 0.0327 
+ 580 27:55 00:00 0.35 0.039 
+ 581 27:58 00:00 0.35 0.039 
+ 581 27:58 00:00 0.35 0.036 
+ 582 28:01 00:00 0.35 0.036 
+ 582 28:01 00:00 0.35 0.0376 
+ 583 28:04 00:00 0.35 0.0376 
+ 583 28:04 00:00 0.35 0.0714 
+ 584 28:06 00:00 0.35 0.0714 
+ 584 28:06 00:00 0.35 0.091 
+ 585 28:09 00:00 0.35 0.091 
+ 585 28:09 00:00 0.35 0.0337 
+ 586 28:12 00:00 0.35 0.0337 
+ 586 28:12 00:00 0.35 0.0287 
+ 587 28:15 00:00 0.35 0.0287 
+ 587 28:15 00:00 0.35 0.0711 
+ 588 28:17 00:00 0.35 0.0711 
+ 588 28:17 00:00 0.35 0.0606 
+ 589 28:20 00:00 0.35 0.0606 
+ 589 28:20 00:00 0.35 0.0522 
+ 590 28:23 00:00 0.35 0.0522 
+ 590 28:23 00:00 0.35 0.0277 
+ 591 28:26 00:00 0.35 0.0277 
+ 591 28:26 00:00 0.35 0.0499 
+ 592 28:28 00:00 0.35 0.0499 
+ 592 28:28 00:00 0.35 0.046 
+ 593 28:31 00:00 0.35 0.046 
+ 593 28:31 00:00 0.35 0.0177 
+ 594 28:34 00:00 0.35 0.0177 
+ 594 28:34 00:00 0.35 0.0136 
+ 595 28:37 00:00 0.35 0.0136 
+ 595 28:37 00:00 0.35 0.027 
+ 596 28:40 00:00 0.35 0.027 
+ 596 28:40 00:00 0.35 0.108 
+ 597 28:42 00:00 0.35 0.108 
+ 597 28:42 00:00 0.35 0.0159 
+ 598 28:45 00:00 0.35 0.0159 
+ 598 28:45 00:00 0.35 0.0535 
+ 599 28:48 00:00 0.35 0.0535 
+ 599 28:48 00:00 0.35 0.0318 
+ 600 28:51 00:00 0.35 0.0318 
+ 600 28:51 00:00 0.35 0.0521 
+ 601 28:53 00:00 0.35 0.0521 
+ 601 28:53 00:00 0.35 0.0413 
+ 602 28:56 00:00 0.35 0.0413 
+ 602 28:56 00:00 0.35 0.0953 
+ 603 28:59 00:00 0.35 0.0953 
+ 603 28:59 00:00 0.35 0.0337 
+ 604 29:02 00:00 0.35 0.0337 
+ 604 29:02 00:00 0.35 0.0185 
+ 605 29:05 00:00 0.35 0.0185 
+ 605 29:05 00:00 0.35 0.0565 
+ 606 29:08 00:00 0.35 0.0565 
+ 606 29:08 00:00 0.35 0.0485 
+ 607 29:11 00:00 0.35 0.0485 
+ 607 29:11 00:00 0.35 0.0336 
+ 608 29:14 00:00 0.35 0.0336 
+ 608 29:14 00:00 0.35 0.0162 
+ 609 29:17 00:00 0.35 0.0162 
+ 609 29:17 00:00 0.35 0.0387 
+ 610 29:19 00:00 0.35 0.0387 
+ 610 29:19 00:00 0.35 0.0761 
+ 611 29:22 00:00 0.35 0.0761 
+ 611 29:22 00:00 0.35 0.0352 
+ 612 29:25 00:00 0.35 0.0352 
+ 612 29:25 00:00 0.35 0.0298 
+ 613 29:28 00:00 0.35 0.0298 
+ 613 29:28 00:00 0.35 0.0214 
+ 614 29:30 00:00 0.35 0.0214 
+ 614 29:30 00:00 0.35 0.0517 
+ 615 29:33 00:00 0.35 0.0517 
+ 615 29:33 00:00 0.35 0.0326 
+ 616 29:36 00:00 0.35 0.0326 
+ 616 29:36 00:00 0.35 0.0299 
+ 617 29:39 00:00 0.35 0.0299 
+ 617 29:39 00:00 0.35 0.0652 
+ 618 29:41 00:00 0.35 0.0652 
+ 618 29:41 00:00 0.35 0.055 
+ 619 29:44 00:00 0.35 0.055 
+ 619 29:44 00:00 0.35 0.0344 
+ 620 29:47 00:00 0.35 0.0344 
+ 620 29:47 00:00 0.35 0.0243 
+ 621 29:50 00:00 0.35 0.0243 
+ 621 29:50 00:00 0.35 0.0531 
+ 622 29:52 00:00 0.35 0.0531 
+ 622 29:53 00:00 0.35 0.0522 
+ 623 29:55 00:00 0.35 0.0522 
+ 623 29:55 00:00 0.35 0.049 
+ 624 29:58 00:00 0.35 0.049 
+ 624 29:58 00:00 0.35 0.0702 
+ 625 30:01 00:00 0.35 0.0702 
+ 625 30:01 00:00 0.35 0.0326 
+ 626 30:04 00:00 0.35 0.0326 
+ 626 30:04 00:00 0.35 0.0445 
+ 627 30:06 00:00 0.35 0.0445 
+ 627 30:06 00:00 0.35 0.0395 
+ 628 30:09 00:00 0.35 0.0395 
+ 628 30:09 00:00 0.35 0.0572 
+ 629 30:12 00:00 0.35 0.0572 
+ 629 30:12 00:00 0.35 0.0686 
+ 630 30:15 00:00 0.35 0.0686 
+ 630 30:15 00:00 0.35 0.0363 
+ 631 30:17 00:00 0.35 0.0363 
+ 631 30:17 00:00 0.35 0.0227 
+ 632 30:20 00:00 0.35 0.0227 
+ 632 30:20 00:00 0.35 0.0235 
+ 633 30:23 00:00 0.35 0.0235 
+ 633 30:23 00:00 0.35 0.0429 
+ 634 30:26 00:00 0.35 0.0429 
+ 634 30:26 00:00 0.35 0.0356 
+ 635 30:28 00:00 0.35 0.0356 
+ 635 30:28 00:00 0.35 0.0205 
+ 636 30:31 00:00 0.35 0.0205 
+ 636 30:31 00:00 0.35 0.0397 
+ 637 30:34 00:00 0.35 0.0397 
+ 637 30:34 00:00 0.35 0.0516 
+ 638 30:37 00:00 0.35 0.0516 
+ 638 30:37 00:00 0.35 0.0197 
+ 639 30:40 00:00 0.35 0.0197 
+ 639 30:40 00:00 0.35 0.0592 
+ 640 30:42 00:00 0.35 0.0592 
+ 640 30:42 00:00 0.35 0.0657 
+ 641 30:45 00:00 0.35 0.0657 
+ 641 30:46 00:00 0.35 0.0599 
+ 642 30:48 00:00 0.35 0.0599 
+ 642 30:48 00:00 0.35 0.0217 
+ 643 30:51 00:00 0.35 0.0217 
+ 643 30:51 00:00 0.35 0.0791 
+ 644 30:54 00:00 0.35 0.0791 
+ 644 30:54 00:00 0.35 0.0606 
+ 645 30:57 00:00 0.35 0.0606 
+ 645 30:57 00:00 0.35 0.0968 
+ 646 31:00 00:00 0.35 0.0968 
+ 646 31:00 00:00 0.35 0.0101 
+ 647 31:03 00:00 0.35 0.0101 
+ 647 31:03 00:00 0.35 0.0272 
+ 648 31:06 00:00 0.35 0.0272 
+ 648 31:06 00:00 0.35 0.0398 
+ 649 31:09 00:00 0.35 0.0398 
+ 649 31:09 00:00 0.35 0.0166 
+ 650 31:11 00:00 0.35 0.0166 
+ 650 31:11 00:00 0.35 0.0363 
+ 651 31:14 00:00 0.35 0.0363 
+ 651 31:14 00:00 0.35 0.027 
+ 652 31:17 00:00 0.35 0.027 
+ 652 31:17 00:00 0.35 0.0265 
+ 653 31:20 00:00 0.35 0.0265 
+ 653 31:20 00:00 0.35 0.0169 
+ 654 31:23 00:00 0.35 0.0169 
+ 654 31:23 00:00 0.35 0.0255 
+ 655 31:25 00:00 0.35 0.0255 
+ 655 31:25 00:00 0.35 0.039 
+ 656 31:28 00:00 0.35 0.039 
+ 656 31:28 00:00 0.35 0.0148 
+ 657 31:31 00:00 0.35 0.0148 
+ 657 31:31 00:00 0.35 0.141 
+ 658 31:34 00:00 0.35 0.141 
+ 658 31:34 00:00 0.35 0.0166 
+ 659 31:36 00:00 0.35 0.0166 
+ 659 31:36 00:00 0.35 0.0208 
+ 660 31:39 00:00 0.35 0.0208 
+ 660 31:39 00:00 0.35 0.038 
+ 661 31:42 00:00 0.35 0.038 
+ 661 31:42 00:00 0.35 0.0455 
+ 662 31:45 00:00 0.35 0.0455 
+ 662 31:45 00:00 0.35 0.0257 
+ 663 31:47 00:00 0.35 0.0257 
+ 663 31:47 00:00 0.35 0.0317 
+ 664 31:50 00:00 0.35 0.0317 
+ 664 31:50 00:00 0.35 0.0297 
+ 665 31:53 00:00 0.35 0.0297 
+ 665 31:53 00:00 0.35 0.0746 
+ 666 31:56 00:00 0.35 0.0746 
+ 666 31:56 00:00 0.35 0.0413 
+ 667 31:58 00:00 0.35 0.0413 
+ 667 31:58 00:00 0.35 0.0425 
+ 668 32:01 00:00 0.35 0.0425 
+ 668 32:01 00:00 0.35 0.0538 
+ 669 32:04 00:00 0.35 0.0538 
+ 669 32:04 00:00 0.35 0.0596 
+ 670 32:07 00:00 0.35 0.0596 
+ 670 32:07 00:00 0.35 0.0294 
+ 671 32:09 00:00 0.35 0.0294 
+ 671 32:09 00:00 0.35 0.0403 
+ 672 32:12 00:00 0.35 0.0403 
+ 672 32:12 00:00 0.35 0.0259 
+ 673 32:15 00:00 0.35 0.0259 
+ 673 32:15 00:00 0.35 0.0845 
+ 674 32:18 00:00 0.35 0.0845 
+ 674 32:18 00:00 0.35 0.0221 
+ 675 32:20 00:00 0.35 0.0221 
+ 675 32:20 00:00 0.35 0.028 
+ 676 32:23 00:00 0.35 0.028 
+ 676 32:23 00:00 0.35 0.0386 
+ 677 32:26 00:00 0.35 0.0386 
+ 677 32:26 00:00 0.35 0.0172 
+ 678 32:29 00:00 0.35 0.0172 
+ 678 32:29 00:00 0.35 0.032 
+ 679 32:31 00:00 0.35 0.032 
+ 679 32:31 00:00 0.35 0.0332 
+ 680 32:34 00:00 0.35 0.0332 
+ 680 32:34 00:00 0.35 0.0386 
+ 681 32:37 00:00 0.35 0.0386 
+ 681 32:37 00:00 0.35 0.0464 
+ 682 32:40 00:00 0.35 0.0464 
+ 682 32:40 00:00 0.35 0.0681 
+ 683 32:43 00:00 0.35 0.0681 
+ 683 32:43 00:00 0.35 0.0255 
+ 684 32:46 00:00 0.35 0.0255 
+ 684 32:46 00:00 0.35 0.0222 
+ 685 32:49 00:00 0.35 0.0222 
+ 685 32:49 00:00 0.35 0.0443 
+ 686 32:52 00:00 0.35 0.0443 
+ 686 32:52 00:00 0.35 0.090 
+ 687 32:55 00:00 0.35 0.090 
+ 687 32:55 00:00 0.35 0.0752 
+ 688 32:58 00:00 0.35 0.0752 
+ 688 32:58 00:00 0.35 0.0346 
+ 689 33:01 00:00 0.35 0.0346 
+ 689 33:01 00:00 0.35 0.0279 
+ 690 33:03 00:00 0.35 0.0279 
+ 690 33:03 00:00 0.35 0.0462 
+ 691 33:06 00:00 0.35 0.0462 
+ 691 33:06 00:00 0.35 0.0339 
+ 692 33:09 00:00 0.35 0.0339 
+ 692 33:09 00:00 0.35 0.0378 
+ 693 33:12 00:00 0.35 0.0378 
+ 693 33:12 00:00 0.35 0.030 
+ 694 33:14 00:00 0.35 0.030 
+ 694 33:14 00:00 0.35 0.0325 
+ 695 33:17 00:00 0.35 0.0325 
+ 695 33:17 00:00 0.35 0.022 
+ 696 33:20 00:00 0.35 0.022 
+ 696 33:20 00:00 0.35 0.0735 
+ 697 33:23 00:00 0.35 0.0735 
+ 697 33:23 00:00 0.35 0.0614 
+ 698 33:25 00:00 0.35 0.0614 
+ 698 33:25 00:00 0.35 0.0179 
+ 699 33:28 00:00 0.35 0.0179 
+ 699 33:28 00:00 0.35 0.0584 
+ 700 33:31 00:00 0.35 0.0584 
+ 700 33:31 00:00 0.35 0.0204 
+ 701 33:34 00:00 0.35 0.0204 
+ 701 33:34 00:00 0.35 0.0468 
+ 702 33:36 00:00 0.35 0.0468 
+ 702 33:36 00:00 0.35 0.0224 
+ 703 33:39 00:00 0.35 0.0224 
+ 703 33:39 00:00 0.35 0.019 
+ 704 33:42 00:00 0.35 0.019 
+ 704 33:42 00:00 0.35 0.0447 
+ 705 33:45 00:00 0.35 0.0447 
+ 705 33:45 00:00 0.35 0.069 
+ 706 33:47 00:00 0.35 0.069 
+ 706 33:47 00:00 0.35 0.025 
+ 707 33:50 00:00 0.35 0.025 
+ 707 33:50 00:00 0.35 0.0213 
+ 708 33:53 00:00 0.35 0.0213 
+ 708 33:53 00:00 0.35 0.0431 
+ 709 33:56 00:00 0.35 0.0431 
+ 709 33:56 00:00 0.35 0.0284 
+ 710 33:58 00:00 0.35 0.0284 
+ 710 33:58 00:00 0.35 0.0439 
+ 711 34:01 00:00 0.35 0.0439 
+ 711 34:01 00:00 0.35 0.0191 
+ 712 34:04 00:00 0.35 0.0191 
+ 712 34:04 00:00 0.35 0.0685 
+ 713 34:07 00:00 0.35 0.0685 
+ 713 34:07 00:00 0.35 0.0184 
+ 714 34:09 00:00 0.35 0.0184 
+ 714 34:09 00:00 0.35 0.0316 
+ 715 34:12 00:00 0.35 0.0316 
+ 715 34:12 00:00 0.35 0.0174 
+ 716 34:15 00:00 0.35 0.0174 
+ 716 34:15 00:00 0.35 0.0294 
+ 717 34:18 00:00 0.35 0.0294 
+ 717 34:18 00:00 0.35 0.0226 
+ 718 34:20 00:00 0.35 0.0226 
+ 718 34:20 00:00 0.35 0.0172 
+ 719 34:23 00:00 0.35 0.0172 
+ 719 34:23 00:00 0.35 0.0144 
+ 720 34:26 00:00 0.35 0.0144 
+ 720 34:26 00:00 0.35 0.0235 
+ 721 34:29 00:00 0.35 0.0235 
+ 721 34:29 00:00 0.35 0.0534 
+ 722 34:32 00:00 0.35 0.0534 
+ 722 34:32 00:00 0.35 0.0215 
+ 723 34:35 00:00 0.35 0.0215 
+ 723 34:35 00:00 0.35 0.0554 
+ 724 34:38 00:00 0.35 0.0554 
+ 724 34:38 00:00 0.35 0.0654 
+ 725 34:40 00:00 0.35 0.0654 
+ 725 34:41 00:00 0.35 0.034 
+ 726 34:44 00:00 0.35 0.034 
+ 726 34:44 00:00 0.35 0.0289 
+ 727 34:47 00:00 0.35 0.0289 
+ 727 34:47 00:00 0.35 0.0463 
+ 728 34:50 00:00 0.35 0.0463 
+ 728 34:50 00:00 0.35 0.0574 
+ 729 34:52 00:00 0.35 0.0574 
+ 729 34:52 00:00 0.35 0.0593 
+ 730 34:55 00:00 0.35 0.0593 
+ 730 34:55 00:00 0.35 0.0334 
+ 731 34:58 00:00 0.35 0.0334 
+ 731 34:58 00:00 0.35 0.0232 
+ 732 35:01 00:00 0.35 0.0232 
+ 732 35:01 00:00 0.35 0.0252 
+ 733 35:03 00:00 0.35 0.0252 
+ 733 35:03 00:00 0.35 0.0225 
+ 734 35:06 00:00 0.35 0.0225 
+ 734 35:06 00:00 0.35 0.0586 
+ 735 35:09 00:00 0.35 0.0586 
+ 735 35:09 00:00 0.35 0.0495 
+ 736 35:12 00:00 0.35 0.0495 
+ 736 35:12 00:00 0.35 0.0641 
+ 737 35:14 00:00 0.35 0.0641 
+ 737 35:14 00:00 0.35 0.0427 
+ 738 35:17 00:00 0.35 0.0427 
+ 738 35:17 00:00 0.35 0.0193 
+ 739 35:20 00:00 0.35 0.0193 
+ 739 35:20 00:00 0.35 0.0179 
+ 740 35:23 00:00 0.35 0.0179 
+ 740 35:23 00:00 0.35 0.026 
+ 741 35:25 00:00 0.35 0.026 
+ 741 35:26 00:00 0.35 0.0595 
+ 742 35:28 00:00 0.35 0.0595 
+ 742 35:28 00:00 0.35 0.0402 
+ 743 35:31 00:00 0.35 0.0402 
+ 743 35:31 00:00 0.35 0.0516 
+ 744 35:34 00:00 0.35 0.0516 
+ 744 35:34 00:00 0.35 0.0459 
+ 745 35:37 00:00 0.35 0.0459 
+ 745 35:37 00:00 0.35 0.0166 
+ 746 35:39 00:00 0.35 0.0166 
+ 746 35:39 00:00 0.35 0.0216 
+ 747 35:42 00:00 0.35 0.0216 
+ 747 35:42 00:00 0.35 0.0328 
+ 748 35:45 00:00 0.35 0.0328 
+ 748 35:45 00:00 0.35 0.0257 
+ 749 35:48 00:00 0.35 0.0257 
+ 749 35:48 00:00 0.35 0.0433 
+ 750 35:50 00:00 0.35 0.0433 
+ 751 36:01 00:00 0.35 0.0204 
+ 751 36:01 00:00 0.35 0.020 
+ 752 36:04 00:00 0.35 0.020 
+ 752 36:04 00:00 0.35 0.0637 
+ 753 36:07 00:00 0.35 0.0637 
+ 753 36:07 00:00 0.35 0.0221 
+ 754 36:10 00:00 0.35 0.0221 
+ 754 36:10 00:00 0.35 0.0696 
+ 755 36:12 00:00 0.35 0.0696 
+ 755 36:12 00:00 0.35 0.0267 
+ 756 36:15 00:00 0.35 0.0267 
+ 756 36:15 00:00 0.35 0.0328 
+ 757 36:18 00:00 0.35 0.0328 
+ 757 36:18 00:00 0.35 0.0365 
+ 758 36:21 00:00 0.35 0.0365 
+ 758 36:21 00:00 0.35 0.0382 
+ 759 36:23 00:00 0.35 0.0382 
+ 759 36:23 00:00 0.35 0.0159 
+ 760 36:26 00:00 0.35 0.0159 
+ 760 36:26 00:00 0.35 0.0199 
+ 761 36:29 00:00 0.35 0.0199 
+ 761 36:29 00:00 0.35 0.0657 
